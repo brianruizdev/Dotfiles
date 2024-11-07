@@ -1,0 +1,1 @@
+LyDM rute -> /etc/ly/config.ini
