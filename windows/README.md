@@ -15,20 +15,47 @@ Fuentes necesarias para visualizar `ligatures` e `iconos`:
 - [Cascadia Code](https://github.com/microsoft/cascadia-code/releases)
 - [Hack Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
-## Instalando paquetes nativos
+## Instalando paquetes
 
 Con [winstall](https://winstall.app/) podemos encontrar los paquetes a continuación.
 
 Instalamos paquetes nativos con el `AppInstaller` de windows (`winget`) que debería estar instalado por defecto.
 
 ```sh
+# Install
 winget install --id=Microsoft.AppInstaller  -e
 ```
 
-Existe otro gestor de paquetes llamado `Chocolatey`, sin embargo no es muy popular.
+```sh
+# Update
+winget upgrade --id=Microsoft.AppInstaller  -e
+```
+
+Existe otros gestores de paquetes llamados:
+
+[Chocolatey](https://chocolatey.org/)
+: The Package Manager for Windows Modern Software Automation
+
+Instalando mediante `winget`:
 
 ```sh
 winget install --id=Chocolatey.Chocolatey  -e
+```
+
+Instalando mediante `cmd`:
+
+```sh
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+[Scoop](https://scoop.sh/)
+: A command-line installer for Windows
+
+```sh
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
 ### Gestores de versiones y contenedores
@@ -63,10 +90,30 @@ winget install --id=JesseDuffield.Lazydocker  -e
 winget install --id=Volta.Volta  -e
 ```
 
-Herramientas para mejorar tu flujo de trabajo
+Herramientas para mejorar tu flujo de trabajo con `Volta`:
 
 ```sh
 volta install @microsoft/inshellisense
+```
+
+```sh
+volta install typescript @ansible/ansible-language-server @astrojs/language-server bash-language-server vscode-langservers-extracted dockerfile-language-server-nodejs
+```
+
+```sh
+volta install dot-language-server elm elm-test elm-format @elm-tooling/elm-language-server graphql-language-service-cli lean-language-server sql-language-server
+```
+
+```sh
+volta install markdoc-ls @prisma/language-server pyright svelte-language-server typescript-svelte-plugin @tailwindcss/language-server typescript-language-server
+```
+
+```sh
+volta install prettier @vue/language-server yaml-language-server@next
+```
+
+```sh
+volta install intelephense
 ```
 
 ### Emuladores de Terminal
@@ -256,6 +303,12 @@ Entornos de `NeoVim`:
 winget install --id=Helix.Helix  -e
 ```
 
+```sh
+sudo add-apt-repository ppa:maveonair/helix-editor
+sudo apt update
+sudo apt install helix
+```
+
 #### Visual Studio Code
 
 ```sh
@@ -390,17 +443,6 @@ winget install --id=Valve.Steam  -e
 winget install --id=Discord.Discord  -e
 ```
 
-## Comandos CMD para UNIX users
-
-| Command | UNIX | CMD |
-| :---: | :---: | :---: |
-| List | ls | dir |
-| Copy | cp | copy |
-| Move | mv | move |
-| Delete | rm | del |
-| Remove | rm -rf | rd /s /q |
-| Rename | mv | ren |
-
 ## WSL (Windows Subsystem for Linux)
 
 En windows el `WSL` debería estar instalado por defecto, sin embargo en ocasiones requiere habilitar la función de `virtualization` desde la `BIOS`.
@@ -421,7 +463,7 @@ Opción de instalación con `winget`:
 winget install --id=Microsoft.WSL  -e
 ```
 
-WSL instala por defecto `Ubuntu` y es muy probable que no este completamente actualizado asi que antes de cualquier cosa, necesitamos actualizar el sistema con estos dos comandos:
+`WSL` instala por defecto `Ubuntu` y es muy probable que no este completamente actualizado asi que antes de cualquier cosa, necesitamos actualizar el sistema con estos dos comandos:
 
 ```sh
 sudo apt update
@@ -456,20 +498,16 @@ brew install package_name
 
 `Nala` es un gestor de paquetes mejorado para `Ubuntu` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas por lo que el proceso tomará su tiempo.
 
-Para instalar `nala` ejecutamos el siguiente comando comenzará el proceso de instalación.
+Para instalar `Nala` ejecutamos el siguiente comando comenzará el proceso de instalación.
 
 ```sh
 sudo apt install nala
 ```
 
-Una vez instalado `nala` podemos instalar paquetes en `Ubuntu` con:
+Una vez instalado `Nala` podemos instalar paquetes en `Ubuntu` con:
 
 ```sh
 sudo nala install package_name
-```
-
-```sh
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 ### Instalando Kali Linux en WSL
@@ -488,9 +526,17 @@ winget install --id=OffSec.KaliLinux  -e
 bash <(curl -L https://zellij.dev/launch)
 ```
 
-Homebrew install
+Instalando con `Homebrew`:
 
 ```sh
 # Linux Terminal (WSL)
 brew install zellij
+```
+
+#### Instalando Helix en WSL para Ubuntu
+
+```sh
+sudo add-apt-repository ppa:maveonair/helix-editor
+sudo apt update
+sudo apt install helix
 ```

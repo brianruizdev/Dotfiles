@@ -21,7 +21,11 @@ Fuentes necesarias para visualizar `ligatures` e `iconos`:
 
 ## General
 
-Paquetes para uso general de la distro
+El gestor de paquetes por defecto en `Arch Linux` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
+
+### Base
+
+Paquetes para uso general de la distro:
 
 ```sh
 sudo pacman -S network-manager-@@@@@@@@_y_otras_cosas
@@ -43,23 +47,26 @@ Entornos de `NeoVim`:
 - [AstroVim](https://astronvim.com/)
 - [LunarVim](https://www.lunarvim.org/)
 
-## Qtile
+> [!TIP]
+> Una vez tengamos instalada una base podemos instalar los dotfiles de [ML4W](https://www.ml4w.com/) desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
 
-Paquetes para uso exclusivo de `Qtile`
+### Qtile
+
+Paquetes para uso exclusivo de `Qtile`:
 
 ```sh
 sudo pacman -S qtile qtile-extras ly feh rofi polybar
 ```
 
-## Hyprland
+### Hyprland
 
-Paquetes para uso exclusivo de `Hyprland`
+Paquetes para uso exclusivo de `Hyprland`:
 
 ```sh
 sudo pacman -S hyprland hyprwm hyprlock hyprpanel hyprpaper wofi waybar
 ```
 
-## Virtual Machine
+### Virtual Machine
 
 Paquetes gráficos para uso en maquina virtual
 
@@ -69,15 +76,25 @@ sudo pacman -S ...
 
 ## Repositorios
 
-### Paru
+### [Paru](https://aur.archlinux.org/packages/paru)
 
 ```sh
+sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 ```
 
-### BlackArch
+### [Yay](https://aur.archlinux.org/packages/yay)
 
-[Official web](https://blackarch.org/downloads.html)
+```sh
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+### [BlackArch](https://blackarch.org/downloads.html)
 
 BlackArch Linux is compatible with existing/normal Arch installations. It acts as an unofficial user repository. Below you will find instructions on how to install BlackArch in this manner.
 

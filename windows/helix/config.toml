@@ -1,0 +1,63 @@
+theme = "ayu_mirage_transparent"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.indent-guides]
+render = true
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes= true
+mouse = false
+true-color = true
+bufferline = "multiple"
+middle-click-paste = false
+insert-final-newline = true
+
+[editor.statusline]
+mode.normal = "N O R M A L"
+mode.insert = "I N S E R T"
+mode.select = "S E L E C T"
+left = ["file-name", "spinner", "file-modification-indicator","read-only-indicator"]
+center = ["mode"]
+right = ["diagnostics","selections","register","position","version-control"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace.render]
+newline = "none"
+space = "all"
+tab = "all"
+tabpad = "all"
+nbsp = "all"
+
+[keys.normal]
+C-o = ":config-open"
+C-r = ":config-reload"
+C-s = ":w"
+C-a = "select_all"
+C-z = "undo"
+C-y = "redo"
+
+[keys.insert]
+C-space = "completion"
+C-d = "expand_selection"
+C-left = "move_prev_word_start"
+A-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "move_visual_line_up"]
+A-down = ["extend_to_line_bounds", "delete_selection", "paste_after", "move_visual_line_down"]
+C-right = "move_next_word_end"
+C-S-f = "global_search"
+C-f = "search"
+C-p = "file_picker"
+C-S-p = "command_palette"
+C-x = ["extend_to_line_bounds", "delete_selection"]
+"C-/" = ["toggle_comments"]
