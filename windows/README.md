@@ -1,4 +1,4 @@
-# Dotfiles (Unix and Windows)
+# Windows 10/11 & UNIX
 
 > [!WARNING]
 > En construcción
@@ -15,86 +15,23 @@ Fuentes necesarias para visualizar `ligatures` e `iconos`:
 - [Cascadia Code](https://github.com/microsoft/cascadia-code/releases)
 - [Hack Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
-## WSL (Windows Subsystem for Linux)
-
-```sh
-wsl --install
-wsl --set-default-version 2
-```
-
-Una vez en `Ubuntu` que es el que se instala por defecto es muy probable que no este completamente actualizado asi que antes de tocar cualquier cosa, necesitas hacer estos dos comandos que se encuentran en la parte inferior.
-
-```sh
-sudo apt update
-```
-
-```sh
-sudo apt upgrade
-```
-
-### La primera herramienta a instalar
-
-[Homebrew](https://brew.sh/)
-: Package Manager for Linux (WSL)
-
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Una vez instalado `Homebrew` podemos instalar paquetes en `WLS` con:
-
-```sh
-# Linux Terminal (WSL)
-brew install nombre_del_paquete
-```
-
-### Luego
-
-Lo primero que necesitamos es algo para facilitar la gestión de nuestro ubuntu, que mejor que usar `nala` que nos proporciona muchas ventajas sobre `apt` que viene por defecto en ubuntu, lo que si te dire es que quizás al instalarlo sean necesarios muchas cosas de python, que si bibliotecas de colores para crear tablas, entre otras cosas.
-
-Para instalar `nala` solo ejecutamos el comando que se encuentra en la parte inferior y eso comenzara el proceso de instalación de `nala` cuando coloques la respectiva contraseña.
-
-```sh
-sudo apt install nala
-```
-
-Posteriormente, una vez instalado `nala` podemos probar que esta instalado correctamente, probando a instalar algo como `neofetch` que nos mostrara información correspondiente a nuestro sistema.
-
-```sh
-sudo nala install neofetch
-```
-
-```sh
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
-## Instalando paquetes
-
-Instlamos paquetes con `winget` para Windows y `brew` para WSL
-
-### Gestores de paquetes, versiones y contenedores
+## Instalando paquetes nativos
 
 Con [winstall](https://winstall.app/) podemos encontrar los paquetes a continuación.
 
-#### App Installer
-
-Debería estar instalado por default.
+Instalamos paquetes nativos con el `AppInstaller` de windows (`winget`) que debería estar instalado por defecto.
 
 ```sh
 winget install --id=Microsoft.AppInstaller  -e
 ```
 
-#### Chocolatey
+Existe otro gestor de paquetes llamado `Chocolatey`, sin embargo no es muy popular.
 
 ```sh
 winget install --id=Chocolatey.Chocolatey  -e
 ```
 
-#### WSL (en caso de ser necesario)
-
-```sh
-winget install --id=Microsoft.WSL  -e
-```
+### Gestores de versiones y contenedores
 
 #### Git & LazyGit
 
@@ -234,34 +171,6 @@ winget install --id=chrisant996.Clink  -e
 winget install --id=BurntSushi.ripgrep.MSVC  -e
 ```
 
-#### Kali Linux (WSL)
-
-```sh
-winget install --id=OffSec.KaliLinux  -e
-```
-
-#### ZelliJ (WSL) (No-Winget)
-
-[Website](https://zellij.dev/)
-
-```sh
-# Linux Terminal (WSL)
-bash <(curl -L https://zellij.dev/launch)
-```
-
-Homebrew install
-
-```sh
-# Linux Terminal (WSL)
-brew install zellij
-```
-
-#### MongoDB Shell
-
-```sh
-winget install --id=MongoDB.Shell  -e
-```
-
 ### Lenguajes y Tecnologías
 
 #### NodeJS
@@ -294,6 +203,12 @@ winget install --id=Python.Python.3.13  -e
 
 ```sh
 winget install --id=MongoDB.Server  -e
+```
+
+##### MongoDB Shell
+
+```sh
+winget install --id=MongoDB.Shell  -e
 ```
 
 #### XAMPP 8.2
@@ -399,7 +314,6 @@ winget install --id=Docker.DockerDesktop  -e
 #### MongoDB Compass
 
 ```sh
-winget install --id=MongoDB.Compass.Full  -e
 winget install --id=MongoDB.Compass.Community  -e
 ```
 
@@ -409,7 +323,7 @@ winget install --id=MongoDB.Compass.Community  -e
 winget install --id=3TSoftwareLabs.Studio3T  -e
 ```
 
-#### DBngin (No-Winget)
+#### DBngin
 
 [Download](https://dbngin.com/)
 
@@ -474,4 +388,109 @@ winget install --id=Valve.Steam  -e
 
 ```sh
 winget install --id=Discord.Discord  -e
+```
+
+## Comandos CMD para UNIX users
+
+| Command | UNIX | CMD |
+| :---: | :---: | :---: |
+| List | ls | dir |
+| Copy | cp | copy |
+| Move | mv | move |
+| Delete | rm | del |
+| Remove | rm -rf | rd /s /q |
+| Rename | mv | ren |
+
+## WSL (Windows Subsystem for Linux)
+
+En windows el `WSL` debería estar instalado por defecto, sin embargo en ocasiones requiere habilitar la función de `virtualization` desde la `BIOS`.
+
+```sh
+wsl --install
+```
+
+Configuramos la versión por defecto:
+
+```sh
+wsl --set-default-version 2
+```
+
+Opción de instalación con `winget`:
+
+```sh
+winget install --id=Microsoft.WSL  -e
+```
+
+WSL instala por defecto `Ubuntu` y es muy probable que no este completamente actualizado asi que antes de cualquier cosa, necesitamos actualizar el sistema con estos dos comandos:
+
+```sh
+sudo apt update
+```
+
+```sh
+sudo apt upgrade
+```
+
+### Instalando Homebrew en WSL
+
+[Homebrew](https://brew.sh/)
+: Package Manager for Linux (WSL)
+
+Podemos instalar `Homebrew` ejecutando el siguiente comando para copiar el repositorio.
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Una vez instalado `Homebrew` podemos instalar paquetes en `WLS` con:
+
+```sh
+# Linux Terminal (WSL)
+brew install package_name
+```
+
+### Instalando Nala en WSL para Ubuntu
+
+[Nala](https://www.omgubuntu.co.uk/2023/01/install-nala-on-ubuntu)
+: Nala is a Neat Alternative to Apt on Ubuntu
+
+`Nala` es un gestor de paquetes mejorado para `Ubuntu` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas por lo que el proceso tomará su tiempo.
+
+Para instalar `nala` ejecutamos el siguiente comando comenzará el proceso de instalación.
+
+```sh
+sudo apt install nala
+```
+
+Una vez instalado `nala` podemos instalar paquetes en `Ubuntu` con:
+
+```sh
+sudo nala install package_name
+```
+
+```sh
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+### Instalando Kali Linux en WSL
+
+```sh
+winget install --id=OffSec.KaliLinux  -e
+```
+
+### Instalando ZelliJ en WSL para WezTerm
+
+[Zellij](https://zellij.dev/)
+: A terminal workspace with batteries included
+
+```sh
+# Linux Terminal (WSL)
+bash <(curl -L https://zellij.dev/launch)
+```
+
+Homebrew install
+
+```sh
+# Linux Terminal (WSL)
+brew install zellij
 ```

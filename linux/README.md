@@ -1,4 +1,4 @@
-# Dotfiles (GNU Linux > Arch Linux)
+# GNU Linux - Arch Linux
 
 > [!WARNING]
 > En construcción
@@ -27,7 +27,7 @@ Paquetes para uso general de la distro
 sudo pacman -S network-manager-@@@@@@@@_y_otras_cosas
 sudo pacman -S udiskie nm-applet blueman-applet cbatticon
 sudo pacman -S pipewire wireplumber volumeicon
-sudo pacman -S kitty git vim nano neovim
+sudo pacman -S kitty git vim nano neovim helix
 sudo pacman -S zsh oh-my-zsh lsd bat fzf fd zoxide
 sudo pacman -S htop neofetch fastfetch
 sudo pacman -S ranger nemo dunst picom

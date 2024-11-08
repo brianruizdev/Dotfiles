@@ -1,4 +1,4 @@
-# Dotfiles (MacOS)
+# MacOS
 
 > [!WARNING]
 > En construcción

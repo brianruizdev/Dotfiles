@@ -1,13 +1,10 @@
-# Dotfiles configs
+# Dotfiles
 
-## [Windows](/windows/README.md)
+> [!WARNING]
+> En construcción
 
-Archivos y configuraciones para un entorno de desarrollo en Windows 10/11.
+Archivos de configuración, gestores de paquetes, software y programas para tu entorno.
 
-## [Linux](/linux/README.md)
-
-Archivos y configuraciones para un entorno de desarrollo en Arch Linux.
-
-## [MacOS](/mac/README.md)
-
-Soon...
+- [Windows 10/11](/windows/README.md)
+- [Arch Linux](/linux/README.md)
+- [MacOS](/mac/README.md)
