@@ -92,15 +92,15 @@ winget install --id=JesseDuffield.lazygit -e
 Pushing git repository to github:
 
 ```sh
-echo "# Readme File" >> README.md
-git init
-git add .
-git status
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/username/repository.git
-git remote -v
-git push -u origin main
+echo "# Readme File" >> README.md                                # Add a README.md file to repository directory
+git init                                                         # initiate a git repository
+git add .                                                        # add all files in actual directory to the repository
+git status                                                       # check the status of files added to the repository
+git commit -m "first commit"                                     # commit all added files
+git branch -M main                                               # rename branch (optional if name is the same)
+git remote add origin https://github.com/username/repository.git # link github repository
+git remote -v                                                    # check linked github repository
+git push -u origin main                                          # push commit to github
 ```
 
 ##### Docker & LazyDocker
