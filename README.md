@@ -827,137 +827,182 @@ Soon...
 
 ## Recursos de interés
 
-[El Arte del Terminal](https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md)
-: Aprende a usar la terminal.
+### [El Arte del Terminal](https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md)
 
-[Not-Paid](https://github.com/kleampa/not-paid)
-: Client did not pay? Add opacity...
+Aprende a usar la terminal.
 
-[Gentleman Programming Book](https://the-amazing-gentleman-programming-book.vercel.app/)
-:  "A clean programmer is the best kind of programmer"  - by Alan Buscaglia.
+### [Not-Paid](https://github.com/kleampa/not-paid)
 
-[Goal Kicker Books](https://books.goalkicker.com/)
-: Programming Notes for Professionals books.
+Client did not pay? Add opacity...
 
-[eBooks Foundation](https://github.com/EbookFoundation/free-programming-books)
-: List of Free Learning Resources In Many Languages
+### [Gentleman Programming Book](https://the-amazing-gentleman-programming-book.vercel.app/)
 
-[QX Research Python](https://github.com/qxresearch/qxresearch-event-1)
-: GitHub repository featuring 50+ Python applications with only 10 lines of code!
+ "A clean programmer is the best kind of programmer"  - by Alan Buscaglia.
 
-[DevDocs](https://devdocs.io/)
-: DevDocs combines multiple API documentations...
+### [Goal Kicker Books](https://books.goalkicker.com/)
 
-[Project Based Learning](https://github.com/practical-tutorials/project-based-learning)
-: A list of programming tutorials in which aspiring software developers learn how to build an application from scratch.
+Programming Notes for Professionals books.
 
-[Netlify Drop](https://app.netlify.com/drop)
-: Drag & drop. It’s online.
+### [eBooks Foundation](https://github.com/EbookFoundation/free-programming-books)
 
-[ExcaliDraw](https://excalidraw.com/)
-: Schemas drawing tool.
+List of Free Learning Resources In Many Languages
 
-[DistroSea](https://distrosea.com/)
-: Test drive Linux distros online!
+### [QX Research Python](https://github.com/qxresearch/qxresearch-event-1)
 
-[NetBoot](https://netboot.xyz/)
-: Your favorite operating systems in one place.
+GitHub repository featuring 50+ Python applications with only 10 lines of code!
 
-[Kitty Doc](https://sw.kovidgoyal.net/kitty/overview/#)
-: Kitty is designed for power keyboard users.
+### [DevDocs](https://devdocs.io/)
 
-[Vim Doc](https://vim.rtorr.com/)
-: Vim Cheat Sheet.
+DevDocs combines multiple API documentations...
 
-[Vimium Doc](https://vimium.github.io/)
-: The Hacker's Browser.
+### [Project Based Learning](https://github.com/practical-tutorials/project-based-learning)
 
-[DeepHacking](https://deephacking.tech/)
-: Hacking paper.
+A list of programming tutorials in which aspiring software developers learn how to build an application from scratch.
 
-[OverTheWire](https://overthewire.org/wargames/)
-: The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
+### [Netlify Drop](https://app.netlify.com/drop)
 
-[CodeDex](https://www.codedex.io/)
-: Start your coding adventure while gaming.
+Drag & drop. It’s online.
 
-[RoadMap](https://roadmap.sh/)
-: Developer RoadMaps.
+### [ExcaliDraw](https://excalidraw.com/)
 
-[Exercism](https://exercism.org/)
-: Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
+Schemas drawing tool.
 
-[Lear X in Y Minutes](https://learnxinyminutes.com/)
-: Take a whirlwind tour of your next favorite language. Community-driven!
+### [DistroSea](https://distrosea.com/)
 
-[W3Schools](https://www.w3schools.com/)
-: Learn to code with the world's largest web developer site.
+Test drive Linux distros online!
 
-[SQLbolt](https://sqlbolt.com/)
-: asd
+### [NetBoot](https://netboot.xyz/)
 
-[HyperUI](https://www.hyperui.dev/)
-: HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
+Your favorite operating systems in one place.
 
-[CSS Loaders](https://css-loaders.com/)
-: The Biggest Collection of Loading Animations
+### [Kitty Doc](https://sw.kovidgoyal.net/kitty/overview/#)
 
-[Mejores prácticas de NodeJS](https://github.com/goldbergyoni/nodebestpractices/blob/spanish-translation/README.spanish.md)
-: Aquí encontrarás docenas de los mejores artículos sobre Node.JS.
+Kitty is designed for power keyboard users.
 
-[Full Stack Open (ES)](https://fullstackopen.com/es/)
-: Inmersión Profunda en el Desarrollo Web Moderno.
+### [Vim Doc](https://vim.rtorr.com/)
 
-[MDN Web Docs](https://developer.mozilla.org/en-US/)
-: Resources for Developers, by Developers.
+Vim Cheat Sheet.
 
-[OffSec](https://www.offsec.com/)
-: Elevating Cyber Workforce and Professional Development.
+### [Vimium Doc](https://vimium.github.io/)
 
-[Material UI](https://mui.com/)
-: Move faster with intuitive React UI tools.
+The Hacker's Browser.
 
-[DB Diagram](https://dbdiagram.io/home)
-: Draw Entity-Relationship Diagrams, Painlessly 😎.
+### [DeepHacking](https://deephacking.tech/)
 
-[CognitiveClass](https://cognitiveclass.ai/)
-: Get ahead in the tech industry and advance your career.
+Hacking paper.
 
-[Replit Python Course](https://replit.com/learn/100-days-of-python?utm_medium=referral&utm_campaign=100_days_of_code_python)
-: 100 Days of Code - The Complete Python Course.
+### [OverTheWire](https://overthewire.org/wargames/)
 
-[FreeCodeCamp](https://www.freecodecamp.org/)
-: Learn to code — for free. Build projects. Earn certifications.
+The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
 
-[Oracle Next Education](https://www.oracle.com/ar/education/oracle-next-education/)
-: Learn to code — for free. Build projects. Earn certifications.
+### [CodeDex](https://www.codedex.io/)
 
-[Open Bootcamp](https://open-bootcamp.com/)
-: Contenido gratuito que se adapta a ti.
+Start your coding adventure while gaming.
 
-[MongoDB Certified](https://certificationprogramspain.splashthat.com/)
-: ...
+### [RoadMap](https://roadmap.sh/)
 
-[Studio 3T Academy](hhttps://studio3t.com/academy/)
-: ...
+Developer RoadMaps.
 
-[Google Actívate](https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es)
-: Desarrolla tu carrera profesional o expande tu empresa mediante cursos diseñados para fortalecer tu confianza y ayudarte a crecer.
+### [Exercism](https://exercism.org/)
 
-[Microsoft Learn](https://learn.microsoft.com/en-us/training/)
-: ...
+Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
 
-[FaztWeb](https://faztweb.com/)
-: Aprende a Desarrollar Proyectos Web.
+### [Lear X in Y Minutes](https://learnxinyminutes.com/)
 
-[HackTheBox](https://www.hackthebox.com/)
-: Your Cyber Performance Center.
+Take a whirlwind tour of your next favorite language. Community-driven!
 
-[Hack4U](https://hack4u.io/)
-: Aprende Ciberseguridad.
+### [W3Schools](https://www.w3schools.com/)
 
-[NetworkChuk Academy](https://academy.networkchuck.com/)
-: Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
+Learn to code with the world's largest web developer site.
 
-[Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/)
-: Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
+### [SQLbolt](https://sqlbolt.com/)
+
+asd
+
+### [HyperUI](https://www.hyperui.dev/)
+
+HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
+
+### [CSS Loaders](https://css-loaders.com/)
+
+The Biggest Collection of Loading Animations
+
+### [Mejores prácticas de NodeJS](https://github.com/goldbergyoni/nodebestpractices/blob/spanish-translation/README.spanish.md)
+
+Aquí encontrarás docenas de los mejores artículos sobre Node.JS.
+
+### [Full Stack Open (ES)](https://fullstackopen.com/es/)
+
+Inmersión Profunda en el Desarrollo Web Moderno.
+
+### [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+Resources for Developers, by Developers.
+
+### [OffSec](https://www.offsec.com/)
+
+Elevating Cyber Workforce and Professional Development.
+
+### [Material UI](https://mui.com/)
+
+Move faster with intuitive React UI tools.
+
+### [DB Diagram](https://dbdiagram.io/home)
+
+Draw Entity-Relationship Diagrams, Painlessly 😎.
+
+### [CognitiveClass](https://cognitiveclass.ai/)
+
+Get ahead in the tech industry and advance your career.
+
+### [Replit Python Course](https://replit.com/learn/100-days-of-python?utm_medium=referral&utm_campaign=100_days_of_code_python)
+
+100 Days of Code - The Complete Python Course.
+
+### [FreeCodeCamp](https://www.freecodecamp.org/)
+
+Learn to code — for free. Build projects. Earn certifications.
+
+### [Oracle Next Education](https://www.oracle.com/ar/education/oracle-next-education/)
+
+Learn to code — for free. Build projects. Earn certifications.
+
+### [Open Bootcamp](https://open-bootcamp.com/)
+
+Contenido gratuito que se adapta a ti.
+
+### [MongoDB Certified](https://certificationprogramspain.splashthat.com/)
+
+...
+
+### [Studio 3T Academy](hhttps://studio3t.com/academy/)
+
+...
+
+### [Google Actívate](https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es)
+
+Desarrolla tu carrera profesional o expande tu empresa mediante cursos diseñados para fortalecer tu confianza y ayudarte a crecer.
+
+### [Microsoft Learn](https://learn.microsoft.com/en-us/training/)
+
+...
+
+### [FaztWeb](https://faztweb.com/)
+
+Aprende a Desarrollar Proyectos Web.
+
+### [HackTheBox](https://www.hackthebox.com/)
+
+Your Cyber Performance Center.
+
+### [Hack4U](https://hack4u.io/)
+
+Aprende Ciberseguridad.
+
+### [NetworkChuk Academy](https://academy.networkchuck.com/)
+
+Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
+
+### [Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/)
+
+Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
