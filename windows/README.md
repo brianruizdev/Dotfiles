@@ -17,6 +17,9 @@ Fuentes necesarias para visualizar `ligatures` e `iconos`:
 
 ## Instalando paquetes
 
+[Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+: The WinGet command line tool enables developers to discover, install, upgrade, remove and configure applications on Windows computers.
+
 Con [winstall](https://winstall.app/) podemos encontrar los paquetes a continuación.
 
 Instalamos paquetes nativos con el `AppInstaller` de windows (`winget`) que debería estar instalado por defecto.
@@ -36,13 +39,13 @@ Existe otros gestores de paquetes llamados:
 [Chocolatey](https://chocolatey.org/)
 : The Package Manager for Windows Modern Software Automation
 
-Instalando mediante `winget`:
+Instalando con `winget`:
 
 ```sh
 winget install --id=Chocolatey.Chocolatey  -e
 ```
 
-Instalando mediante `cmd`:
+Instalando con `cmd`:
 
 ```sh
 Set-ExecutionPolicy Bypass -Scope Process -Force
@@ -156,15 +159,21 @@ winget install --id=CommandLine.Wave  -e
 winget install --id=Microsoft.PowerShell  -e
 ```
 
-##### oh-my-posh (terminal prompt)
+#### oh-my-posh (terminal prompt)
 
 ```sh
 winget install --id=JanDeDobbeleer.OhMyPosh  -e
 ```
 
-##### Starship (terminal prompt)
+Instalando `Terminal-Icons` para nuestros iconos en terminal:
 
-Crea conflicto con oh-my-posh, no debe coincidir
+```sh
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
+#### Starship (terminal prompt)
+
+Crea conflicto con `oh-my-posh`, no debe coincidir.
 
 ```sh
 winget install --id=Starship.Starship  -e
@@ -234,9 +243,68 @@ winget install --id=OpenJS.NodeJS.LTS  -e
 
 ##### npm (node package manager)
 
-- Vite (React)
-- Tailwind
-- Express.js
+```sh
+# Vite
+npm install vite@latest
+
+# Vite templates
+npm create vite@latest project-name -- --template react
+```
+
+`Vite` supported templates: `vanilla`, `vanilla-ts`, `vue`, `vue-ts`, `react`, `react-ts`, `react-swc`, `react-swc-ts`, `preact`, `preact-ts`, `lit`, `lit-ts`, `svelte`, `svelte-ts`, `solid`, `solid-ts`, `qwik`, `qwik-ts`.
+
+```sh
+# React in existing project
+npm install react react-dom
+```
+
+```sh
+# Tailwind CSS
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+```sh
+# Bootstrap
+npm install bootstrap
+```
+
+```sh
+# ExpressJS
+npm install express
+```
+
+```sh
+# Mongoose
+npm install mongoose
+```
+
+```sh
+# NextJS automatic installation
+npx create-next-app@latest
+
+# NextJS manual installation
+npm install next@latest react@latest react-dom@latest
+```
+
+```sh
+# NestJS
+npm i -g @nestjs/cli
+nest new project-name
+```
+
+```sh
+# VueJS
+npm create vue@latest
+
+# NuxtJS
+npx nuxi@latest init project-name
+```
+
+```sh
+# Expo for ReactNative Apps
+npx create-expo-app
+```
 
 #### Python 3.13
 
@@ -246,15 +314,46 @@ winget install --id=Python.Python.3.13  -e
 
 ##### pip (package installer for python)
 
+```sh
+# Django
+pip install Django
+```
+
+```sh
+# FastAPI
+pip install "fastapi[standard]"
+```
+
+```sh
+# Flask
+pip install Flask
+```
+
+```sh
+# ReactPy
+pip install "reactpy[starlette]"
+python -c "import reactpy; reactpy.run(reactpy.sample.SampleApp)"
+```
+
+```sh
+# Flet
+pip install flet
+```
+
+```sh
+# FastHTML
+pip install python-fasthtml
+```
+
 #### MongoDB
 
 ```sh
+# Server
 winget install --id=MongoDB.Server  -e
 ```
 
-##### MongoDB Shell
-
 ```sh
+# Shell
 winget install --id=MongoDB.Shell  -e
 ```
 
@@ -301,12 +400,6 @@ Entornos de `NeoVim`:
 
 ```sh
 winget install --id=Helix.Helix  -e
-```
-
-```sh
-sudo add-apt-repository ppa:maveonair/helix-editor
-sudo apt update
-sudo apt install helix
 ```
 
 #### Visual Studio Code
@@ -388,8 +481,7 @@ winget install --id=Oracle.MySQLWorkbench  -e
 
 #### Oracle VM VirtualBox
 
-- [Arch Linux](https://archlinux.org/)
-- [Kali Linux](https://www.kali.org/)
+Para [`Arch Linux`](https://archlinux.org/) y [`Kali Linux`](https://www.kali.org/).
 
 ```sh
 winget install --id=Oracle.VirtualBox  -e
@@ -473,6 +565,24 @@ sudo apt update
 sudo apt upgrade
 ```
 
+En caso de que no instale `Ubunto` por defecto o queramos instalar otra distro como `Debian` ó `Kali Linux`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
+
+```sh
+# para listar
+wsl.exe --list --online
+```
+
+```sh
+# para instalar
+wsl.exe --install <Distro>
+```
+
+Tambien podemos ver las distros instaladas ejecutando el comando:
+
+```sh
+wsl -l -v
+```
+
 ### Instalando Homebrew en WSL
 
 [Homebrew](https://brew.sh/)
@@ -488,7 +598,7 @@ Una vez instalado `Homebrew` podemos instalar paquetes en `WLS` con:
 
 ```sh
 # Linux Terminal (WSL)
-brew install package_name
+brew install package-name
 ```
 
 ### Instalando Nala en WSL para Ubuntu
@@ -507,12 +617,20 @@ sudo apt install nala
 Una vez instalado `Nala` podemos instalar paquetes en `Ubuntu` con:
 
 ```sh
-sudo nala install package_name
+sudo nala install package-name
 ```
 
 ### Instalando Kali Linux en WSL
 
+Podemos instalar con `wsl` ó con `winget`:
+
 ```sh
+# WSL (recomendado)
+wsl.exe --install kali-linux
+```
+
+```sh
+# Winget
 winget install --id=OffSec.KaliLinux  -e
 ```
 
@@ -531,6 +649,12 @@ Instalando con `Homebrew`:
 ```sh
 # Linux Terminal (WSL)
 brew install zellij
+```
+
+#### Instalando NeoVim en WSL para Ubuntu
+
+```sh
+sudo apt install neovim
 ```
 
 #### Instalando Helix en WSL para Ubuntu

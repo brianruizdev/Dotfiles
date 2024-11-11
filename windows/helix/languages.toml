@@ -85,4 +85,3 @@ suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.l
 # inlayHints.propertyDeclarationTypes.enabled  = true
 # inlayHints.functionLikeReturnTypes.enabled = true
 # inlayHints.enumMemberValues.enabled = true
-

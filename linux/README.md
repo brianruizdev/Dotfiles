@@ -1,13 +1,13 @@
-# GNU Linux - Arch Linux
+# GNU Linux - [Arch Linux](https://archlinux.org/)
 
 > [!WARNING]
 > En construcción
 
 A continuación estarán algunos paquetes y herramientas que podrían acomodarse al entorno de tu distro de `Arch Linux`.
 
-[Installation Guide](https://wiki.archlinux.org/title/Installation_guide)
+Para la instalación es recomendable seguir la [`guía oficial`](https://wiki.archlinux.org/title/Installation_guide) ó usar el comando `archinstall` para una instalación por GUI.
 
-Para instalación sencilla usar el comando `archinstall`.
+Otra distro basada en `Arch Linux` recomendable es [`ArchCraft`](https://archcraft.io/).
 
 > [!NOTE]
 > No es necesario instalar todo lo presentado a continuación.
@@ -68,7 +68,7 @@ sudo pacman -S hyprland hyprwm hyprlock hyprpanel hyprpaper wofi waybar
 
 ### Virtual Machine
 
-Paquetes gráficos para uso en maquina virtual
+Paquetes gráficos para uso en maquina virtual:
 
 ```sh
 sudo pacman -S ...
