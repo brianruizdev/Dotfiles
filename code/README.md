@@ -123,6 +123,21 @@ Jupyter Slide Show support for VS Code.
 
 Renderers for Jupyter Notebooks (with plotly, vega, gif, png, svg, jpeg and other such outputs).
 
+## [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+
+Microsoft
+Hosts a local server in your workspace for you to preview your webpages on.
+
+## [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+Ritwick Dey
+Launch a development local Server with live reload feature for static & dynamic pages
+
+## [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+
+Microsoft
+Real-time collaborative development from the comfort of your favorite tools.
+
 ## [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 Yiyi Wang
@@ -248,3 +263,8 @@ Lightweight Rest API Client for VS Code.
 
 vscodevim
 Vim emulation for Visual Studio Code.
+
+## [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+
+Microsoft
+Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set.
