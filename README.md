@@ -89,6 +89,20 @@ winget install --id=Git.Git  -e
 winget install --id=JesseDuffield.lazygit -e
 ```
 
+Pushing git repository to github:
+
+```sh
+echo "# Readme File" >> README.md
+git init
+git add .
+git status
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/username/repository.git
+git remote -v
+git push -u origin main
+```
+
 ##### Docker & LazyDocker
 
 ```sh
