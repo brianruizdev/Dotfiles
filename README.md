@@ -28,8 +28,9 @@ A continuación estarán algunas de las herramientas que podrían acomodarse a t
 
 ### Instalando paquetes
 
-[Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
-: The WinGet command line tool enables developers to discover, install, upgrade, remove and configure applications on Windows computers.
+#### [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+
+The WinGet command line tool enables developers to discover, install, upgrade, remove and configure applications on Windows computers.
 
 Con [winstall](https://winstall.app/) podemos encontrar los paquetes a continuación.
 
@@ -47,8 +48,9 @@ winget upgrade --id=Microsoft.AppInstaller  -e
 
 Existe otros gestores de paquetes llamados:
 
-[Chocolatey](https://chocolatey.org/)
-: The Package Manager for Windows Modern Software Automation
+#### [Chocolatey](https://chocolatey.org/)
+
+The Package Manager for Windows Modern Software Automation
 
 Instalando con `winget`:
 
@@ -64,8 +66,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-[Scoop](https://scoop.sh/)
-: A command-line installer for Windows
+#### [Scoop](https://scoop.sh/)
+
+A command-line installer for Windows
 
 ```sh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -596,8 +599,9 @@ wsl -l -v
 
 #### Instalando Homebrew en WSL
 
-[Homebrew](https://brew.sh/)
-: Package Manager for Linux (WSL)
+##### [Homebrew](https://brew.sh/)
+
+Package Manager for Linux (WSL)
 
 Podemos instalar `Homebrew` ejecutando el siguiente comando para copiar el repositorio.
 
@@ -614,8 +618,9 @@ brew install package-name
 
 #### Instalando Nala en WSL para Ubuntu
 
-[Nala](https://www.omgubuntu.co.uk/2023/01/install-nala-on-ubuntu)
-: Nala is a Neat Alternative to Apt on Ubuntu
+##### [Nala](https://www.omgubuntu.co.uk/2023/01/install-nala-on-ubuntu)
+
+Nala is a Neat Alternative to Apt on Ubuntu
 
 `Nala` es un gestor de paquetes mejorado para `Ubuntu` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas por lo que el proceso tomará su tiempo.
 
@@ -647,8 +652,9 @@ winget install --id=OffSec.KaliLinux  -e
 
 #### Instalando ZelliJ en WSL para WezTerm
 
-[Zellij](https://zellij.dev/)
-: A terminal workspace with batteries included
+##### [Zellij](https://zellij.dev/)
+
+A terminal workspace with batteries included
 
 ```sh
 # Linux Terminal (WSL)
@@ -680,11 +686,39 @@ sudo apt install helix
 
 A continuación estarán algunos paquetes y herramientas que podrían acomodarse al entorno de tu distro de [`Arch Linux`](https://archlinux.org/).
 
-Para la instalación es recomendable seguir la [`guía oficial`](https://wiki.archlinux.org/title/Installation_guide) ó usar el comando `archinstall` para una instalación por GUI.
+Para la instalación es recomendable seguir la [`guía oficial`](https://wiki.archlinux.org/title/Installation_guide), buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
 
 Otra distro basada en `Arch Linux` recomendable es [`ArchCraft`](https://archcraft.io/).
 
 ### General
+
+Para conectar por wifi usamos `iwctl` con los comandos:
+
+```sh
+# To get an interactive prompt do:
+iwctl
+
+# The interactive prompt is then displayed with a prefix of [iwd].
+
+# First, if you do not know your wireless device name, list all Wi-Fi devices:
+[iwd] device list
+
+# If the device or its corresponding adapter is turned off, turn it on:
+[iwd] device name set-property Powered on
+[iwd] adapter adapter set-property Powered on
+
+# Then, to initiate a scan for networks (note that this command will not output anything):
+[iwd] station name scan
+
+# You can then list all available networks:
+[iwd] station name get-networks
+
+# Finally, to connect to a network:
+[iwd] station name connect SSID
+
+# If a passphrase is required (and it is not already stored in one of the profiles that iwd automatically checks), you will be prompted to enter it. Alternatively, you can supply it as a command line argument:
+iwctl --passphrase passphrase station name connect SSID
+```
 
 El gestor de paquetes por defecto en `Arch Linux` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
 
@@ -975,7 +1009,7 @@ Contenido gratuito que se adapta a ti.
 
 ...
 
-### [Studio 3T Academy](hhttps://studio3t.com/academy/)
+### [Studio 3T Academy](https://studio3t.com/academy/)
 
 ...
 
