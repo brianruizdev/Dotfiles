@@ -261,11 +261,26 @@ winget install --id=OpenJS.NodeJS.LTS  -e
 # Vite
 npm install vite@latest
 
-# Vite templates
+# Vite template
 npm create vite@latest project-name -- --template react
 ```
 
 `Vite` supported templates: `vanilla`, `vanilla-ts`, `vue`, `vue-ts`, `react`, `react-ts`, `react-swc`, `react-swc-ts`, `preact`, `preact-ts`, `lit`, `lit-ts`, `svelte`, `svelte-ts`, `solid`, `solid-ts`, `qwik`, `qwik-ts`.
+
+```sh
+# Vite alternatives
+# Farm
+npm create farm@latest
+
+# Farm  template
+npm create farm@latest farm-app --template react
+
+# RsPack
+npm add @rspack/core -D
+
+# WebPack
+npm install --save-dev webpack
+```
 
 ```sh
 # React in existing project
