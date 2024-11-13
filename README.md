@@ -32,18 +32,32 @@ A continuación estarán algunas de las herramientas que podrían acomodarse a t
 
 The WinGet command line tool enables developers to discover, install, upgrade, remove and configure applications on Windows computers.
 
-Con [winstall](https://winstall.app/) podemos encontrar los paquetes a continuación.
-
 Instalamos paquetes nativos con el `AppInstaller` de windows (`winget`) que debería estar instalado por defecto.
 
 ```sh
 # Install
-winget install --id=Microsoft.AppInstaller  -e
+winget install Microsoft.AppInstaller
 ```
 
 ```sh
 # Update
-winget upgrade --id=Microsoft.AppInstaller  -e
+winget upgrade Microsoft.AppInstaller
+```
+
+Podemos buscar paquetes en [`winstall`](https://winstall.app/) o usar el comando:
+
+```sh
+winget search <package-name>
+```
+
+Y podemos instalar paquetes por `nombre` o `id`, usando el comando:
+
+```sh
+# by name
+winget install <package-name>
+
+# by id (Recomended)
+winget install <package-id>
 ```
 
 Existe otros gestores de paquetes llamados:
@@ -55,7 +69,7 @@ The Package Manager for Windows Modern Software Automation
 Instalando con `winget`:
 
 ```sh
-winget install --id=Chocolatey.Chocolatey  -e
+winget install Chocolatey.Chocolatey
 ```
 
 Instalando con `cmd`:
@@ -81,70 +95,44 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ```sh
 # Git
-winget install --id=Git.Git  -e
+winget install Git.Git
 ```
 
 ```sh
 # LazyGit
-winget install --id=JesseDuffield.lazygit -e
+winget install JesseDuffield.lazygit
 ```
 
 Pushing git repository to github:
 
 ```sh
-echo "# Readme File" >> README.md                                # Add a README.md file to repository directory
-git init                                                         # initiate a git repository
-git add .                                                        # add all files in actual directory to the repository
-git status                                                       # check the status of files added to the repository
-git commit -m "first commit"                                     # commit all added files
-git branch -M main                                               # rename branch (optional if name is the same)
-git remote add origin https://github.com/username/repository.git # link github repository
-git remote -v                                                    # check linked github repository
-git push -u origin main                                          # push commit to github
+echo "# Readme File" >> README.md
+git init
+git add .
+git status
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/<username>/<repository>.git
+git remote -v
+git push -u origin main
 ```
 
 ##### Docker & LazyDocker
 
 ```sh
 # Docker
-winget install --id=Docker.DockerCompose  -e
+winget install Docker.DockerCompose
 ```
 
 ```sh
 # LazyDocker
-winget install --id=JesseDuffield.Lazydocker  -e
+winget install JesseDuffield.Lazydocker
 ```
 
 ##### Volta (Administrador de versiones de Node)
 
 ```sh
-winget install --id=Volta.Volta  -e
-```
-
-Herramientas para mejorar tu flujo de trabajo con `Volta`:
-
-```sh
-volta install @microsoft/inshellisense
-```
-
-```sh
-volta install typescript @ansible/ansible-language-server @astrojs/language-server bash-language-server vscode-langservers-extracted dockerfile-language-server-nodejs
-```
-
-```sh
-volta install dot-language-server elm elm-test elm-format @elm-tooling/elm-language-server graphql-language-service-cli lean-language-server sql-language-server
-```
-
-```sh
-volta install markdoc-ls @prisma/language-server pyright svelte-language-server typescript-svelte-plugin @tailwindcss/language-server typescript-language-server
-```
-
-```sh
-volta install prettier @vue/language-server yaml-language-server@next
-```
-
-```sh
-volta install intelephense
+winget install Volta.Volta
 ```
 
 #### Emuladores de Terminal
@@ -152,31 +140,25 @@ volta install intelephense
 ##### Windows Terminal
 
 ```sh
-winget install --id=Microsoft.WindowsTerminal  -e
+winget install Microsoft.WindowsTerminal
 ```
 
 ##### WezTerm
 
 ```sh
-winget install --id=wez.wezterm  -e
+winget install wez.wezterm
 ```
 
 ##### Alacritty
 
 ```sh
-winget install --id=Alacritty.Alacritty  -e
+winget install Alacritty.Alacritty
 ```
 
 ##### Hyper
 
 ```sh
-winget install --id=Vercel.Hyper  -e
-```
-
-##### Wave
-
-```sh
-winget install --id=CommandLine.Wave  -e
+winget install Vercel.Hyper
 ```
 
 #### Herramientas para Terminal
@@ -184,13 +166,13 @@ winget install --id=CommandLine.Wave  -e
 ##### PowerShell
 
 ```sh
-winget install --id=Microsoft.PowerShell  -e
+winget install Microsoft.PowerShell
 ```
 
 ##### oh-my-posh (terminal prompt)
 
 ```sh
-winget install --id=JanDeDobbeleer.OhMyPosh  -e
+winget install JanDeDobbeleer.OhMyPosh
 ```
 
 Instalando `Terminal-Icons` para nuestros iconos en terminal:
@@ -204,55 +186,55 @@ Install-Module -Name Terminal-Icons -Repository PSGallery
 Crea conflicto con `oh-my-posh`, no debe coincidir.
 
 ```sh
-winget install --id=Starship.Starship  -e
+winget install Starship.Starship
 ```
 
 ##### lsd
 
 ```sh
-winget install --id=lsd-rs.lsd  -e
+winget install lsd-rs.lsd
 ```
 
 ##### bat
 
 ```sh
-winget install --id=sharkdp.bat  -e
+winget install sharkdp.bat
 ```
 
 ##### tealdeer (tldr)
 
 ```sh
-winget install --id=dbrgn.tealdeer  -e
+winget install dbrgn.tealdeer
 ```
 
 ##### zoxide
 
 ```sh
-winget install --id=ajeetdsouza.zoxide  -e
+winget install ajeetdsouza.zoxide
 ```
 
 ##### fzf
 
 ```sh
-winget install --id=junegunn.fzf  -e
+winget install junegunn.fzf
 ```
 
 ##### fd
 
 ```sh
-winget install --id=sharkdp.fd  -e
+winget install sharkdp.fd
 ```
 
-##### clink
+##### Clink
 
 ```sh
-winget install --id=chrisant996.Clink  -e
+winget install chrisant996.Clink
 ```
 
 ##### ripgrep MSVC
 
 ```sh
-winget install --id=BurntSushi.ripgrep.MSVC  -e
+winget install BurntSushi.ripgrep.MSVC
 ```
 
 #### Lenguajes y Tecnologías
@@ -261,229 +243,114 @@ winget install --id=BurntSushi.ripgrep.MSVC  -e
 
 ```sh
 # Current version
-winget install --id=OpenJS.NodeJS  -e
+winget install OpenJS.NodeJS
 ```
 
 ```sh
 # LTS version (Recommended)
-winget install --id=OpenJS.NodeJS.LTS  -e
+winget install OpenJS.NodeJS.LTS
 ```
 
 ###### npm (node package manager)
 
-```sh
-# Vite
-npm install vite@latest
-
-# Vite template
-npm create vite@latest project-name -- --template react
-```
-
-`Vite` supported templates: `vanilla`, `vanilla-ts`, `vue`, `vue-ts`, `react`, `react-ts`, `react-swc`, `react-swc-ts`, `preact`, `preact-ts`, `lit`, `lit-ts`, `svelte`, `svelte-ts`, `solid`, `solid-ts`, `qwik`, `qwik-ts`.
+Con [`npm`](https://www.npmjs.com/) podemos instalar librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/),[`NuxtJS`](https://nuxt.com/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), entre otros, con el comando:
 
 ```sh
-# Vite alternatives
-# Farm
-npm create farm@latest
-
-# Farm  template
-npm create farm@latest farm-app --template react
-
-# RsPack
-npm add @rspack/core -D
-
-# WebPack
-npm install --save-dev webpack
+npm install <package-name>
 ```
 
 ```sh
-# React in existing project
-npm install react react-dom
-```
-
-```sh
-# Tailwind CSS
-npm install -D tailwindcss
-npx tailwindcss init
-```
-
-```sh
-# Bootstrap
-npm install bootstrap
-```
-
-```sh
-# ExpressJS
-npm install express
-```
-
-```sh
-# Mongoose
-npm install mongoose
-```
-
-```sh
-# NextJS automatic installation
-npx create-next-app@latest
-
-# NextJS manual installation
-npm install next@latest react@latest react-dom@latest
-```
-
-```sh
-# NestJS
-npm i -g @nestjs/cli
-nest new project-name
-```
-
-```sh
-# VueJS
-npm create vue@latest
-
-# NuxtJS
-npx nuxi@latest init project-name
-```
-
-```sh
-# Expo for ReactNative Apps
-npx create-expo-app
+pnpm install <package-name>
 ```
 
 ##### Python 3.13
 
 ```sh
-winget install --id=Python.Python.3.13  -e
+winget install Python.Python.3.13
 ```
 
 ###### pip (package installer for python)
 
-```sh
-# Django
-pip install Django
-```
+Con [`pip`](https://pypi.org/) podemos instalar librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
 
 ```sh
-# FastAPI
-pip install "fastapi[standard]"
-```
-
-```sh
-# Flask
-pip install Flask
-```
-
-```sh
-# ReactPy
-pip install "reactpy[starlette]"
-python -c "import reactpy; reactpy.run(reactpy.sample.SampleApp)"
-```
-
-```sh
-# Flet
-pip install flet
-```
-
-```sh
-# FastHTML
-pip install python-fasthtml
+pip install <package-name>
 ```
 
 ##### MongoDB
 
 ```sh
 # Server
-winget install --id=MongoDB.Server  -e
+winget install MongoDB.Server
 ```
 
 ```sh
 # Shell
-winget install --id=MongoDB.Shell  -e
+winget install MongoDB.Shell
 ```
 
 ##### XAMPP 8.2
 
 ```sh
-winget install --id=ApacheFriends.Xampp.8.2  -e 
+winget install ApacheFriends.Xampp.8.2 
 ```
 
 ##### Deno
 
 ```sh
-winget install --id=DenoLand.Deno  -e
+winget install DenoLand.Deno
 ```
 
-##### zig
+##### Bun
 
 ```sh
-winget install --id=zig.zig  -e
+winget install Oven-sh.Bun
+```
+
+##### Zig
+
+```sh
+winget install zig.zig
 ```
 
 #### Editores de Texto e IDEs
 
-##### Vim & NeoVim
+##### Neovim
 
 ```sh
-# Vim
-winget install --id=vim.vim  -e
+winget install Neovim.Neovim
 ```
 
-```sh
-# NeoVim
-winget install --id=Neovim.Neovim  -e
-```
-
-Entornos de `NeoVim`:
-
-- [LazyVim](https://www.lazyvim.org/) (Recomendado)
-- [NvChad](https://nvchad.com/)
-- [AstroVim](https://astronvim.com/)
-- [LunarVim](https://www.lunarvim.org/)
-
-##### Helix
-
-```sh
-winget install --id=Helix.Helix  -e
-```
+Podemos mejorar nuestro entorno de `Neovim` usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
 
 ##### Visual Studio Code
 
 ```sh
-# Production
-winget install --id=Microsoft.VisualStudioCode  -e
+winget install Microsoft.VisualStudioCode
 ```
 
+##### WebStorm
+
 ```sh
-# Insiders
-winget install --id=Microsoft.VisualStudioCode.Insiders  -e
+winget install JetBrains.WebStorm
 ```
 
-##### Spyder
+##### PyCharm Community
 
 ```sh
-winget install --id=Spyder.Spyder  -e
+winget install JetBrains.PyCharm.Community
 ```
 
-##### JetBrains IDEs
+##### IntelliJ IDEA Community
 
 ```sh
-# WebStorm
-winget install --id=JetBrains.WebStorm  -e
-```
-
-```sh
-# PyCharm Community
-winget install --id=JetBrains.PyCharm.Community  -e
-```
-
-```sh
-# IntelliJ IDEA Community
-winget install --id=JetBrains.IntelliJIDEA.Community  -e
+winget install JetBrains.IntelliJIDEA.Community
 ```
 
 ##### Android Studio
 
 ```sh
-winget install --id=Google.AndroidStudio  -e
+winget install Google.AndroidStudio
 ```
 
 #### Software
@@ -491,25 +358,25 @@ winget install --id=Google.AndroidStudio  -e
 ##### GitHub Desktop
 
 ```sh
-winget install --id=GitHub.GitHubDesktop  -e
+winget install GitHub.GitHubDesktop
 ```
 
 ##### Docker Desktop
 
 ```sh
-winget install --id=Docker.DockerDesktop  -e
+winget install Docker.DockerDesktop
 ```
 
 ##### MongoDB Compass
 
 ```sh
-winget install --id=MongoDB.Compass.Community  -e
+winget install MongoDB.Compass.Community
 ```
 
 ##### Studio 3T
 
 ```sh
-winget install --id=3TSoftwareLabs.Studio3T  -e
+winget install 3TSoftwareLabs.Studio3T
 ```
 
 ##### DBngin
@@ -519,7 +386,7 @@ winget install --id=3TSoftwareLabs.Studio3T  -e
 ##### MySQL Workbench 8.0 CE
 
 ```sh
-winget install --id=Oracle.MySQLWorkbench  -e
+winget install Oracle.MySQLWorkbench
 ```
 
 ##### Oracle VM VirtualBox
@@ -527,19 +394,7 @@ winget install --id=Oracle.MySQLWorkbench  -e
 Para [`Arch Linux`](https://archlinux.org/) y [`Kali Linux`](https://www.kali.org/).
 
 ```sh
-winget install --id=Oracle.VirtualBox  -e
-```
-
-##### Google Chrome
-
-```sh
-winget install --id=Google.Chrome  -e
-```
-
-##### Mozilla Firefox
-
-```sh
-winget install --id=Mozilla.Firefox  -e
+winget install Oracle.VirtualBox
 ```
 
 ##### balenaEtcher
@@ -554,33 +409,13 @@ winget install --id=Balena.Etcher  -e
 winget install --id=Transmission.Transmission  -e
 ```
 
-##### Notion
-
-```sh
-winget install --id=Notion.Notion  -e
-```
-
-##### TickTick
-
-```sh
-winget install --id=Appest.TickTick  -e
-```
-
-##### Steam
-
-```sh
-winget install --id=Valve.Steam  -e
-```
-
-##### Discord
-
-```sh
-winget install --id=Discord.Discord  -e
-```
-
 ### WSL (Windows Subsystem for Linux)
 
-En windows el `WSL` debería estar instalado por defecto, sin embargo en ocasiones requiere habilitar la función de `virtualization` desde la `BIOS`.
+En Windows el paquete de `WSL` debería estar instalado por defecto, sin embargo en ocasiones requiere habilitar la función de `virtualization` desde la `BIOS`.
+
+También podríamos entrar en el `Control Panel` luego en la sección de `Programs`, `Programs and Features`, `Turn Windows features on or off`, se abrirá una ventana de `Windows Features`, bajamos y marcamos las opciones `Virtual Machine Platform` y `Windows Subsystem for Linux`.
+
+Instalando `WSL`:
 
 ```sh
 wsl --install
@@ -595,10 +430,34 @@ wsl --set-default-version 2
 Opción de instalación con `winget`:
 
 ```sh
-winget install --id=Microsoft.WSL  -e
+winget install Microsoft.WSL
 ```
 
-`WSL` instala por defecto `Ubuntu` y es muy probable que no este completamente actualizado asi que antes de cualquier cosa, necesitamos actualizar el sistema con estos dos comandos:
+`WSL` instala por defecto `Ubuntu`, si no es la distro que queremos, podemos desinstalarla de la siguiente manera:
+
+```sh
+# para listar las distros instaladas
+wsl --list --verbose
+```
+
+```sh
+# para desinstalar la distro que no queremos, en este caso Ubuntu
+wsl --unregister Ubuntu
+```
+
+Para instalar otra distro como `Debian` ó `Kali Linux`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
+
+```sh
+# para listar las distros disponibles
+wsl --list --online
+```
+
+```sh
+# para instalar la distro que queremos, en este caso Debian
+wsl --install Debian
+```
+
+Una vez instalado `Debian` es muy probable que no este completamente actualizado asi que antes de cualquier cosa, necesitamos actualizar el sistema con estos dos comandos:
 
 ```sh
 sudo apt update
@@ -608,29 +467,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-En caso de que no instale `Ubunto` por defecto o queramos instalar otra distro como `Debian` ó `Kali Linux`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
-
-```sh
-# para listar
-wsl.exe --list --online
-```
-
-```sh
-# para instalar
-wsl.exe --install <Distro>
-```
-
-Tambien podemos ver las distros instaladas ejecutando el comando:
-
-```sh
-wsl -l -v
-```
-
-#### Instalando Homebrew en WSL
-
-##### [Homebrew](https://brew.sh/)
-
-Package Manager for Linux (WSL)
+#### [Homebrew](https://brew.sh/)
 
 Podemos instalar `Homebrew` ejecutando el siguiente comando para copiar el repositorio.
 
@@ -642,73 +479,53 @@ Una vez instalado `Homebrew` podemos instalar paquetes en `WLS` con:
 
 ```sh
 # Linux Terminal (WSL)
-brew install package-name
+brew install <package-name>
 ```
 
-#### Instalando Nala en WSL para Ubuntu
+#### [Nala](https://gitlab.com/volian/nala)
 
-##### [Nala](https://www.omgubuntu.co.uk/2023/01/install-nala-on-ubuntu)
+`Nala` es un gestor de paquetes mejorado para `Debian` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas, por lo que el proceso tomará su tiempo.
 
-Nala is a Neat Alternative to Apt on Ubuntu
-
-`Nala` es un gestor de paquetes mejorado para `Ubuntu` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas por lo que el proceso tomará su tiempo.
-
-Para instalar `Nala` ejecutamos el siguiente comando comenzará el proceso de instalación.
+Para instalar `Nala` ejecutamos el siguiente comando y comenzará el proceso de instalación:
 
 ```sh
 sudo apt install nala
 ```
 
-Una vez instalado `Nala` podemos instalar paquetes en `Ubuntu` con:
+Una vez instalado `Nala` podemos instalar paquetes en `Debian` con:
 
 ```sh
-sudo nala install package-name
+sudo nala install <package-name>
 ```
 
-#### Instalando Kali Linux en WSL
-
-Podemos instalar con `wsl` ó con `winget`:
+#### [Zellij](https://zellij.dev/) en WezTerm
 
 ```sh
-# WSL (recomendado)
-wsl.exe --install kali-linux
-```
-
-```sh
-# Winget
-winget install --id=OffSec.KaliLinux  -e
-```
-
-#### Instalando ZelliJ en WSL para WezTerm
-
-##### [Zellij](https://zellij.dev/)
-
-A terminal workspace with batteries included
-
-```sh
-# Linux Terminal (WSL)
+# Bash on Linux Terminal (WSL)
 bash <(curl -L https://zellij.dev/launch)
 ```
 
-Instalando con `Homebrew`:
-
 ```sh
-# Linux Terminal (WSL)
+# Homebrew on Linux Terminal (WSL)
 brew install zellij
 ```
 
-##### Instalando NeoVim en WSL para Ubuntu
+#### Neovim en Debian
 
 ```sh
 sudo apt install neovim
 ```
 
-##### Instalando Helix en WSL para Ubuntu
+#### [Kali Linux](https://www.kali.org/)
 
 ```sh
-sudo add-apt-repository ppa:maveonair/helix-editor
-sudo apt update
-sudo apt install helix
+# WSL (recomendado)
+wsl --install kali-linux
+```
+
+```sh
+# Winget
+winget install OffSec.KaliLinux
 ```
 
 ## GNU Linux - Arch Linux
@@ -733,20 +550,20 @@ iwctl
 [iwd] device list
 
 # If the device or its corresponding adapter is turned off, turn it on:
-[iwd] device name set-property Powered on
-[iwd] adapter adapter set-property Powered on
+[iwd] device <name> set-property Powered on
+[iwd] adapter <adapter> set-property Powered on
 
 # Then, to initiate a scan for networks (note that this command will not output anything):
-[iwd] station name scan
+[iwd] station <name> scan
 
 # You can then list all available networks:
-[iwd] station name get-networks
+[iwd] station <name> get-networks
 
 # Finally, to connect to a network:
-[iwd] station name connect SSID
+[iwd] station <name> connect SSID
 
 # If a passphrase is required (and it is not already stored in one of the profiles that iwd automatically checks), you will be prompted to enter it. Alternatively, you can supply it as a command line argument:
-iwctl --passphrase passphrase station name connect SSID
+iwctl --passphrase <passphrase> station <name> connect SSID
 ```
 
 El gestor de paquetes por defecto en `Arch Linux` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
@@ -768,12 +585,7 @@ sudo pacman -S unclutter scrot solaar papyrus
 sudo paru -S lazygit
 ```
 
-Entornos de `NeoVim`:
-
-- [LazyVim](https://www.lazyvim.org/) (Recomendado)
-- [NvChad](https://nvchad.com/)
-- [AstroVim](https://astronvim.com/)
-- [LunarVim](https://www.lunarvim.org/)
+Podemos mejorar nuestro entorno de `Neovim` usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
 
 > [!TIP]
 > Una vez tengamos instalada una base podemos instalar los dotfiles de [ML4W](https://www.ml4w.com/) desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
@@ -871,20 +683,15 @@ sudo pacman -Syyu --needed --overwrite='*' <wanted-package>
 Soon...
 
 - Homebrew
-
 - Warp
 - Kitty
 - Ghostty
 - WezTerm
-
 - zsh
 - oh-my-zsh
 - Starship
-
-- Vim
-- NeoVim
+- Neovim
 - VS Code
-
 - VirtualBox
 - VMware Fusion
 

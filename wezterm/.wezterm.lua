@@ -16,8 +16,6 @@ config.max_fps = 60
 -- Windows exclusive configs
 config.default_prog = { "pwsh", "-NoLogo" }
 -- config.default_domain = 'WSL:Debian'
--- config.default_domain = 'WSL:kali-linux'
--- config.default_domain = 'WSL:Ubuntu-18.04'
 
 -- and finally, return the configuration to wezterm
 return config
