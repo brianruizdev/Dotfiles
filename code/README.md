@@ -18,6 +18,16 @@ Improve your code commenting by annotating with alert, informational, TODOs, and
 biomejs
 Toolchain of the web.
 
+## [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
+
+Ashok Koyi
+Bootstrap 4 snippets based on documentation + Font awesome 4 + Font Awesome 5 Free & Pro snippets.
+
+## [Bootstrap 5 Quick Snippets](https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode)
+
+Anbuselvan Rocky
+Collection of Bootstrap 5 Snippets that will make your life easier.
+
 ## [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 Jun Han
@@ -78,6 +88,46 @@ Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customiz
 Microsoft
 Integrates ESLint JavaScript into VS Code.
 
+## [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+
+Microsoft
+Popular extensions for Java development that provides Java IntelliSense, debugging, testing, Maven/Gradle support, project management and more.
+
+### [Language Support for Java™ by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java) (extension pack)
+
+Red Hat
+Java Linting, Intellisense, formatting, refactoring, Maven/Gradle support and more...
+
+### [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug) (extension pack)
+
+Microsoft
+A lightweight Java debugger for Visual Studio Code.
+
+### [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) (extension pack)
+
+Microsoft
+Run and debug JUnit or TestNG test cases.
+
+### [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven) (extension pack)
+
+Microsoft
+Manage Maven projects, execute goals, generate project from archetype, improve user experience for Java developers.
+
+### [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) (extension pack)
+
+Microsoft
+Manage Gradle Projects, run Gradle tasks and provide better Gradle file authoring experience in VS Code.
+
+### [Project Manager for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency) (extension pack)
+
+Microsoft
+Manage Java projects in Visual Studio Code
+
+### [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) (extension pack)
+
+Microsoft
+AI-assisted development.
+
 ## [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
 
 Miguel Solorio
@@ -97,10 +147,20 @@ AI chat features powered by Copilot.
 GitKraken
 Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more.
 
+## [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
+ecmel
+CSS Intellisense for HTML.
+
 ## [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
 
 Kiss Tamas
 Shows image preview in the gutter and on hover.
+
+## [Java](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java)
+
+Oracle Corporation
+Java Platform Extension for Visual Studio Code.
 
 ## [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
@@ -168,6 +228,11 @@ Connect to MongoDB and Atlas directly from your VS Code environment, navigate yo
 Weijan Chen
 Database manager for MySQL/MariaDB, PostgreSQL, SQLite, Redis and ElasticSearch.
 
+## [MySQL Shell for VS Code](https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-code)
+
+Oracle Corporation
+The power of MySQL Shell as part of your VS Code workflow.
+
 ### [Database Client JDBC](https://marketplace.visualstudio.com/items?itemName=cweijan.dbclient-jdbc) (extension pack)
 
 JDBC Adapter For Database Client.
@@ -181,6 +246,21 @@ Visual Studio Code plugin that autocompletes npm modules in import statements.
 
 binaryify
 Atom's iconic One Dark theme for Visual Studio Code.
+
+## [Oracle Developer Tools for VS Code (SQL and PLSQL)](https://marketplace.visualstudio.com/items?itemName=Oracle.oracledevtools)
+
+Oracle Corporation
+Develop SQL and PL/SQL with Oracle Database and Oracle Autonomous Database.
+
+## [Oracle NoSQL Database Connector](https://marketplace.visualstudio.com/items?itemName=Oracle.nosql-vscode)
+
+Oracle Corporation
+Use Oracle NoSQL database connector to browse tables and run queries against the Oracle NoSQL Database Cloud Service, Oracle NoSQL Database on-premises or to the Oracle NoSQL Cloud Simulator.
+
+## [Oracle SQL Developer Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer)
+
+Oracle Corporation
+End-to-end development tools for your SQL and PL/SQL applications.
 
 ## [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
@@ -243,6 +323,26 @@ REST Client for Visual Studio Code.
 
 SonarSource
 Linter to detect & fix coding issues locally in JS/TS, Python, PHP, Java, C, C++, C#, Go, IaC. Use with SonarQube & SonarCloud for optimal team performance.
+
+## [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)
+
+VMware
+A collection of extensions for developing Spring Boot applications.
+
+### [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) (extension pack)
+
+VMware
+Provides validation and content assist for Spring Boot `application.properties`, `application.yml` properties files. As well as Boot-specific support for `.java` files.
+
+### [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr) (extension pack)
+
+Microsoft
+A lightweight extension based on Spring Initializr to generate quick start Spring Boot Java projects.
+
+### [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard) (extension pack)
+
+Microsoft
+Spring Boot Dashboard for VS Code.
 
 ## [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols)
 
