@@ -321,7 +321,7 @@ winget install zig.zig
 winget install Neovim.Neovim
 ```
 
-Podemos mejorar nuestro entorno de `Neovim` usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
 
 ##### Visual Studio Code
 
@@ -329,19 +329,19 @@ Podemos mejorar nuestro entorno de `Neovim` usando algún entorno pre [`LazyVim`
 winget install Microsoft.VisualStudioCode
 ```
 
-##### WebStorm
+##### JetBrains WebStorm
 
 ```sh
 winget install JetBrains.WebStorm
 ```
 
-##### PyCharm Community
+##### JetBrains PyCharm Community
 
 ```sh
 winget install JetBrains.PyCharm.Community
 ```
 
-##### IntelliJ IDEA Community
+##### JetBrains IntelliJ IDEA Community
 
 ```sh
 winget install JetBrains.IntelliJIDEA.Community
@@ -391,22 +391,28 @@ winget install Oracle.MySQLWorkbench
 
 ##### Oracle VM VirtualBox
 
-Para [`Arch Linux`](https://archlinux.org/) y [`Kali Linux`](https://www.kali.org/).
+Para [`Arch Linux`](https://archlinux.org/), [`Debian`](https://www.debian.org/) y  [`Kali Linux`](https://www.kali.org/).
 
 ```sh
 winget install Oracle.VirtualBox
 ```
 
-##### balenaEtcher
-
-```sh
-winget install --id=Balena.Etcher  -e
-```
-
 ##### Transmission
 
 ```sh
-winget install --id=Transmission.Transmission  -e
+winget install Transmission.Transmission
+```
+
+##### balenaEtcher
+
+```sh
+winget install Balena.Etcher
+```
+
+##### Nvidia GeForce Experience
+
+```sh
+winget install Nvidia.GeForceExperience
 ```
 
 ### WSL (Windows Subsystem for Linux)
@@ -516,6 +522,8 @@ brew install zellij
 sudo apt install neovim
 ```
 
+Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+
 #### [Kali Linux](https://www.kali.org/)
 
 ```sh
@@ -573,7 +581,6 @@ El gestor de paquetes por defecto en `Arch Linux` es `pacman`. Posteriormente in
 Paquetes para uso general de la distro:
 
 ```sh
-sudo pacman -S network-manager-@@@@@@@@_y_otras_cosas
 sudo pacman -S udiskie nm-applet blueman-applet cbatticon
 sudo pacman -S pipewire wireplumber volumeicon
 sudo pacman -S kitty git vim nano neovim helix
@@ -585,7 +592,7 @@ sudo pacman -S unclutter scrot solaar papyrus
 sudo paru -S lazygit
 ```
 
-Podemos mejorar nuestro entorno de `Neovim` usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
 
 > [!TIP]
 > Una vez tengamos instalada una base podemos instalar los dotfiles de [ML4W](https://www.ml4w.com/) desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
@@ -611,7 +618,7 @@ sudo pacman -S hyprland hyprwm hyprlock hyprpanel hyprpaper wofi waybar
 Paquetes gráficos para uso en maquina virtual:
 
 ```sh
-sudo pacman -S ...
+pacman -S virtualbox-guest-utils mesa mesa-libgl
 ```
 
 ### Repositorios
@@ -741,7 +748,11 @@ Vim Cheat Sheet.
 
 #### [Vimium Doc](https://vimium.github.io/)
 
-The Hacker's Browser.
+Vim Cheat Sheet.
+
+#### [VIM Adventures](https://vim-adventures.com/)
+
+Learning VIM while playing a game.
 
 ### Códigos y herramientas
 
