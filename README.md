@@ -271,7 +271,7 @@ winget install Python.Python.3.13
 
 ###### pip (package installer for python)
 
-Con [`pip`](https://pypi.org/) podemos instalar librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
+Con [`pip`](https://pypi.org/) podemos instalar librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Streamlit`](https://streamlit.io/), [`TensorFlow`](https://www.tensorflow.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
 
 ```sh
 pip install <package-name>
@@ -292,7 +292,7 @@ winget install MongoDB.Shell
 ##### XAMPP 8.2
 
 ```sh
-winget install ApacheFriends.Xampp.8.2 
+winget install ApacheFriends.Xampp.8.2
 ```
 
 ##### Deno
@@ -353,6 +353,24 @@ winget install JetBrains.IntelliJIDEA.Community
 winget install Google.AndroidStudio
 ```
 
+##### Cursor
+
+```sh
+winget install Anysphere.Cursor
+```
+
+##### Windsurf
+
+```sh
+winget install Codeium.Windsurf
+```
+
+##### Spyder
+
+```sh
+winget install Spyder.Spyder
+```
+
 #### Software
 
 ##### GitHub Desktop
@@ -389,12 +407,34 @@ winget install 3TSoftwareLabs.Studio3T
 winget install Oracle.MySQLWorkbench
 ```
 
+##### Ngrok
+
+```sh
+winget install Ngrok.Ngrok
+```
+
+```sh
+choco install ngrok
+```
+
 ##### Oracle VM VirtualBox
 
-Para [`Arch Linux`](https://archlinux.org/), [`Debian`](https://www.debian.org/) y  [`Kali Linux`](https://www.kali.org/).
+Para [`Arch Linux`](https://archlinux.org/), [`Debian`](https://www.debian.org/) y [`Kali Linux`](https://www.kali.org/).
 
 ```sh
 winget install Oracle.VirtualBox
+```
+
+##### Google Chrome
+
+```sh
+winget install Google.Chrome
+```
+
+##### Mozilla Firefox
+
+```sh
+winget install Mozilla.Firefox
 ```
 
 ##### Transmission
@@ -413,6 +453,78 @@ winget install Balena.Etcher
 
 ```sh
 winget install Nvidia.GeForceExperience
+```
+
+##### Spotify
+
+```sh
+winget install Spotify.Spotify
+```
+
+##### Steam
+
+```sh
+winget install Valve.Steam
+```
+
+##### Discord
+
+```sh
+winget install Discord.Discord
+```
+
+##### OBS Studio
+
+```sh
+winget install OBSProject.OBSStudio
+```
+
+##### TickTick
+
+```sh
+winget install Appest.TickTick
+```
+
+##### Notion
+
+```sh
+winget install Notion.Notion
+```
+
+##### Obsidian
+
+```sh
+winget install Obsidian.Obsidian
+```
+
+##### NordVPN
+
+```sh
+winget install NordSecurity.NordVPN
+```
+
+##### ProtonVPN
+
+```sh
+winget install Proton.ProtonVPN
+```
+
+##### TunnelBear VPN
+
+```sh
+winget install TunnelBear.TunnelBear
+```
+
+##### 7-Zip
+
+```sh
+winget install 7zip.7zip
+```
+
+##### WinRAR
+
+```sh
+winget install RARLab.WinRAR
 ```
 
 ### WSL (Windows Subsystem for Linux)
@@ -706,6 +818,10 @@ Soon...
 
 ### Documentación y libros
 
+#### [Library Genesis](https://libgen.is/)
+
+Get Books.
+
 #### [RoadMap](https://roadmap.sh/)
 
 Developer RoadMaps.
@@ -720,7 +836,7 @@ Aprende a usar la terminal.
 
 #### [Gentleman Programming Book](https://the-amazing-gentleman-programming-book.vercel.app/)
 
- "A clean programmer is the best kind of programmer"  - by Alan Buscaglia.
+"A clean programmer is the best kind of programmer" - by Alan Buscaglia.
 
 #### [Goal Kicker Books](https://books.goalkicker.com/)
 
@@ -756,6 +872,74 @@ Learning VIM while playing a game.
 
 ### Códigos y herramientas
 
+#### [Hostinger](https://www.hostinger.com/)
+
+Your website. Sorted.
+
+#### [Github Pages](https://pages.github.com/)
+
+Websites for you and your projects.
+
+#### [Surge](https://surge.sh/)
+
+Static web publishing for Front-End Developers.
+
+#### [Vercel](https://vercel.com/)
+
+Your complete platform for the web.
+
+#### [Netlify](https://www.netlify.com/)
+
+Connect everything. Build anything.
+
+##### [Netlify Drop](https://app.netlify.com/drop)
+
+Drag & drop. It’s online.
+
+#### [Railway](https://railway.app/)
+
+Shipping great products is hard. Scaling infrastructure is easy.
+
+#### [DigitalOcean](https://www.digitalocean.com/)
+
+The simplest cloud that scales with you.
+
+#### [Resend](https://resend.com/)
+
+Email for developers.
+
+#### [Brevo](https://www.brevo.com/)
+
+Grow with our Email Marketing Platform & CRM suite.
+
+#### [SendGrid](https://sendgrid.com/)
+
+Get your emails to the inbox—where they belong.
+
+#### [Firebase](https://firebase.google.com/)
+
+Make your app the best it can be with Firebase and generative AI.
+
+#### [Supabase](https://supabase.com/)
+
+Build in a weekend. Scale to millions.
+
+#### [Cloudflare](https://www.cloudflare.com/)
+
+Connect, protect, and build everywhere.
+
+#### [PureCode AI](https://purecode.ai/)
+
+AI-Generated UI on Demand.
+
+#### [React Icons](https://react-icons.github.io/react-icons/)
+
+Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+#### [WorldVectorLogo](https://worldvectorlogo.com/)
+
+Download vector logos of brands you love.
+
 #### [Not-Paid](https://github.com/kleampa/not-paid)
 
 Client did not pay? Add opacity...
@@ -767,10 +951,6 @@ GitHub repository featuring 50+ Python applications with only 10 lines of code!
 #### [Project Based Learning](https://github.com/practical-tutorials/project-based-learning)
 
 A list of programming tutorials in which aspiring software developers learn how to build an application from scratch.
-
-#### [Netlify Drop](https://app.netlify.com/drop)
-
-Drag & drop. It’s online.
 
 #### [ExcaliDraw](https://excalidraw.com/)
 
@@ -815,6 +995,10 @@ Move faster with intuitive React UI tools.
 #### [DB Diagram](https://dbdiagram.io/home)
 
 Draw Entity-Relationship Diagrams, Painlessly 😎.
+
+#### [WebVM](https://webvm.io/)
+
+WebVM is a virtual Linux environment running in the browser via WebAssembly.
 
 ### Cursos y Academias
 

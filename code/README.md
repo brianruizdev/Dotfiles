@@ -16,7 +16,7 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 Aaron Bond
 Improve your code commenting by annotating with alert, informational, TODOs, and more!
 
-## [Biome](https://marketplace.visualstudio.com/items?itemName=biomejs.biome) ⭐
+## [Biome](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
 
 biomejs
 Toolchain of the web.
@@ -48,8 +48,12 @@ Spelling checker for source code.
 
 ### 📦 [Spanish Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish) (add-on) ⭐
 
-Street Side Software
 Spanish Add-On for Code Spell Checker.
+
+## [Codeium](https://marketplace.visualstudio.com/items?itemName=Codeium.codeium)
+
+Codeium
+The modern coding superpower: free AI code acceleration plugin for your favorite languages. Type less. Code more. Ship faster.
 
 ## [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap) ⭐
 
@@ -91,7 +95,7 @@ Improve highlighting of errors, warnings and other language diagnostics.
 dsznajder
 Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
 
-## [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+## [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) ⭐
 
 Microsoft
 Integrates ESLint JavaScript into VS Code.
@@ -103,37 +107,30 @@ Popular extensions for Java development that provides Java IntelliSense, debuggi
 
 ### 📦 [Language Support for Java™ by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java) (extension pack)
 
-Red Hat
 Java Linting, Intellisense, formatting, refactoring, Maven/Gradle support and more...
 
 ### 📦 [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug) (extension pack)
 
-Microsoft
 A lightweight Java debugger for Visual Studio Code.
 
 ### 📦 [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) (extension pack)
 
-Microsoft
 Run and debug JUnit or TestNG test cases.
 
 ### 📦 [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven) (extension pack)
 
-Microsoft
 Manage Maven projects, execute goals, generate project from archetype, improve user experience for Java developers.
 
 ### 📦 [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) (extension pack)
 
-Microsoft
 Manage Gradle Projects, run Gradle tasks and provide better Gradle file authoring experience in VS Code.
 
 ### 📦 [Project Manager for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency) (extension pack)
 
-Microsoft
 Manage Java projects in Visual Studio Code
 
 ### 📦 [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) (extension pack)
 
-Microsoft
 AI-assisted development.
 
 ## [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
@@ -141,14 +138,28 @@ AI-assisted development.
 Miguel Solorio
 Fluent product icons for Visual Studio Code.
 
-## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+## [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+
+Dart Code
+Flutter support and debugger for Visual Studio Code.
+
+### 📦 [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) (dependency)
+
+Dart language support and debugger for Visual Studio Code.
+
+## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) ⭐
 
 GitHub
 Your AI pair programmer.
 
-### 📦 [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) (extension pack)
+### 📦 [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) (extension pack) ⭐
 
 AI chat features powered by Copilot.
+
+## [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+GitHub
+Pull Request and Issue Provider for GitHub.
 
 ## [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) ⭐
 
@@ -290,7 +301,7 @@ Streamline API development and testing with the power of Postman, directly in yo
 Microsoft
 Develop PowerShell modules, commands and scripts in Visual Studio Code!
 
-## [Prettier Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) ⭐
 
 Prettier
 Code formatter using prettier.
@@ -299,6 +310,11 @@ Code formatter using prettier.
 
 yoavbls
 Make TypeScript errors prettier and more human-readable in VSCode.
+
+## [PureCode AI](https://marketplace.visualstudio.com/items?itemName=PurecodeAI.purecode-ai)
+
+PureCode AI
+Generate, iterate, and export production-ready UI components, code and designs.
 
 ## [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) ⭐
 
@@ -344,18 +360,20 @@ A collection of extensions for developing Spring Boot applications.
 
 ### 📦 [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) (extension pack)
 
-VMware
 Provides validation and content assist for Spring Boot `application.properties`, `application.yml` properties files. As well as Boot-specific support for `.java` files.
 
 ### 📦 [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr) (extension pack)
 
-Microsoft
 A lightweight extension based on Spring Initializr to generate quick start Spring Boot Java projects.
 
 ### 📦 [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard) (extension pack)
 
-Microsoft
 Spring Boot Dashboard for VS Code.
+
+## [Supermaven](https://marketplace.visualstudio.com/items?itemName=supermaven.supermaven)
+
+Supermaven
+The fastest copilot.
 
 ## [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols)
 
@@ -376,6 +394,11 @@ Lightweight Rest API Client for VS Code.
 
 vscodevim
 Vim emulation for Visual Studio Code.
+
+## [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) ⭐
+
+tomoki1207
+Display pdf file in VSCode.
 
 ## [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 

@@ -1,43 +1,43 @@
 {
-	"editor.fontFamily": "Cascadia Code",
-	"editor.fontLigatures": true,
-	"terminal.integrated.fontFamily": "Hack Nerd Font",
-	"workbench.colorTheme": "One Dark Pro",
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.productIconTheme": "material-product-icons",
-	"editor.cursorBlinking": "expand",
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.guides.bracketPairs": true,
-	"explorer.confirmDelete": false,
-	"security.workspace.trust.untrustedFiles": "open",
-	"editor.formatOnPaste": true,
-	"editor.formatOnSave": true,
-	"editor.formatOnType": true,
-	"editor.wordWrap": "bounded",
-	"editor.indentSize": "tabSize",
-	"editor.insertSpaces": false,
-	"explorer.confirmDragAndDrop": false,
-	"editor.defaultFormatter": "biomejs.biome",
-	"editor.linkedEditing": true,
-	"breadcrumbs.enabled": false,
-	"console-ninja.featureSet": "Community",
-	"console-ninja.toolsToEnableSupportAutomaticallyFor": {
-		"live-server-extension": true,
-		"live-preview-extension": true
-	},
-	"cSpell.language": "en,es-ES",
-	"cSpell.userWords": [],
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"intelephense.phpdoc.functionTemplate": {
-		"summary": "$1",
-		"tags": [
-			"@param ${1:$SYMBOL_TYPE} $SYMBOL_NAME $2",
-			"@return ${1:$SYMBOL_TYPE} $2",
-			"@throws ${1:$SYMBOL_TYPE} $2"
-		]
-	},
-	"database-client.autoSync": true,
-	"terminal.integrated.env.windows": {},
-	"terminal.integrated.defaultProfile.windows": "PowerShell",
-	"editor.minimap.enabled": false
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": true,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.wordWrap": "bounded",
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.linkedEditing": true,
+  "breadcrumbs.enabled": false,
+  "console-ninja.featureSet": "Community",
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "live-server-extension": true,
+    "live-preview-extension": true
+  },
+  "cSpell.language": "en,es-ES",
+  "cSpell.userWords": [],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "intelephense.phpdoc.functionTemplate": {
+    "summary": "$1",
+    "tags": [
+      "@param ${1:$SYMBOL_TYPE} $SYMBOL_NAME $2",
+      "@return ${1:$SYMBOL_TYPE} $2",
+      "@throws ${1:$SYMBOL_TYPE} $2"
+    ]
+  },
+  "database-client.autoSync": true,
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
