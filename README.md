@@ -321,7 +321,7 @@ winget install zig.zig
 winget install Neovim.Neovim
 ```
 
-Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno preparado como pueden ser: [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
 
 ##### Visual Studio Code
 
@@ -329,28 +329,24 @@ Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún 
 winget install Microsoft.VisualStudioCode
 ```
 
-##### JetBrains WebStorm
+##### JetBrains IDEs
+
+###### WebStorm
 
 ```sh
 winget install JetBrains.WebStorm
 ```
 
-##### JetBrains PyCharm Community
+###### PyCharm Community
 
 ```sh
 winget install JetBrains.PyCharm.Community
 ```
 
-##### JetBrains IntelliJ IDEA Community
+###### IntelliJ IDEA Community
 
 ```sh
 winget install JetBrains.IntelliJIDEA.Community
-```
-
-##### Android Studio
-
-```sh
-winget install Google.AndroidStudio
 ```
 
 ##### Cursor
@@ -363,12 +359,6 @@ winget install Anysphere.Cursor
 
 ```sh
 winget install Codeium.Windsurf
-```
-
-##### Spyder
-
-```sh
-winget install Spyder.Spyder
 ```
 
 #### Software
