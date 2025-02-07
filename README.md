@@ -26,7 +26,7 @@ Fuentes necesarias para visualizar `ligatures` e `icons`:
 
 A continuación estarán algunas de las herramientas que podrían acomodarse a tu entorno de desarrollo en `Windows`.
 
-### Instalando paquetes
+### Gestores de Paquetes
 
 #### [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 
@@ -89,9 +89,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-#### Gestores de versiones y contenedores
+### Instalando Paquetes
 
-##### Git & LazyGit
+#### Git
 
 ```sh
 # Git
@@ -101,6 +101,11 @@ winget install Git.Git
 ```sh
 # LazyGit
 winget install JesseDuffield.lazygit
+```
+
+```sh
+# GitHub Desktop
+winget install GitHub.GitHubDesktop
 ```
 
 Pushing git repository to github:
@@ -117,7 +122,7 @@ git remote -v
 git push -u origin main
 ```
 
-##### Docker & LazyDocker
+#### Docker
 
 ```sh
 # Docker
@@ -129,39 +134,16 @@ winget install Docker.DockerCompose
 winget install JesseDuffield.Lazydocker
 ```
 
-##### Volta (Administrador de versiones de Node)
-
 ```sh
-winget install Volta.Volta
+# Docker Desktop
+winget install Docker.DockerDesktop
 ```
 
-#### Emuladores de Terminal
-
-##### Windows Terminal
+#### Windows Terminal
 
 ```sh
 winget install Microsoft.WindowsTerminal
 ```
-
-##### WezTerm
-
-```sh
-winget install wez.wezterm
-```
-
-##### Alacritty
-
-```sh
-winget install Alacritty.Alacritty
-```
-
-##### Hyper
-
-```sh
-winget install Vercel.Hyper
-```
-
-#### Herramientas para Terminal
 
 ##### PowerShell
 
@@ -201,57 +183,44 @@ winget install lsd-rs.lsd
 winget install sharkdp.bat
 ```
 
-##### tealdeer (tldr)
-
-```sh
-winget install dbrgn.tealdeer
-```
-
-##### zoxide
-
-```sh
-winget install ajeetdsouza.zoxide
-```
-
 ##### fzf
 
 ```sh
 winget install junegunn.fzf
 ```
 
-##### fd
+#### WezTerm
 
 ```sh
-winget install sharkdp.fd
+winget install wez.wezterm
 ```
 
-##### Clink
+#### NodeJS
 
 ```sh
-winget install chrisant996.Clink
-```
-
-##### ripgrep MSVC
-
-```sh
-winget install BurntSushi.ripgrep.MSVC
-```
-
-#### Lenguajes y Tecnologías
-
-##### NodeJS
-
-```sh
-# Current version
-winget install OpenJS.NodeJS
-```
-
-```sh
-# LTS version (Recommended)
 winget install OpenJS.NodeJS.LTS
 ```
 
-###### npm (node package manager)
+Administrador de versiones:
+
+```sh
+# Volta
+winget install Volta.Volta
+```
+
+Alternativas:
+
+```sh
+# Deno
+winget install DenoLand.Deno
+```
+
+```sh
+# Bun
+winget install Oven-sh.Bun
+```
+
+##### npm (node package manager)
 
 Con [`npm`](https://www.npmjs.com/) podemos instalar librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/), [`NuxtJS`](https://nuxt.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), [`gh-pages`](https://www.npmjs.com/package/gh-pages), [`Vercel`](https://vercel.com/), [`Resend`](https://resend.com/), entre otros, con el comando:
 
@@ -263,13 +232,13 @@ npm install <package-name>
 pnpm install <package-name>
 ```
 
-##### Python 3.13
+#### Python 3.13
 
 ```sh
 winget install Python.Python.3.13
 ```
 
-###### pip (package installer for python)
+##### pip (package installer for python)
 
 Con [`pip`](https://pypi.org/) podemos instalar librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Streamlit`](https://streamlit.io/), [`TensorFlow`](https://www.tensorflow.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
 
@@ -277,7 +246,7 @@ Con [`pip`](https://pypi.org/) podemos instalar librerías y frameworks de [`Pyt
 pip install <package-name>
 ```
 
-##### MongoDB
+#### MongoDB
 
 ```sh
 # Server
@@ -287,92 +256,6 @@ winget install MongoDB.Server
 ```sh
 # Shell
 winget install MongoDB.Shell
-```
-
-##### XAMPP 8.2
-
-```sh
-winget install ApacheFriends.Xampp.8.2
-```
-
-##### Deno
-
-```sh
-winget install DenoLand.Deno
-```
-
-##### Bun
-
-```sh
-winget install Oven-sh.Bun
-```
-
-##### Zig
-
-```sh
-winget install zig.zig
-```
-
-#### Editores de Texto e IDEs
-
-##### Neovim
-
-```sh
-winget install Neovim.Neovim
-```
-
-Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno preparado como pueden ser: [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
-
-##### Visual Studio Code
-
-```sh
-winget install Microsoft.VisualStudioCode
-```
-
-##### JetBrains IDEs
-
-###### WebStorm
-
-```sh
-winget install JetBrains.WebStorm
-```
-
-###### PyCharm Community
-
-```sh
-winget install JetBrains.PyCharm.Community
-```
-
-###### IntelliJ IDEA Community
-
-```sh
-winget install JetBrains.IntelliJIDEA.Community
-```
-
-##### Cursor
-
-```sh
-winget install Anysphere.Cursor
-```
-
-##### Windsurf
-
-```sh
-winget install Codeium.Windsurf
-```
-
-#### Software
-
-##### GitHub Desktop
-
-```sh
-winget install GitHub.GitHubDesktop
-```
-
-##### Docker Desktop
-
-```sh
-winget install Docker.DockerDesktop
 ```
 
 ##### MongoDB Compass
@@ -387,9 +270,15 @@ winget install MongoDB.Compass.Community
 winget install 3TSoftwareLabs.Studio3T
 ```
 
+#### XAMPP 8.2
+
+```sh
+winget install ApacheFriends.Xampp.8.2
+```
+
 ##### DBngin
 
-[Download](https://dbngin.com/)
+Database Version Management Tool ([web](https://dbngin.com/)).
 
 ##### MySQL Workbench 8.0 CE
 
@@ -397,7 +286,53 @@ winget install 3TSoftwareLabs.Studio3T
 winget install Oracle.MySQLWorkbench
 ```
 
-##### Ngrok
+#### Neovim
+
+```sh
+winget install Neovim.Neovim
+```
+
+Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno preparado como pueden ser: [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+
+Para `LazyVim` es necesario instalar `Zig` para que funcione correctamente.
+
+```sh
+winget install zig.zig
+```
+
+#### Visual Studio Code
+
+```sh
+winget install Microsoft.VisualStudioCode
+```
+
+#### JetBrains IDE's
+
+##### WebStorm
+
+```sh
+winget install JetBrains.WebStorm
+```
+
+##### PyCharm Community
+
+```sh
+winget install JetBrains.PyCharm.Community
+```
+
+##### IntelliJ IDEA Community
+
+```sh
+winget install JetBrains.IntelliJIDEA.Community
+```
+
+#### Spyder
+
+```sh
+winget install Spyder.Spyder
+```
+
+#### Ngrok
 
 ```sh
 winget install Ngrok.Ngrok
@@ -407,21 +342,21 @@ winget install Ngrok.Ngrok
 choco install ngrok
 ```
 
-##### Oracle VM VirtualBox
-
-Para [`Arch Linux`](https://archlinux.org/), [`Debian`](https://www.debian.org/) y [`Kali Linux`](https://www.kali.org/).
+#### Oracle Virtual Box
 
 ```sh
 winget install Oracle.VirtualBox
 ```
 
-##### Microsoft Office LTSC Professional Plus 2024
+#### Microsoft
+
+##### Office LTSC Professional Plus 2024
 
 [Instructions](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy):
 
-1. Downloading the Office Deployment Tool from the Microsoft Download Center ([link](https://www.microsoft.com/en-us/download/details.aspx?id=49117)). Keep the "`Setup`" file and erase another files.
+1. Downloading the Office Deployment Tool from the Microsoft Download Center ([web](https://www.microsoft.com/en-us/download/details.aspx?id=49117)). Keep the "`Setup`" file and erase another files.
 
-2. Creating the configuration.xml file ([link](https://config.office.com/deploymentsettings)). Create, Export as "`Office Open XML`" and Named "`Configuration.xml`", then move the "`Configuration.xml`" file to the folder with the "`Setup`" file.
+2. Creating the `configuration.xml` file ([web](https://config.office.com/deploymentsettings)). Create, export as "`Office Open XML`" and name it "`Configuration.xml`", then move the "`Configuration.xml`" file to the folder with the "`Setup`" file.
 
 3. Install Office LTSC 2024 by using the Office Deployment Tool. Open the folder containing the files in a `CMD` as Administrator and use the follow command:
 
@@ -445,130 +380,10 @@ irm https://get.activated.win | iex
 
 Activating command [web](https://massgrave.dev/).
 
-##### Microsoft PowerBI
+##### Power BI
 
 ```sh
 winget install Microsoft.PowerBI
-```
-
-##### Google Chrome
-
-```sh
-winget install Google.Chrome
-```
-
-##### Mozilla Firefox
-
-```sh
-winget install Mozilla.Firefox
-```
-
-##### Microsoft Edge
-
-```sh
-winget install Microsoft.Edge
-```
-
-##### Microsoft Teams
-
-```sh
-winget install Microsoft.Teams
-```
-
-##### Transmission
-
-```sh
-winget install Transmission.Transmission
-```
-
-##### balenaEtcher
-
-```sh
-winget install Balena.Etcher
-```
-
-##### TickTick
-
-```sh
-winget install Appest.TickTick
-```
-
-##### Notion
-
-```sh
-winget install Notion.Notion
-```
-
-##### Obsidian
-
-```sh
-winget install Obsidian.Obsidian
-```
-
-##### NordVPN
-
-```sh
-winget install NordSecurity.NordVPN
-```
-
-##### ProtonVPN
-
-```sh
-winget install Proton.ProtonVPN
-```
-
-##### TunnelBear VPN
-
-```sh
-winget install TunnelBear.TunnelBear
-```
-
-##### 7-Zip
-
-```sh
-winget install 7zip.7zip
-```
-
-##### WinRAR
-
-```sh
-winget install RARLab.WinRAR
-```
-
-##### Nvidia GeForce Experience
-
-```sh
-winget install Nvidia.GeForceExperience
-```
-
-##### OBS Studio
-
-```sh
-winget install OBSProject.OBSStudio
-```
-
-##### Spotify
-
-```sh
-winget install Spotify.Spotify
-```
-
-##### Discord
-
-```sh
-winget install Discord.Discord
-```
-
-##### Steam
-
-```sh
-winget install Valve.Steam
-```
-
-##### LOL LAN
-
-```sh
-winget install RiotGames.LeagueOfLegends.LA1
 ```
 
 ### WSL (Windows Subsystem for Linux)
@@ -700,8 +515,6 @@ Para la instalación es recomendable seguir la [`guía oficial`](https://wiki.ar
 
 Otra distro basada en `Arch Linux` recomendable es [`ArchCraft`](https://archcraft.io/).
 
-### General
-
 Para conectar por wifi usamos `iwctl` con los comandos:
 
 ```sh
@@ -731,6 +544,8 @@ iwctl --passphrase <passphrase> station <name> connect SSID
 ```
 
 El gestor de paquetes por defecto en `Arch Linux` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
+
+### Paquetes
 
 #### Base
 
