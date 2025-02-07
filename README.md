@@ -253,7 +253,7 @@ winget install OpenJS.NodeJS.LTS
 
 ###### npm (node package manager)
 
-Con [`npm`](https://www.npmjs.com/) podemos instalar librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/),[`NuxtJS`](https://nuxt.com/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), [`gh-pages`](https://www.npmjs.com/package/gh-pages), entre otros, con el comando:
+Con [`npm`](https://www.npmjs.com/) podemos instalar librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/), [`NuxtJS`](https://nuxt.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), [`gh-pages`](https://www.npmjs.com/package/gh-pages), [`Vercel`](https://vercel.com/), [`Resend`](https://resend.com/), entre otros, con el comando:
 
 ```sh
 npm install <package-name>
@@ -415,6 +415,42 @@ Para [`Arch Linux`](https://archlinux.org/), [`Debian`](https://www.debian.org/)
 winget install Oracle.VirtualBox
 ```
 
+##### Microsoft Office LTSC Professional Plus 2024
+
+[Instructions](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy):
+
+1. Downloading the Office Deployment Tool from the Microsoft Download Center ([link](https://www.microsoft.com/en-us/download/details.aspx?id=49117)). Keep the "`Setup`" file and erase another files.
+
+2. Creating the configuration.xml file ([link](https://config.office.com/deploymentsettings)). Create, Export as "`Office Open XML`" and Named "`Configuration.xml`", then move the "`Configuration.xml`" file to the folder with the "`Setup`" file.
+
+3. Install Office LTSC 2024 by using the Office Deployment Tool. Open the folder containing the files in a `CMD` as Administrator and use the follow command:
+
+```sh
+setup /configure configuration.xml
+```
+
+PRODUCT KEY:
+
+|   Software   |        Activation KEY         |
+| :----------: | :---------------------------: |
+| Office 2024  | 2TDPW-NDQ7G-FMG99-DXQ7M-TX3T2 |
+| Project 2024 | D9GTG-NP7DV-T6JP3-B6B62-JB89R |
+|  Visio 2024  | YW66X-NH62M-G6YFP-B7KCT-WXGKQ |
+
+If this PRODUCT KEY (`Office`) does not work, use this command on a `PowerShell` as Administrator and select (`2`) and then (`1`):
+
+```sh
+irm https://get.activated.win | iex
+```
+
+Activating command [web](https://massgrave.dev/).
+
+##### Microsoft PowerBI
+
+```sh
+winget install Microsoft.PowerBI
+```
+
 ##### Google Chrome
 
 ```sh
@@ -427,6 +463,18 @@ winget install Google.Chrome
 winget install Mozilla.Firefox
 ```
 
+##### Microsoft Edge
+
+```sh
+winget install Microsoft.Edge
+```
+
+##### Microsoft Teams
+
+```sh
+winget install Microsoft.Teams
+```
+
 ##### Transmission
 
 ```sh
@@ -437,36 +485,6 @@ winget install Transmission.Transmission
 
 ```sh
 winget install Balena.Etcher
-```
-
-##### Nvidia GeForce Experience
-
-```sh
-winget install Nvidia.GeForceExperience
-```
-
-##### Spotify
-
-```sh
-winget install Spotify.Spotify
-```
-
-##### Steam
-
-```sh
-winget install Valve.Steam
-```
-
-##### Discord
-
-```sh
-winget install Discord.Discord
-```
-
-##### OBS Studio
-
-```sh
-winget install OBSProject.OBSStudio
 ```
 
 ##### TickTick
@@ -515,6 +533,42 @@ winget install 7zip.7zip
 
 ```sh
 winget install RARLab.WinRAR
+```
+
+##### Nvidia GeForce Experience
+
+```sh
+winget install Nvidia.GeForceExperience
+```
+
+##### OBS Studio
+
+```sh
+winget install OBSProject.OBSStudio
+```
+
+##### Spotify
+
+```sh
+winget install Spotify.Spotify
+```
+
+##### Discord
+
+```sh
+winget install Discord.Discord
+```
+
+##### Steam
+
+```sh
+winget install Valve.Steam
+```
+
+##### LOL LAN
+
+```sh
+winget install RiotGames.LeagueOfLegends.LA1
 ```
 
 ### WSL (Windows Subsystem for Linux)
@@ -966,9 +1020,13 @@ Start your coding adventure while gaming.
 
 Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
 
-#### [SQLbolt](https://sqlbolt.com/)
+#### [SQLite OnLine IDE](https://sqliteonline.com/)
 
-asd
+SQLite OnLine IDE.
+
+#### [Google Colab](https://colab.research.google.com/)
+
+Python notebook with Google.
 
 #### [HyperUI](https://www.hyperui.dev/)
 
@@ -989,6 +1047,10 @@ Draw Entity-Relationship Diagrams, Painlessly 😎.
 #### [WebVM](https://webvm.io/)
 
 WebVM is a virtual Linux environment running in the browser via WebAssembly.
+
+#### [daedalOS](https://dustinbrett.io/)
+
+A complete Operative System on the Browser.
 
 ### Cursos y Academias
 
@@ -1067,3 +1129,7 @@ The wargames offered by the OverTheWire community can help you to learn and prac
 #### [OffSec](https://www.offsec.com/)
 
 Elevating Cyber Workforce and Professional Development.
+
+#### [DS4B](https://ds4b.teachable.com/p/tu-primera-experiencia-como-analista-de-datos)
+
+Tu primera experiencia como analista de datos.
