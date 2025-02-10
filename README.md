@@ -145,13 +145,13 @@ winget install Docker.DockerDesktop
 winget install Microsoft.WindowsTerminal
 ```
 
-##### PowerShell
+Usaremos `PowerShell` como nuestro CLI:
 
 ```sh
 winget install Microsoft.PowerShell
 ```
 
-##### oh-my-posh (terminal prompt)
+Mejoramos el "`terminal prompt`" con `oh-my-posh`:
 
 ```sh
 winget install JanDeDobbeleer.OhMyPosh
@@ -163,36 +163,79 @@ Instalando `Terminal-Icons` para nuestros iconos en terminal:
 Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
-##### Starship (terminal prompt)
-
-Crea conflicto con `oh-my-posh`, no debe coincidir.
+Alternativa a `oh-my-posh`:
 
 ```sh
+# Starship
 winget install Starship.Starship
 ```
 
-##### lsd
+Otras herramientas necesarias:
 
 ```sh
+# Zig
+winget install zig.zig
+```
+
+```sh
+# lsd
 winget install lsd-rs.lsd
 ```
 
-##### bat
-
 ```sh
+# bat
 winget install sharkdp.bat
 ```
 
-##### fzf
-
 ```sh
+# fzf
 winget install junegunn.fzf
 ```
 
-#### WezTerm
+```sh
+# fd
+winget install sharkdp.fd
+```
 
 ```sh
+# ripgrep
+winget install BurntSushi.ripgrep.MSVC
+```
+
+```sh
+# tealdeer
+winget install dbrgn.tealdeer
+```
+
+```sh
+# cLink
+winget install chrisant996.Clink
+```
+
+```sh
+# zoxide
+winget install ajeetdsouza.zoxide
+```
+
+Alternativa a `WindowsTerminal`:
+
+```sh
+# WezTerm
 winget install wez.wezterm
+```
+
+#### Python 3.13
+
+```sh
+winget install Python.Python.3.13
+```
+
+Instalando paquetes:
+
+Con [`pip`](https://pypi.org/) (package installer for python) podemos instalar paquetes como librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Streamlit`](https://streamlit.io/), [`TensorFlow`](https://www.tensorflow.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
+
+```sh
+pip install <package-name>
 ```
 
 #### NodeJS
@@ -220,9 +263,9 @@ winget install DenoLand.Deno
 winget install Oven-sh.Bun
 ```
 
-##### npm (node package manager)
+Instalando paquetes:
 
-Con [`npm`](https://www.npmjs.com/) podemos instalar librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/), [`NuxtJS`](https://nuxt.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), [`gh-pages`](https://www.npmjs.com/package/gh-pages), [`Vercel`](https://vercel.com/), [`Resend`](https://resend.com/), entre otros, con el comando:
+Con [`npm`](https://www.npmjs.com/) (node package manager) podemos instalar paquetes como librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/), [`NuxtJS`](https://nuxt.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), [`gh-pages`](https://www.npmjs.com/package/gh-pages), [`Vercel`](https://vercel.com/), [`Resend`](https://resend.com/), entre otros, con el comando:
 
 ```sh
 npm install <package-name>
@@ -230,20 +273,6 @@ npm install <package-name>
 
 ```sh
 pnpm install <package-name>
-```
-
-#### Python 3.13
-
-```sh
-winget install Python.Python.3.13
-```
-
-##### pip (package installer for python)
-
-Con [`pip`](https://pypi.org/) podemos instalar librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Streamlit`](https://streamlit.io/), [`TensorFlow`](https://www.tensorflow.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
-
-```sh
-pip install <package-name>
 ```
 
 #### MongoDB
@@ -258,15 +287,13 @@ winget install MongoDB.Server
 winget install MongoDB.Shell
 ```
 
-##### MongoDB Compass
-
 ```sh
+# MongoDB Compass
 winget install MongoDB.Compass.Community
 ```
 
-##### Studio 3T
-
 ```sh
+# Studio 3T
 winget install 3TSoftwareLabs.Studio3T
 ```
 
@@ -276,13 +303,10 @@ winget install 3TSoftwareLabs.Studio3T
 winget install ApacheFriends.Xampp.8.2
 ```
 
-##### DBngin
-
-Database Version Management Tool ([web](https://dbngin.com/)).
-
-##### MySQL Workbench 8.0 CE
+- [DBngin](https://dbngin.com/) - Database Version Management Tool.
 
 ```sh
+# MySQL Workbench 8.0 CE
 winget install Oracle.MySQLWorkbench
 ```
 
@@ -294,10 +318,16 @@ winget install Neovim.Neovim
 
 Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno preparado como pueden ser: [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
 
-Para `LazyVim` es necesario instalar `Zig` para que funcione correctamente.
+Alternativas:
 
 ```sh
-winget install zig.zig
+# Vim
+winget install vim.vim
+```
+
+```sh
+# Helix
+winget install Helix.Helix
 ```
 
 #### Visual Studio Code
@@ -306,23 +336,32 @@ winget install zig.zig
 winget install Microsoft.VisualStudioCode
 ```
 
-#### JetBrains IDE's
-
-##### WebStorm
+Alternativas derivadas de `VS Code` con IA implementada:
 
 ```sh
+# Cursor
+winget install Anysphere.Cursor
+```
+
+```sh
+# Windsurf
+winget install Codeium.Windsurf
+```
+
+#### JetBrains IDE's
+
+```sh
+# WebStorm
 winget install JetBrains.WebStorm
 ```
 
-##### PyCharm Community
-
 ```sh
+# PyCharm Community
 winget install JetBrains.PyCharm.Community
 ```
 
-##### IntelliJ IDEA Community
-
 ```sh
+# IntelliJ IDEA Community
 winget install JetBrains.IntelliJIDEA.Community
 ```
 
@@ -348,9 +387,9 @@ choco install ngrok
 winget install Oracle.VirtualBox
 ```
 
-#### Microsoft
+#### Microsoft Office
 
-##### Office LTSC Professional Plus 2024
+- Instalando `Office LTSC Professional Plus 2024`:
 
 [Instructions](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy):
 
@@ -380,9 +419,10 @@ irm https://get.activated.win | iex
 
 Activating command [web](https://massgrave.dev/).
 
-##### Power BI
+- Instalando Power BI:
 
 ```sh
+# Power BI
 winget install Microsoft.PowerBI
 ```
 
@@ -554,7 +594,7 @@ Paquetes para uso general de la distro:
 ```sh
 sudo pacman -S udiskie nm-applet blueman-applet cbatticon
 sudo pacman -S pipewire wireplumber volumeicon
-sudo pacman -S kitty git vim nano neovim helix
+sudo pacman -S kitty ghostty git vim nano neovim helix
 sudo pacman -S zsh oh-my-zsh lsd bat fzf fd zoxide
 sudo pacman -S htop neofetch fastfetch
 sudo pacman -S ranger nemo dunst picom
@@ -661,290 +701,135 @@ sudo pacman -Syyu --needed --overwrite='*' <wanted-package>
 Soon...
 
 - Homebrew
-- Warp
-- Kitty
-- Ghostty
-- WezTerm
-- zsh
-- oh-my-zsh
-- Starship
-- Neovim
-- VS Code
-- VirtualBox
-- VMware Fusion
+- Warp, Kitty, Ghostty
+- zsh, oh-my-zsh, Starship
+- Neovim, VS Code
+- VirtualBox, VMware Fusion
 
 ## Recursos de interés
 
-### Documentación y libros
+- [Library Genesis](https://libgen.is/) - Get Books.
 
-#### [Library Genesis](https://libgen.is/)
+- [RoadMap](https://roadmap.sh/) - Developer RoadMaps.
 
-Get Books.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) - Resources for Developers, by Developers.
 
-#### [RoadMap](https://roadmap.sh/)
+- [El Arte del Terminal](https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md) - Aprende a usar la terminal.
 
-Developer RoadMaps.
+- [Gentleman Programming Book](https://the-amazing-gentleman-programming-book.vercel.app/) - "A clean programmer is the best kind of programmer" - by Alan Buscaglia.
 
-#### [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [Goal Kicker Books](https://books.goalkicker.com/) - Programming Notes for Professionals books.
 
-Resources for Developers, by Developers.
+- [eBooks Foundation](https://github.com/EbookFoundation/free-programming-books) - List of Free Learning Resources In Many Languages
 
-#### [El Arte del Terminal](https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md)
+- [Mejores prácticas de NodeJS](https://github.com/goldbergyoni/nodebestpractices/blob/spanish-translation/README.spanish.md) - Aquí encontrarás docenas de los mejores artículos sobre Node.JS.
 
-Aprende a usar la terminal.
+- [DevDocs](https://devdocs.io/) - DevDocs combines multiple API documentations...
 
-#### [Gentleman Programming Book](https://the-amazing-gentleman-programming-book.vercel.app/)
+- [Kitty Doc](https://sw.kovidgoyal.net/kitty/overview/#) - Kitty is designed for power keyboard users.
 
-"A clean programmer is the best kind of programmer" - by Alan Buscaglia.
+- [Vim Doc](https://vim.rtorr.com/) - Vim Cheat Sheet.
 
-#### [Goal Kicker Books](https://books.goalkicker.com/)
+- [Vimium Doc](https://vimium.github.io/) - Vim Cheat Sheet.
 
-Programming Notes for Professionals books.
+- [VIM Adventures](https://vim-adventures.com/) - Learning VIM while playing a game.
 
-#### [eBooks Foundation](https://github.com/EbookFoundation/free-programming-books)
+- [Hostinger](https://www.hostinger.com/) - Your website. Sorted.
 
-List of Free Learning Resources In Many Languages
+- [Github Pages](https://pages.github.com/) - Websites for you and your projects.
 
-#### [Mejores prácticas de NodeJS](https://github.com/goldbergyoni/nodebestpractices/blob/spanish-translation/README.spanish.md)
+- [Vercel](https://vercel.com/) - Your complete platform for the web.
 
-Aquí encontrarás docenas de los mejores artículos sobre Node.JS.
+- [Railway](https://railway.app/) - Shipping great products is hard. Scaling infrastructure is easy.
 
-#### [DevDocs](https://devdocs.io/)
+- [Resend](https://resend.com/) - Email for developers.
 
-DevDocs combines multiple API documentations...
+- [Brevo](https://www.brevo.com/) - Grow with our Email Marketing Platform & CRM suite.
 
-#### [Kitty Doc](https://sw.kovidgoyal.net/kitty/overview/#)
+- [SendGrid](https://sendgrid.com/) - Get your emails to the inbox—where they belong.
 
-Kitty is designed for power keyboard users.
+- [Firebase](https://firebase.google.com/) - Make your app the best it can be with Firebase and generative AI.
 
-#### [Vim Doc](https://vim.rtorr.com/)
+- [Supabase](https://supabase.com/) - Build in a weekend. Scale to millions.
 
-Vim Cheat Sheet.
+- [Cloudflare](https://www.cloudflare.com/) - Connect, protect, and build everywhere.
 
-#### [Vimium Doc](https://vimium.github.io/)
+- [V0 AI](https://v0.dev/) - AI-Generated UI on Demand.
 
-Vim Cheat Sheet.
+- [Bolt AI](https://bolt.new/) - AI-Generated UI on Demand.
 
-#### [VIM Adventures](https://vim-adventures.com/)
+- [PureCode AI](https://purecode.ai/) - AI-Generated UI on Demand.
 
-Learning VIM while playing a game.
+- [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
-### Códigos y herramientas
+- [WorldVectorLogo](https://worldvectorlogo.com/) - Download vector logos of brands you love.
 
-#### [Hostinger](https://www.hostinger.com/)
+- [Not-Paid](https://github.com/kleampa/not-paid) - Client did not pay? Add opacity...
 
-Your website. Sorted.
+- [QX Research Python](https://github.com/qxresearch/qxresearch-event-1) - GitHub repository featuring 50+ Python applications with only 10 lines of code!
 
-#### [Github Pages](https://pages.github.com/)
+- [Project Based Learning](https://github.com/practical-tutorials/project-based-learning) - A list of programming tutorials in which aspiring software developers learn how to build an application from scratch.
 
-Websites for you and your projects.
+- [ExcaliDraw](https://excalidraw.com/) - Schemas drawing tool.
 
-#### [Surge](https://surge.sh/)
+- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
-Static web publishing for Front-End Developers.
+- [NetBoot](https://netboot.xyz/) - Your favorite operating systems in one place.
 
-#### [Vercel](https://vercel.com/)
+- [DeepHacking](https://deephacking.tech/) - Hacking paper.
 
-Your complete platform for the web.
+- [CodeDex](https://www.codedex.io/) - Start your coding adventure while gaming.
 
-#### [Netlify](https://www.netlify.com/)
+- [Exercism](https://exercism.org/) - Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
 
-Connect everything. Build anything.
+- [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
 
-##### [Netlify Drop](https://app.netlify.com/drop)
+- [HyperUI](https://www.hyperui.dev/) - HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
 
-Drag & drop. It’s online.
+- [CSS Loaders](https://css-loaders.com/) - The Biggest Collection of Loading Animations
 
-#### [Railway](https://railway.app/)
+- [Material UI](https://mui.com/) - Move faster with intuitive React UI tools.
 
-Shipping great products is hard. Scaling infrastructure is easy.
+- [DB Diagram](https://dbdiagram.io/home) - Draw Entity-Relationship Diagrams, Painlessly 😎.
 
-#### [DigitalOcean](https://www.digitalocean.com/)
+- [WebVM](https://webvm.io/) - WebVM is a virtual Linux environment running in the browser via WebAssembly.
 
-The simplest cloud that scales with you.
+- [Lear X in Y Minutes](https://learnxinyminutes.com/) - Take a whirlwind tour of your next favorite language. Community-driven!
 
-#### [Resend](https://resend.com/)
+- [Full Stack Open (ES)](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
 
-Email for developers.
+- [W3Schools](https://www.w3schools.com/) - Learn to code with the world's largest web developer site.
 
-#### [Brevo](https://www.brevo.com/)
+- [CognitiveClass](https://cognitiveclass.ai/) - Get ahead in the tech industry and advance your career.
 
-Grow with our Email Marketing Platform & CRM suite.
+- [Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/) - Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
 
-#### [SendGrid](https://sendgrid.com/)
+- [Replit Python Course](https://replit.com/learn/100-days-of-python?utm_medium=referral&utm_campaign=100_days_of_code_python) - 100 Days of Code - The Complete Python Course.
 
-Get your emails to the inbox—where they belong.
+- [FreeCodeCamp](https://www.freecodecamp.org/) - Learn to code — for free. Build projects. Earn certifications.
 
-#### [Firebase](https://firebase.google.com/)
+- [Oracle Next Education](https://www.oracle.com/ar/education/oracle-next-education/) - Learn to code — for free. Build projects. Earn certifications.
 
-Make your app the best it can be with Firebase and generative AI.
+- [Open Bootcamp](https://open-bootcamp.com/) - Contenido gratuito que se adapta a ti.
 
-#### [Supabase](https://supabase.com/)
+- [MongoDB Certified](https://certificationprogramspain.splashthat.com/) - ...
 
-Build in a weekend. Scale to millions.
+- [Studio 3T Academy](https://studio3t.com/academy/) - ...
 
-#### [Cloudflare](https://www.cloudflare.com/)
+- [Google Actívate](https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es) - Desarrolla tu carrera profesional o expande tu empresa mediante cursos diseñados para fortalecer tu confianza y ayudarte a crecer.
 
-Connect, protect, and build everywhere.
+- [Microsoft Learn](https://learn.microsoft.com/en-us/training/) - ...
 
-#### [PureCode AI](https://purecode.ai/)
+- [FaztWeb](https://faztweb.com/) - Aprende a Desarrollar Proyectos Web.
 
-AI-Generated UI on Demand.
+- [HackTheBox](https://www.hackthebox.com/) - Your Cyber Performance Center.
 
-#### [React Icons](https://react-icons.github.io/react-icons/)
+- [Hack4U](https://hack4u.io/) - Aprende Ciberseguridad.
 
-Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+- [NetworkChuk Academy](https://academy.networkchuck.com/) - Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
 
-#### [WorldVectorLogo](https://worldvectorlogo.com/)
+- [OverTheWire](https://overthewire.org/wargames/) - The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
 
-Download vector logos of brands you love.
+- [OffSec](https://www.offsec.com/) - Elevating Cyber Workforce and Professional Development.
 
-#### [Not-Paid](https://github.com/kleampa/not-paid)
-
-Client did not pay? Add opacity...
-
-#### [QX Research Python](https://github.com/qxresearch/qxresearch-event-1)
-
-GitHub repository featuring 50+ Python applications with only 10 lines of code!
-
-#### [Project Based Learning](https://github.com/practical-tutorials/project-based-learning)
-
-A list of programming tutorials in which aspiring software developers learn how to build an application from scratch.
-
-#### [ExcaliDraw](https://excalidraw.com/)
-
-Schemas drawing tool.
-
-#### [DistroSea](https://distrosea.com/)
-
-Test drive Linux distros online!
-
-#### [NetBoot](https://netboot.xyz/)
-
-Your favorite operating systems in one place.
-
-#### [DeepHacking](https://deephacking.tech/)
-
-Hacking paper.
-
-#### [CodeDex](https://www.codedex.io/)
-
-Start your coding adventure while gaming.
-
-#### [Exercism](https://exercism.org/)
-
-Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
-
-#### [SQLite OnLine IDE](https://sqliteonline.com/)
-
-SQLite OnLine IDE.
-
-#### [Google Colab](https://colab.research.google.com/)
-
-Python notebook with Google.
-
-#### [HyperUI](https://www.hyperui.dev/)
-
-HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
-
-#### [CSS Loaders](https://css-loaders.com/)
-
-The Biggest Collection of Loading Animations
-
-#### [Material UI](https://mui.com/)
-
-Move faster with intuitive React UI tools.
-
-#### [DB Diagram](https://dbdiagram.io/home)
-
-Draw Entity-Relationship Diagrams, Painlessly 😎.
-
-#### [WebVM](https://webvm.io/)
-
-WebVM is a virtual Linux environment running in the browser via WebAssembly.
-
-#### [daedalOS](https://dustinbrett.io/)
-
-A complete Operative System on the Browser.
-
-### Cursos y Academias
-
-#### [Lear X in Y Minutes](https://learnxinyminutes.com/)
-
-Take a whirlwind tour of your next favorite language. Community-driven!
-
-#### [Full Stack Open (ES)](https://fullstackopen.com/es/)
-
-Inmersión Profunda en el Desarrollo Web Moderno.
-
-#### [W3Schools](https://www.w3schools.com/)
-
-Learn to code with the world's largest web developer site.
-
-#### [CognitiveClass](https://cognitiveclass.ai/)
-
-Get ahead in the tech industry and advance your career.
-
-#### [Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/)
-
-Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
-
-#### [Replit Python Course](https://replit.com/learn/100-days-of-python?utm_medium=referral&utm_campaign=100_days_of_code_python)
-
-100 Days of Code - The Complete Python Course.
-
-#### [FreeCodeCamp](https://www.freecodecamp.org/)
-
-Learn to code — for free. Build projects. Earn certifications.
-
-#### [Oracle Next Education](https://www.oracle.com/ar/education/oracle-next-education/)
-
-Learn to code — for free. Build projects. Earn certifications.
-
-#### [Open Bootcamp](https://open-bootcamp.com/)
-
-Contenido gratuito que se adapta a ti.
-
-#### [MongoDB Certified](https://certificationprogramspain.splashthat.com/)
-
-...
-
-#### [Studio 3T Academy](https://studio3t.com/academy/)
-
-...
-
-#### [Google Actívate](https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es)
-
-Desarrolla tu carrera profesional o expande tu empresa mediante cursos diseñados para fortalecer tu confianza y ayudarte a crecer.
-
-#### [Microsoft Learn](https://learn.microsoft.com/en-us/training/)
-
-...
-
-#### [FaztWeb](https://faztweb.com/)
-
-Aprende a Desarrollar Proyectos Web.
-
-#### [HackTheBox](https://www.hackthebox.com/)
-
-Your Cyber Performance Center.
-
-#### [Hack4U](https://hack4u.io/)
-
-Aprende Ciberseguridad.
-
-#### [NetworkChuk Academy](https://academy.networkchuck.com/)
-
-Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
-
-#### [OverTheWire](https://overthewire.org/wargames/)
-
-The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
-
-#### [OffSec](https://www.offsec.com/)
-
-Elevating Cyber Workforce and Professional Development.
-
-#### [DS4B](https://ds4b.teachable.com/p/tu-primera-experiencia-como-analista-de-datos)
-
-Tu primera experiencia como analista de datos.
+- [DS4B](https://ds4b.teachable.com/p/tu-primera-experiencia-como-analista-de-datos) - Tu primera experiencia como analista de datos.
