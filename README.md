@@ -170,7 +170,7 @@ Alternativa a `oh-my-posh`:
 winget install Starship.Starship
 ```
 
-Otras herramientas necesarias:
+Otras herramientas útiles:
 
 ```sh
 # Zig
@@ -251,7 +251,19 @@ Administrador de versiones:
 winget install Volta.Volta
 ```
 
-Alternativas:
+Instalando paquetes:
+
+Con [`npm`](https://www.npmjs.com/) (node package manager) podemos instalar paquetes como librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`React`](https://react.dev/), [`NextJS`](https://nextjs.org/), [`ExpressJS`](https://expressjs.com/), [`NestJS`](https://nestjs.com/), [`Hono`](https://hono.dev/), [`Mongoose`](https://mongoosejs.com/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), entre otros, con el comando:
+
+```sh
+npm install <package-name>
+```
+
+```sh
+pnpm install <package-name>
+```
+
+Alternativas a `NodeJS`:
 
 ```sh
 # Deno
@@ -261,18 +273,6 @@ winget install DenoLand.Deno
 ```sh
 # Bun
 winget install Oven-sh.Bun
-```
-
-Instalando paquetes:
-
-Con [`npm`](https://www.npmjs.com/) (node package manager) podemos instalar paquetes como librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`pnpm`](https://pnpm.io/), [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`WebPack`](https://webpack.js.org/), [`React`](https://react.dev/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`VueJS`](https://vuejs.org/), [`NuxtJS`](https://nuxt.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), [`bcryptjs`](https://www.npmjs.com/package/bcryptjs), [`cookie-parser`](https://www.npmjs.com/package/cookie-parser), [`jsonwebtoken`](https://www.npmjs.com/package/jsonwebtoken), [`zod`](https://www.npmjs.com/package/zod), [`gh-pages`](https://www.npmjs.com/package/gh-pages), [`Vercel`](https://vercel.com/), [`Resend`](https://resend.com/), entre otros, con el comando:
-
-```sh
-npm install <package-name>
-```
-
-```sh
-pnpm install <package-name>
 ```
 
 #### MongoDB
@@ -348,21 +348,41 @@ winget install Anysphere.Cursor
 winget install Codeium.Windsurf
 ```
 
+```sh
+# RunJS
+winget install lukehaas.RunJS
+```
+
+```sh
+# JupyterLab
+winget install ProjectJupyter.JupyterLab
+```
+
 #### JetBrains IDE's
 
 ```sh
-# WebStorm
+# WebStorm (JavaScript)
 winget install JetBrains.WebStorm
 ```
 
 ```sh
-# PyCharm Community
+# PyCharm Community (Python)
 winget install JetBrains.PyCharm.Community
 ```
 
 ```sh
-# IntelliJ IDEA Community
+# IntelliJ IDEA Community (Java)
 winget install JetBrains.IntelliJIDEA.Community
+```
+
+```sh
+# DataGrip (Databases)
+winget install JetBrains.DataGrip
+```
+
+```sh
+# DataSpell (Data Analysis)
+winget install JetBrains.DataSpell
 ```
 
 #### Spyder
@@ -708,31 +728,55 @@ Soon...
 
 ## Recursos de interés
 
+### Documentación y Cursos
+
 - [Library Genesis](https://libgen.is/) - Get Books.
 
-- [RoadMap](https://roadmap.sh/) - Developer RoadMaps.
-
-- [MDN Web Docs](https://developer.mozilla.org/en-US/) - Resources for Developers, by Developers.
-
-- [El Arte del Terminal](https://github.com/jlevy/the-art-of-command-line/blob/master/README-es.md) - Aprende a usar la terminal.
-
-- [Gentleman Programming Book](https://the-amazing-gentleman-programming-book.vercel.app/) - "A clean programmer is the best kind of programmer" - by Alan Buscaglia.
-
 - [Goal Kicker Books](https://books.goalkicker.com/) - Programming Notes for Professionals books.
-
-- [eBooks Foundation](https://github.com/EbookFoundation/free-programming-books) - List of Free Learning Resources In Many Languages
-
-- [Mejores prácticas de NodeJS](https://github.com/goldbergyoni/nodebestpractices/blob/spanish-translation/README.spanish.md) - Aquí encontrarás docenas de los mejores artículos sobre Node.JS.
-
-- [DevDocs](https://devdocs.io/) - DevDocs combines multiple API documentations...
 
 - [Kitty Doc](https://sw.kovidgoyal.net/kitty/overview/#) - Kitty is designed for power keyboard users.
 
 - [Vim Doc](https://vim.rtorr.com/) - Vim Cheat Sheet.
 
-- [Vimium Doc](https://vimium.github.io/) - Vim Cheat Sheet.
+- [Vimium Doc](https://vimium.github.io/) - Vim Cheat Sheet
+
+- [RoadMap](https://roadmap.sh/) - Developer RoadMaps.
+
+- [W3Schools](https://www.w3schools.com/) - Learn to code with the world's largest web developer site.
+
+- [Lear X in Y Minutes](https://learnxinyminutes.com/) - Take a whirlwind tour of your next favorite language. Community-driven!
+
+- [Full Stack Open (es)](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
 
 - [VIM Adventures](https://vim-adventures.com/) - Learning VIM while playing a game.
+
+- [CodeDex](https://www.codedex.io/) - Start your coding adventure while gaming.
+
+- [Exercism](https://exercism.org/) - Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
+
+- [CognitiveClass](https://cognitiveclass.ai/) - Get ahead in the tech industry and advance your career.
+
+- [Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/) - Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
+
+- [FreeCodeCamp](https://www.freecodecamp.org/) - Learn to code — for free. Build projects. Earn certifications.
+
+- [Open Bootcamp](https://open-bootcamp.com/) - Contenido gratuito que se adapta a ti.
+
+- [MongoDB Certified](https://certificationprogramspain.splashthat.com/) - Programa de Certificación MongoDB España.
+
+- [Studio 3T Academy](https://studio3t.com/academy/) - The fastest way to learn MongoDB.
+
+- [FaztWeb](https://faztweb.com/) - Aprende a Desarrollar Proyectos Web.
+
+- [HackTheBox](https://www.hackthebox.com/) - Your Cyber Performance Center.
+
+- [Hack4U](https://hack4u.io/) - Aprende Ciberseguridad.
+
+- [OverTheWire](https://overthewire.org/wargames/) - The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
+
+- [NetworkChuk Academy](https://academy.networkchuck.com/) - Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
+
+### Servicios
 
 - [Hostinger](https://www.hostinger.com/) - Your website. Sorted.
 
@@ -742,17 +786,25 @@ Soon...
 
 - [Railway](https://railway.app/) - Shipping great products is hard. Scaling infrastructure is easy.
 
+- [Render](https://render.com/) - Your fastest path to production.
+
+- [Fly](https://fly.io/) - A Public Cloud Built For Developers Who Ship.
+
+- [Cloudflare](https://www.cloudflare.com/) - Connect, protect, and build everywhere.
+
+- [MongoDB Atlas](https://www.mongodb.com/atlas) - The multi-cloud developer data platform.
+
+- [PlanetScale](https://planetscale.com/) - The database platform built for scale.
+
+- [Supabase](https://supabase.com/) - Build in a weekend. Scale to millions.
+
+- [Firebase](https://firebase.google.com/) - Make your app the best it can be with Firebase and generative AI.
+
 - [Resend](https://resend.com/) - Email for developers.
 
 - [Brevo](https://www.brevo.com/) - Grow with our Email Marketing Platform & CRM suite.
 
 - [SendGrid](https://sendgrid.com/) - Get your emails to the inbox—where they belong.
-
-- [Firebase](https://firebase.google.com/) - Make your app the best it can be with Firebase and generative AI.
-
-- [Supabase](https://supabase.com/) - Build in a weekend. Scale to millions.
-
-- [Cloudflare](https://www.cloudflare.com/) - Connect, protect, and build everywhere.
 
 - [V0 AI](https://v0.dev/) - AI-Generated UI on Demand.
 
@@ -764,72 +816,18 @@ Soon...
 
 - [WorldVectorLogo](https://worldvectorlogo.com/) - Download vector logos of brands you love.
 
-- [Not-Paid](https://github.com/kleampa/not-paid) - Client did not pay? Add opacity...
-
-- [QX Research Python](https://github.com/qxresearch/qxresearch-event-1) - GitHub repository featuring 50+ Python applications with only 10 lines of code!
-
-- [Project Based Learning](https://github.com/practical-tutorials/project-based-learning) - A list of programming tutorials in which aspiring software developers learn how to build an application from scratch.
-
 - [ExcaliDraw](https://excalidraw.com/) - Schemas drawing tool.
-
-- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
-
-- [NetBoot](https://netboot.xyz/) - Your favorite operating systems in one place.
-
-- [DeepHacking](https://deephacking.tech/) - Hacking paper.
-
-- [CodeDex](https://www.codedex.io/) - Start your coding adventure while gaming.
-
-- [Exercism](https://exercism.org/) - Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
-
-- [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
-
-- [HyperUI](https://www.hyperui.dev/) - HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
-
-- [CSS Loaders](https://css-loaders.com/) - The Biggest Collection of Loading Animations
-
-- [Material UI](https://mui.com/) - Move faster with intuitive React UI tools.
 
 - [DB Diagram](https://dbdiagram.io/home) - Draw Entity-Relationship Diagrams, Painlessly 😎.
 
-- [WebVM](https://webvm.io/) - WebVM is a virtual Linux environment running in the browser via WebAssembly.
+- [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
 
-- [Lear X in Y Minutes](https://learnxinyminutes.com/) - Take a whirlwind tour of your next favorite language. Community-driven!
+- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
-- [Full Stack Open (ES)](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
+- [CSS Loaders](https://css-loaders.com/) - The Biggest Collection of Loading Animations
 
-- [W3Schools](https://www.w3schools.com/) - Learn to code with the world's largest web developer site.
+- [HyperUI](https://www.hyperui.dev/) - HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
 
-- [CognitiveClass](https://cognitiveclass.ai/) - Get ahead in the tech industry and advance your career.
+- [Material UI](https://mui.com/) - Move faster with intuitive React UI tools.
 
-- [Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/) - Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
-
-- [Replit Python Course](https://replit.com/learn/100-days-of-python?utm_medium=referral&utm_campaign=100_days_of_code_python) - 100 Days of Code - The Complete Python Course.
-
-- [FreeCodeCamp](https://www.freecodecamp.org/) - Learn to code — for free. Build projects. Earn certifications.
-
-- [Oracle Next Education](https://www.oracle.com/ar/education/oracle-next-education/) - Learn to code — for free. Build projects. Earn certifications.
-
-- [Open Bootcamp](https://open-bootcamp.com/) - Contenido gratuito que se adapta a ti.
-
-- [MongoDB Certified](https://certificationprogramspain.splashthat.com/) - ...
-
-- [Studio 3T Academy](https://studio3t.com/academy/) - ...
-
-- [Google Actívate](https://skillshop.exceedlms.com/student/catalog/list?category_ids=7880&locale=es) - Desarrolla tu carrera profesional o expande tu empresa mediante cursos diseñados para fortalecer tu confianza y ayudarte a crecer.
-
-- [Microsoft Learn](https://learn.microsoft.com/en-us/training/) - ...
-
-- [FaztWeb](https://faztweb.com/) - Aprende a Desarrollar Proyectos Web.
-
-- [HackTheBox](https://www.hackthebox.com/) - Your Cyber Performance Center.
-
-- [Hack4U](https://hack4u.io/) - Aprende Ciberseguridad.
-
-- [NetworkChuk Academy](https://academy.networkchuck.com/) - Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
-
-- [OverTheWire](https://overthewire.org/wargames/) - The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
-
-- [OffSec](https://www.offsec.com/) - Elevating Cyber Workforce and Professional Development.
-
-- [DS4B](https://ds4b.teachable.com/p/tu-primera-experiencia-como-analista-de-datos) - Tu primera experiencia como analista de datos.
+- [ShadCN UI](https://ui.shadcn.com/) - Build your component library.
