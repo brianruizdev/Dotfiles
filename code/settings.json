@@ -35,6 +35,7 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
+  "git.autofetch": true,
   "database-client.autoSync": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.variableTypes": true,

@@ -104,6 +104,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) ⭐
 
+- [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) ⭐
 
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
