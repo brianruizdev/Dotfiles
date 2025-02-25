@@ -19,7 +19,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) ⭐
 
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) ⭐
-- 📦 [Spanish Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish) ⭐
+
+- - [Spanish Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish) 📦 ⭐
 
 - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 
@@ -41,25 +42,31 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) ⭐
 
+- [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
+
+- - [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) 📦
+
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) ⭐
 
-- 📦 [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) ⭐
+- - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) 📦 ⭐
 
-- [GitHub Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) ⭐
+- [GitHub Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
 - [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 - [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
 
+- [JSON Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
+
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) ⭐
 
-- 📦 [Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-keymap) ⭐
+- - [Jupyter Cell Tags](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-cell-tags) 📦 ⭐
 
-- 📦 [Jupyter Cell Tags](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-cell-tags) ⭐
+- - [Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-keymap) 📦 ⭐
 
-- 📦 [Jupyter Slide Show](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-slideshow) ⭐
+- - [Jupyter Notebook Renderers](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-renderers) 📦 ⭐
 
-- 📦 [Jupyter Notebook Renderers](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-renderers) ⭐
+- - [Jupyter Slide Show](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-slideshow) 📦 ⭐
 
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
@@ -69,11 +76,11 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) ⭐
 
-- [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) ⭐
+- [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
 
 - [MySQL](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2) ⭐
 
-- 📦 [Database Client JDBC](https://marketplace.visualstudio.com/items?itemName=cweijan.dbclient-jdbc) ⭐
+- - [Database Client JDBC](https://marketplace.visualstudio.com/items?itemName=cweijan.dbclient-jdbc) 📦 ⭐
 
 - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
@@ -91,9 +98,9 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) ⭐
 
-- 📦 [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) ⭐
+- - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) 📦 ⭐
 
-- 📦 [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy) ⭐
+- - [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy) 📦 ⭐
 
 - [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) ⭐
 

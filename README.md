@@ -217,7 +217,7 @@ winget install chrisant996.Clink
 winget install ajeetdsouza.zoxide
 ```
 
-Alternativa a `WindowsTerminal`:
+Alternativa:
 
 ```sh
 # WezTerm
@@ -232,7 +232,7 @@ winget install Python.Python.3.13
 
 Instalando paquetes:
 
-Con [`pip`](https://pypi.org/) (package installer for python) podemos instalar paquetes como librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Tkinter`](https://docs.python.org/es/3/library/tkinter.html), [`PyGame`](https://www.pygame.org/), [`Kivy`](https://kivy.org/), [`Streamlit`](https://streamlit.io/), [`TensorFlow`](https://www.tensorflow.org/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
+Con [`pip`](https://pypi.org/) (package installer for python) podemos instalar paquetes como librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Streamlit`](https://streamlit.io/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
 
 ```sh
 pip install <package-name>
@@ -253,17 +253,13 @@ winget install Volta.Volta
 
 Instalando paquetes:
 
-Con [`npm`](https://www.npmjs.com/) (node package manager) podemos instalar paquetes como librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`Vite`](https://vite.dev/), [`Farm`](https://www.farmfe.org/), [`RsPack`](https://rspack.dev/), [`React`](https://react.dev/), [`NextJS`](https://nextjs.org/), [`ExpressJS`](https://expressjs.com/), [`NestJS`](https://nestjs.com/), [`Hono`](https://hono.dev/), [`Mongoose`](https://mongoosejs.com/), [`TailwindCSS`](https://tailwindcss.com/), [`Bootstrap`](https://getbootstrap.com/), [`Expo`](https://expo.dev/), [`nodemon`](https://nodemon.io/), [`cors`](https://www.npmjs.com/package/cors), [`morgan`](https://www.npmjs.com/package/morgan), entre otros, con el comando:
+Con [`npm`](https://www.npmjs.com/) (node package manager) podemos instalar paquetes como librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`Vite`](https://vite.dev/), [`RsPack`](https://rspack.dev/), [`React`](https://react.dev/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`TailwindCSS`](https://tailwindcss.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), entre otros, con el comando:
 
 ```sh
 npm install <package-name>
 ```
 
-```sh
-pnpm install <package-name>
-```
-
-Alternativas a `NodeJS`:
+Alternativas:
 
 ```sh
 # Deno
@@ -297,17 +293,65 @@ winget install MongoDB.Compass.Community
 winget install 3TSoftwareLabs.Studio3T
 ```
 
-#### XAMPP 8.2
+```sh
+# DbGate
+winget install JanProchazka.dbgate
+```
+
+#### SQL
+
+Instalando entorno [`XAMPP 8.2`](https://www.apachefriends.org/):
 
 ```sh
 winget install ApacheFriends.Xampp.8.2
 ```
 
-- [DBngin](https://dbngin.com/) - Database Version Management Tool.
+Isntalando [DBngin](https://dbngin.com/) - Database Version Management Tool.
+
+Instalando [`MySQL`](https://www.mysql.com/):
+
+```sh
+# MySQL
+winget install Oracle.MySQL
+```
 
 ```sh
 # MySQL Workbench 8.0 CE
 winget install Oracle.MySQLWorkbench
+```
+
+```sh
+# SQLectron
+winget install sqlectron.sqlectron-gui
+```
+
+Instalando [`PostgreSQL`](https://www.postgresql.org/):
+
+```sh
+# PostgreSQL
+winget install PostgreSQL.PostgreSQL.17
+```
+
+```sh
+# pgAdmin
+winget install PostgreSQL.pgAdmin
+```
+
+Instalando [`SQLite`](https://www.sqlite.org/):
+
+```sh
+# SQLite
+winget install SQLite.SQLite
+```
+
+```sh
+# SQLiteStudio
+winget install PawelSalawa.SQLiteStudio
+```
+
+```sh
+# DB Browser for SQLite
+winget install DBBrowserForSQLite.DBBrowserForSQLite
 ```
 
 #### Neovim
@@ -336,7 +380,7 @@ winget install Helix.Helix
 winget install Microsoft.VisualStudioCode
 ```
 
-Alternativas derivadas de `VS Code` con IA implementada:
+Alternativas derivadas con IA implementada:
 
 ```sh
 # Cursor
@@ -349,13 +393,8 @@ winget install Codeium.Windsurf
 ```
 
 ```sh
-# RunJS
-winget install lukehaas.RunJS
-```
-
-```sh
-# JupyterLab
-winget install ProjectJupyter.JupyterLab
+# Trae
+winget install
 ```
 
 #### JetBrains IDE's
@@ -391,16 +430,6 @@ winget install JetBrains.DataSpell
 winget install Spyder.Spyder
 ```
 
-#### Ngrok
-
-```sh
-winget install Ngrok.Ngrok
-```
-
-```sh
-choco install ngrok
-```
-
 #### Oracle Virtual Box
 
 ```sh
@@ -409,41 +438,74 @@ winget install Oracle.VirtualBox
 
 #### Microsoft Office
 
-- Instalando `Office LTSC Professional Plus 2024`:
+1. Download the [`Office Deployment Tool`](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy) from the [`Microsoft Download Center`](https://www.microsoft.com/en-us/download/details.aspx?id=49117). Keep the "`Setup.exe`" file and erase another files.
 
-[Instructions](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy):
-
-1. Downloading the Office Deployment Tool from the Microsoft Download Center ([web](https://www.microsoft.com/en-us/download/details.aspx?id=49117)). Keep the "`Setup`" file and erase another files.
-
-2. Creating the `configuration.xml` file ([web](https://config.office.com/deploymentsettings)). Create, export as "`Office Open XML`" and name it "`Configuration.xml`", then move the "`Configuration.xml`" file to the folder with the "`Setup`" file.
+2. Create and export the [`Office Customization Tool`](https://config.office.com/deploymentsettings) file as "`Office Open XML`" and name it "`Configuration`", then move the "`Configuration.xml`" file to the folder with the "`Setup.exe`" file.
 
 3. Install Office LTSC 2024 by using the Office Deployment Tool. Open the folder containing the files in a `CMD` as Administrator and use the follow command:
 
+   ```sh
+   setup /configure configuration.xml
+   ```
+
+4. Use this command on a `PowerShell` as Administrator and select (`2`) and then (`1`):
+
+   ```sh
+   irm https://get.activated.win | iex
+   ```
+
+También se puede instalar el `Office Development Tool` como paquete de `winget`, aunque no es una instalación personalizada:
+
 ```sh
-setup /configure configuration.xml
+winget install Microsoft.OfficeDeploymentTool
 ```
 
-PRODUCT KEY:
-
-|   Software   |        Activation KEY         |
-| :----------: | :---------------------------: |
-| Office 2024  | 2TDPW-NDQ7G-FMG99-DXQ7M-TX3T2 |
-| Project 2024 | D9GTG-NP7DV-T6JP3-B6B62-JB89R |
-|  Visio 2024  | YW66X-NH62M-G6YFP-B7KCT-WXGKQ |
-
-If this PRODUCT KEY (`Office`) does not work, use this command on a `PowerShell` as Administrator and select (`2`) and then (`1`):
+- Instalando [`Power BI`](https://app.powerbi.com/):
 
 ```sh
-irm https://get.activated.win | iex
-```
-
-Activating command [web](https://massgrave.dev/).
-
-- Instalando Power BI:
-
-```sh
-# Power BI
 winget install Microsoft.PowerBI
+```
+
+#### Softwares Útiles
+
+```sh
+# RunJS
+winget install lukehaas.RunJS
+```
+
+```sh
+# Ngrok
+winget install Ngrok.Ngrok
+```
+
+```sh
+# OBS Studio
+winget install OBSProject.OBSStudio
+```
+
+```sh
+# Chrome
+winget install Google.Chrome
+```
+
+```sh
+# Proton VPN
+winget install Proton.ProtonVPN
+```
+
+```sh
+# TunnelBear
+winget install TunnelBear.TunnelBear
+```
+
+```sh
+# Transmission
+winget install Transmission.Transmission
+```
+
+```sh
+# balenaEtcher
+winget install Balena.Etcher
 ```
 
 ### WSL (Windows Subsystem for Linux)
@@ -565,6 +627,65 @@ wsl --install kali-linux
 ```sh
 # Winget
 winget install OffSec.KaliLinux
+```
+
+### Window Manager Setup
+
+[Reference](https://www.youtube.com/watch?v=G0_wVLhI-Ds&list=WL&index=7&ab_channel=CodingwithSphere)
+
+#### PowerToys
+
+```sh
+winget install Microsoft.PowerToys
+```
+
+#### GlazeWM
+
+[Setup](https://github.com/glzr-io/glazewm)
+
+```sh
+winget install glzr-io.glazewm
+```
+
+```sh
+choco install glazewm
+```
+
+```sh
+scoop bucket add extras
+scoop install extras/glazewm
+```
+
+#### Zebar
+
+[Setup](https://github.com/glzr-io/zebar)
+
+```sh
+winget install glzr-io.zebar
+```
+
+#### TranslucentTB
+
+```sh
+winget install CharlesMilette.TranslucentTB
+```
+
+#### PasteBar
+
+```sh
+winget install PasteBar.PasteBar
+```
+
+#### Rainmeter
+
+```sh
+winget install Rainmeter.Rainmeter
+```
+
+#### Lively Wallpaper
+
+```sh
+winget install rocksdanister.LivelyWallpaper
 ```
 
 ## GNU Linux - Arch Linux
@@ -723,7 +844,7 @@ Soon...
 - Homebrew
 - Warp, Kitty, Ghostty
 - zsh, oh-my-zsh, Starship
-- Neovim, VS Code
+- Neovim, VS Code, Ducklet
 - VirtualBox, VMware Fusion
 
 ## Recursos de interés
@@ -745,6 +866,8 @@ Soon...
 - [W3Schools](https://www.w3schools.com/) - Learn to code with the world's largest web developer site.
 
 - [Lear X in Y Minutes](https://learnxinyminutes.com/) - Take a whirlwind tour of your next favorite language. Community-driven!
+
+- [Retos de Programación](https://retosdeprogramacion.com/) - Ejercicios y proyectos para mejorar tu lógica de programación.
 
 - [Full Stack Open (es)](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
 
@@ -776,7 +899,15 @@ Soon...
 
 - [NetworkChuk Academy](https://academy.networkchuck.com/) - Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
 
+- [OffSec](https://www.offsec.com/) - Elevating Cyber Workforce and Professional Development.
+
+- [DataScience4Business](https://ds4b.teachable.com/) - Tu primera experiencia como analista de datos.
+
+- [DataNerd](https://datanerd.tech/) - 🛠️ Top Skills for Data Nerds 🤓.
+
 ### Servicios
+
+- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
 - [Hostinger](https://www.hostinger.com/) - Your website. Sorted.
 
@@ -790,6 +921,8 @@ Soon...
 
 - [Fly](https://fly.io/) - A Public Cloud Built For Developers Who Ship.
 
+- [FL0](https://www.fl0.com/) - Taking your product to the next level.
+
 - [Cloudflare](https://www.cloudflare.com/) - Connect, protect, and build everywhere.
 
 - [MongoDB Atlas](https://www.mongodb.com/atlas) - The multi-cloud developer data platform.
@@ -798,31 +931,51 @@ Soon...
 
 - [Supabase](https://supabase.com/) - Build in a weekend. Scale to millions.
 
+- [PocketBase](https://pocketbase.io/) - Open Source backend in 1 file.
+
 - [Firebase](https://firebase.google.com/) - Make your app the best it can be with Firebase and generative AI.
 
 - [Resend](https://resend.com/) - Email for developers.
+
+- [New.email](https://new.email/) - The new way to build emails.
 
 - [Brevo](https://www.brevo.com/) - Grow with our Email Marketing Platform & CRM suite.
 
 - [SendGrid](https://sendgrid.com/) - Get your emails to the inbox—where they belong.
 
-- [V0 AI](https://v0.dev/) - AI-Generated UI on Demand.
+- [Twilio](https://www.twilio.com/en-us) - Get RCS on Twilio Messaging—no code changes required.
 
-- [Bolt AI](https://bolt.new/) - AI-Generated UI on Demand.
+- [Stripe](https://stripe.com/) - Financial infrastructure to grow your revenue.
 
-- [PureCode AI](https://purecode.ai/) - AI-Generated UI on Demand.
+- [V0](https://v0.dev/) - AI-Generated UI on Demand.
 
-- [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+- [Bolt AI](https://bolt.new/) - Prompt, run, edit, and deploy full-stack web and mobile apps.
+
+- [PureCode AI](https://purecode.ai/) - The World's First Front-End Ready Copilot.
+
+- [Lovable](https://lovable.dev/) - Idea to app in seconds.
+
+- [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons.
 
 - [WorldVectorLogo](https://worldvectorlogo.com/) - Download vector logos of brands you love.
+
+- [Google Colab](https://colab.research.google.com/) - Colab notebooks allow you to combine executable code and rich text in a single document.
+
+- [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
 
 - [ExcaliDraw](https://excalidraw.com/) - Schemas drawing tool.
 
 - [DB Diagram](https://dbdiagram.io/home) - Draw Entity-Relationship Diagrams, Painlessly 😎.
 
-- [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
+- [JSON Crack](https://jsoncrack.com/) - Visualize JSON into interactive graphs.
 
-- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
+- [ToDiagram](https://todiagram.com/) - Convert JSON into interactive diagrams.
+
+- [Lorem Picsum](https://picsum.photos/) - The Lorem Ipsum for photos.
+
+- [HTMLrev](https://htmlrev.com/) - 1500+ free HTML templates.
+
+- [Tailwind Awesome](https://www.tailwindawesome.com/) - Discover the best Tailwind templates & UI kits.
 
 - [CSS Loaders](https://css-loaders.com/) - The Biggest Collection of Loading Animations
 
