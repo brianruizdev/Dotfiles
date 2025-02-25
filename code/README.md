@@ -32,6 +32,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 
+- [Django](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django)
+
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
@@ -55,6 +57,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 - [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 - [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+
+- [Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja)
 
 - [JSON Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
 
