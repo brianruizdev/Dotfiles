@@ -28,7 +28,10 @@ A continuación estarán algunas de las herramientas que podrían acomodarse a t
 
 ### Gestores de Paquetes
 
-#### [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+> [!TIP]
+> Es recomendable instalar paquetes como administrador!
+
+#### Winget
 
 The WinGet command line tool enables developers to discover, install, upgrade, remove and configure applications on Windows computers.
 
@@ -62,7 +65,7 @@ winget install <package-id>
 
 Existe otros gestores de paquetes llamados:
 
-#### [Chocolatey](https://chocolatey.org/)
+#### Chocolatey
 
 The Package Manager for Windows Modern Software Automation
 
@@ -80,7 +83,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-#### [Scoop](https://scoop.sh/)
+#### Scoop
 
 A command-line installer for Windows
 
@@ -139,10 +142,21 @@ winget install JesseDuffield.Lazydocker
 winget install Docker.DockerDesktop
 ```
 
-#### Windows Terminal
+#### Terminal
 
 ```sh
+# Windows Terminal
 winget install Microsoft.WindowsTerminal
+```
+
+```sh
+# WezTerm
+winget install wez.wezterm
+```
+
+```sh
+# Warp
+winget install Warp.Warp
 ```
 
 Usaremos `PowerShell` como nuestro CLI:
@@ -151,23 +165,22 @@ Usaremos `PowerShell` como nuestro CLI:
 winget install Microsoft.PowerShell
 ```
 
-Mejoramos el "`terminal prompt`" con `oh-my-posh`:
+Mejoramos el `prompt` con `oh-my-posh` ó `Starship`:
 
 ```sh
+# OhMyPosh
 winget install JanDeDobbeleer.OhMyPosh
 ```
-
-Instalando `Terminal-Icons` para nuestros iconos en terminal:
-
-```sh
-Install-Module -Name Terminal-Icons -Repository PSGallery
-```
-
-Alternativa a `oh-my-posh`:
 
 ```sh
 # Starship
 winget install Starship.Starship
+```
+
+Instalamos `Terminal-Icons` para nuestros iconos en terminal:
+
+```sh
+Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
 Otras herramientas útiles:
@@ -217,25 +230,28 @@ winget install chrisant996.Clink
 winget install ajeetdsouza.zoxide
 ```
 
-Alternativa:
-
-```sh
-# WezTerm
-winget install wez.wezterm
-```
-
 #### Python 3.13
 
 ```sh
 winget install Python.Python.3.13
 ```
 
-Instalando paquetes:
-
-Con [`pip`](https://pypi.org/) (package installer for python) podemos instalar paquetes como librerías y frameworks de [`Python`](https://www.python.org/) como [`NumPy`](https://numpy.org/), [`Pandas`](https://pandas.pydata.org/), [`PyTorch`](https://pytorch.org/), [`Matplotlib`](https://matplotlib.org/), [`Streamlit`](https://streamlit.io/), [`Django`](https://www.djangoproject.com/), [`FastAPI`](https://fastapi.tiangolo.com/), [`Flask`](https://flask.palletsprojects.com/), [`FastHTML`](https://fastht.ml/), [`ReactPy`](https://reactpy.dev/), [`Flet`](https://flet.dev/), entre otros, con el comando:
+Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python`como `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Streamlit`, `Django`, `FastAPI`, `Flask`, `FastHTML`, `ReactPy`, `Flet`, entre otros, con el comando:
 
 ```sh
 pip install <package-name>
+```
+
+Una alternativa para instalar `Python` es el entorno `Anaconda`:
+
+```sh
+# Anaconda
+winget install Anaconda.Anaconda3
+```
+
+```sh
+# Miniconda
+winget install Anaconda.Miniconda3
 ```
 
 #### NodeJS
@@ -251,15 +267,13 @@ Administrador de versiones:
 winget install Volta.Volta
 ```
 
-Instalando paquetes:
-
-Con [`npm`](https://www.npmjs.com/) (node package manager) podemos instalar paquetes como librerías y frameworks de [`NodeJS`](https://nodejs.org/) como [`Vite`](https://vite.dev/), [`RsPack`](https://rspack.dev/), [`React`](https://react.dev/), [`ExpressJS`](https://expressjs.com/), [`Mongoose`](https://mongoosejs.com/), [`TailwindCSS`](https://tailwindcss.com/), [`NextJS`](https://nextjs.org/), [`NestJS`](https://nestjs.com/), [`Hono`](https://hono.dev/), [`Expo`](https://expo.dev/), entre otros, con el comando:
+Con `npm` (node package manager) podemos instalar paquetes como librerías y frameworks de `NodeJS` como `Vite`, `RsPack`, `React`, `ExpressJS`, `Mongoose`, `TailwindCSS`, `NextJS`, `NestJS`, `Hono`, `Expo`, entre otros, con el comando:
 
 ```sh
 npm install <package-name>
 ```
 
-Alternativas:
+Alternativas a `NodeJS`:
 
 ```sh
 # Deno
@@ -300,15 +314,16 @@ winget install JanProchazka.dbgate
 
 #### SQL
 
-Instalando entorno [`XAMPP 8.2`](https://www.apachefriends.org/):
+- Entorno `XAMPP 8.2`:
 
 ```sh
+# Entorno XAMPP 8.2
 winget install ApacheFriends.Xampp.8.2
 ```
 
-Isntalando [DBngin](https://dbngin.com/) - Database Version Management Tool.
+- [`DBngin`](https://dbngin.com/) - Database Version Management Tool.
 
-Instalando [`MySQL`](https://www.mysql.com/):
+- `MySQL`:
 
 ```sh
 # MySQL
@@ -325,7 +340,7 @@ winget install Oracle.MySQLWorkbench
 winget install sqlectron.sqlectron-gui
 ```
 
-Instalando [`PostgreSQL`](https://www.postgresql.org/):
+- `PostgreSQL`:
 
 ```sh
 # PostgreSQL
@@ -337,7 +352,7 @@ winget install PostgreSQL.PostgreSQL.17
 winget install PostgreSQL.pgAdmin
 ```
 
-Instalando [`SQLite`](https://www.sqlite.org/):
+- `SQLite`:
 
 ```sh
 # SQLite
@@ -354,33 +369,21 @@ winget install PawelSalawa.SQLiteStudio
 winget install DBBrowserForSQLite.DBBrowserForSQLite
 ```
 
-#### Neovim
+#### Editores & IDEs
 
 ```sh
+# Neovim
 winget install Neovim.Neovim
-```
 
-Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno preparado como pueden ser: [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
-
-Alternativas:
-
-```sh
-# Vim
-winget install vim.vim
+# LazyVim
+git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
+Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
 ```
 
 ```sh
-# Helix
-winget install Helix.Helix
-```
-
-#### Visual Studio Code
-
-```sh
+# Visual Studio Code
 winget install Microsoft.VisualStudioCode
 ```
-
-Alternativas derivadas con IA implementada:
 
 ```sh
 # Cursor
@@ -394,23 +397,21 @@ winget install Codeium.Windsurf
 
 ```sh
 # Trae
-winget install
+winget install ByteDance.Trae
 ```
 
-#### JetBrains IDE's
-
 ```sh
-# WebStorm (JavaScript)
+# WebStorm
 winget install JetBrains.WebStorm
 ```
 
 ```sh
-# PyCharm Community (Python)
+# PyCharm Community
 winget install JetBrains.PyCharm.Community
 ```
 
 ```sh
-# IntelliJ IDEA Community (Java)
+# IntelliJ IDEA Community
 winget install JetBrains.IntelliJIDEA.Community
 ```
 
@@ -424,16 +425,14 @@ winget install JetBrains.DataGrip
 winget install JetBrains.DataSpell
 ```
 
-#### Spyder
-
 ```sh
-winget install Spyder.Spyder
+# RunJS
+winget install lukehaas.RunJS
 ```
 
-#### Oracle Virtual Box
-
 ```sh
-winget install Oracle.VirtualBox
+# Spyder
+winget install Spyder.Spyder
 ```
 
 #### Microsoft Office
@@ -460,7 +459,7 @@ También se puede instalar el `Office Development Tool` como paquete de `winget`
 winget install Microsoft.OfficeDeploymentTool
 ```
 
-- Instalando [`Power BI`](https://app.powerbi.com/):
+- Instalando `Power BI`:
 
 ```sh
 winget install Microsoft.PowerBI
@@ -469,8 +468,13 @@ winget install Microsoft.PowerBI
 #### Softwares Útiles
 
 ```sh
-# RunJS
-winget install lukehaas.RunJS
+# PC Manager
+winget install Microsoft.PCManager
+```
+
+```sh
+# PowerToys
+winget install Microsoft.PowerToys
 ```
 
 ```sh
@@ -489,13 +493,18 @@ winget install Google.Chrome
 ```
 
 ```sh
+# Zen
+winget install Zen-Team.Zen-Browser
+```
+
+```sh
 # Proton VPN
 winget install Proton.ProtonVPN
 ```
 
 ```sh
-# TunnelBear
-winget install TunnelBear.TunnelBear
+# Oracle Virtual Box
+winget install Oracle.VirtualBox
 ```
 
 ```sh
@@ -506,6 +515,26 @@ winget install Transmission.Transmission
 ```sh
 # balenaEtcher
 winget install Balena.Etcher
+```
+
+```sh
+# StartAllBack
+winget install StartIsBack.StartAllBack
+```
+
+```sh
+# TranslucentTB
+winget install CharlesMilette.TranslucentTB
+```
+
+```sh
+# GlazeWM
+winget install glzr-io.glazewm
+```
+
+```sh
+# Zebar
+winget install glzr-io.zebar
 ```
 
 ### WSL (Windows Subsystem for Linux)
@@ -566,7 +595,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-#### [Homebrew](https://brew.sh/)
+#### Homebrew
 
 Podemos instalar `Homebrew` ejecutando el siguiente comando para copiar el repositorio.
 
@@ -581,7 +610,7 @@ Una vez instalado `Homebrew` podemos instalar paquetes en `WLS` con:
 brew install <package-name>
 ```
 
-#### [Nala](https://gitlab.com/volian/nala)
+#### Nala
 
 `Nala` es un gestor de paquetes mejorado para `Debian` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas, por lo que el proceso tomará su tiempo.
 
@@ -597,7 +626,7 @@ Una vez instalado `Nala` podemos instalar paquetes en `Debian` con:
 sudo nala install <package-name>
 ```
 
-#### [Zellij](https://zellij.dev/) en WezTerm
+#### Zellij en WezTerm
 
 ```sh
 # Bash on Linux Terminal (WSL)
@@ -615,9 +644,13 @@ brew install zellij
 sudo apt install neovim
 ```
 
-Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+```sh
+# LazyVim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+```
 
-#### [Kali Linux](https://www.kali.org/)
+#### Kali Linux
 
 ```sh
 # WSL (recomendado)
@@ -629,72 +662,13 @@ wsl --install kali-linux
 winget install OffSec.KaliLinux
 ```
 
-### Window Manager Setup
-
-[Reference](https://www.youtube.com/watch?v=G0_wVLhI-Ds&list=WL&index=7&ab_channel=CodingwithSphere)
-
-#### PowerToys
-
-```sh
-winget install Microsoft.PowerToys
-```
-
-#### GlazeWM
-
-[Setup](https://github.com/glzr-io/glazewm)
-
-```sh
-winget install glzr-io.glazewm
-```
-
-```sh
-choco install glazewm
-```
-
-```sh
-scoop bucket add extras
-scoop install extras/glazewm
-```
-
-#### Zebar
-
-[Setup](https://github.com/glzr-io/zebar)
-
-```sh
-winget install glzr-io.zebar
-```
-
-#### TranslucentTB
-
-```sh
-winget install CharlesMilette.TranslucentTB
-```
-
-#### PasteBar
-
-```sh
-winget install PasteBar.PasteBar
-```
-
-#### Rainmeter
-
-```sh
-winget install Rainmeter.Rainmeter
-```
-
-#### Lively Wallpaper
-
-```sh
-winget install rocksdanister.LivelyWallpaper
-```
-
 ## GNU Linux - Arch Linux
 
-A continuación estarán algunos paquetes y herramientas que podrían acomodarse al entorno de tu distro de [`Arch Linux`](https://archlinux.org/).
+A continuación estarán algunos paquetes y herramientas que podrían acomodarse al entorno de tu distro de `Arch Linux`.
 
-Para la instalación es recomendable seguir la [`guía oficial`](https://wiki.archlinux.org/title/Installation_guide), buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
+Para la instalación es recomendable seguir la `guía oficial`, buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
 
-Otra distro basada en `Arch Linux` recomendable es [`ArchCraft`](https://archcraft.io/).
+Otra distro basada en `Arch Linux` recomendable es `ArchCraft`.
 
 Para conectar por wifi usamos `iwctl` con los comandos:
 
@@ -744,7 +718,11 @@ sudo pacman -S unclutter scrot solaar papyrus
 sudo paru -S lazygit
 ```
 
-Podemos mejorar nuestro entorno de [`Neovim`](https://neovim.io/) usando algún entorno pre [`LazyVim`](https://www.lazyvim.org/) (recomendado), [`NvChad`](https://nvchad.com/), [`AstroVim`](https://astronvim.com/), [`LunarVim`](https://www.lunarvim.org/).
+```sh
+# LazyVim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+```
 
 > [!TIP]
 > Una vez tengamos instalada una base podemos instalar los dotfiles de [ML4W](https://www.ml4w.com/) desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
@@ -775,7 +753,7 @@ pacman -S virtualbox-guest-utils mesa mesa-libgl
 
 ### Repositorios
 
-#### [Paru](https://aur.archlinux.org/packages/paru)
+Instalando repo [Paru](https://aur.archlinux.org/packages/paru):
 
 ```sh
 sudo pacman -S --needed base-devel
@@ -784,7 +762,7 @@ cd paru
 makepkg -si
 ```
 
-#### [Yay](https://aur.archlinux.org/packages/yay)
+Instalando repo [Yay](https://aur.archlinux.org/packages/yay):
 
 ```sh
 sudo pacman -S --needed git base-devel
@@ -793,7 +771,7 @@ cd yay
 makepkg -si
 ```
 
-#### [BlackArch](https://blackarch.org/downloads.html)
+Instalando repo [BlackArch](https://blackarch.org/downloads.html):
 
 BlackArch Linux is compatible with existing/normal Arch installations. It acts as an unofficial user repository. Below you will find instructions on how to install BlackArch in this manner.
 
@@ -849,17 +827,11 @@ Soon...
 
 ## Recursos de interés
 
-### Documentación y Cursos
+### Guías y Cursos
 
 - [Library Genesis](https://libgen.is/) - Get Books.
 
 - [Goal Kicker Books](https://books.goalkicker.com/) - Programming Notes for Professionals books.
-
-- [Kitty Doc](https://sw.kovidgoyal.net/kitty/overview/#) - Kitty is designed for power keyboard users.
-
-- [Vim Doc](https://vim.rtorr.com/) - Vim Cheat Sheet.
-
-- [Vimium Doc](https://vimium.github.io/) - Vim Cheat Sheet
 
 - [RoadMap](https://roadmap.sh/) - Developer RoadMaps.
 
@@ -870,6 +842,8 @@ Soon...
 - [Retos de Programación](https://retosdeprogramacion.com/) - Ejercicios y proyectos para mejorar tu lógica de programación.
 
 - [Full Stack Open (es)](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
+
+- [SQLBolt](https://sqlbolt.com/) - Learn SQL with simple, interactive exercises.
 
 - [VIM Adventures](https://vim-adventures.com/) - Learning VIM while playing a game.
 
@@ -888,6 +862,10 @@ Soon...
 - [MongoDB Certified](https://certificationprogramspain.splashthat.com/) - Programa de Certificación MongoDB España.
 
 - [Studio 3T Academy](https://studio3t.com/academy/) - The fastest way to learn MongoDB.
+
+- [Netboot](https://netboot.xyz/) - your favorite operating systems in one place.
+
+- [Typecraft](https://typecraft.dev/) - be a better nerd.
 
 - [FaztWeb](https://faztweb.com/) - Aprende a Desarrollar Proyectos Web.
 
@@ -962,6 +940,8 @@ Soon...
 - [Google Colab](https://colab.research.google.com/) - Colab notebooks allow you to combine executable code and rich text in a single document.
 
 - [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
+
+- [Freesets](https://freesets.dev/) - Free usefull tools.
 
 - [ExcaliDraw](https://excalidraw.com/) - Schemas drawing tool.
 

@@ -14,6 +14,10 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
+- [Biome](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
+
+- [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+
 - [Bootstrap 5 Quick Snippets](https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode)
 
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) ⭐
@@ -111,6 +115,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) ⭐
+
+- [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
