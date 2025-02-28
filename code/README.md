@@ -52,6 +52,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - - [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) 📦
 
+- [Gemini Code Assist](https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist)
+
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) ⭐
 
 - - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) 📦 ⭐

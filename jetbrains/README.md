@@ -12,27 +12,33 @@ Los IDEs de JetBrains son de uso regulado en su versión gratuita, que no todos 
 > [!NOTE]
 > No es necesario instalar todo lo presentado a continuación.
 
-Te dejo algunas de las extensiones que impulsaran tu desempeño.
+Te dejo algunas de las extensiones que impulsaran tu desempeño:
 
 > [!TIP]
 > Las extensiones que tengan una estrella (⭐) son las recomendadas.
 
-## [Database Tools and SQL for WebStorm](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstor) ⭐
+- [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044-atom-material-icons)
 
-JetBrains s.r.o.
-The Database Tools and SQL plugin for WebStorm allows you to query, create, and manage databases and provides full SQL language support.
+- [CSV Editor](https://plugins.jetbrains.com/plugin/10037-csv-editor)
 
-## [GitHub Copilot](https://plugins.jetbrains.com/plugin/17718-github-copilot) ⭐
+- [Database Tools and SQL for WebStorm](https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstor)
 
-GitHub
-GitHub Copilot is your AI-powered coding assistant, offering assistance throughout your software development journey.
+- [Dart](https://plugins.jetbrains.com/plugin/6351-dart)
 
-## [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim) ⭐
+- [Docker](https://plugins.jetbrains.com/plugin/7724-docker)
 
-JetBrains s.r.o.
-Vim engine for JetBrains IDEs
+- [Gemini Code Assist](https://plugins.jetbrains.com/plugin/24198-gemini-code-assist)
 
-## [One Dark Theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme) ⭐
+- [GitHub Copilot](https://plugins.jetbrains.com/plugin/17718-github-copilot)
 
-Mark Skelton
-One Dark theme for JetBrains.
+- [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
+
+- [One Dark Theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme)
+
+- [Python Community Edition](https://plugins.jetbrains.com/plugin/7322-python-community-edition)
+
+- [Toml](https://plugins.jetbrains.com/plugin/8195-toml)
+
+- [.​env files](https://plugins.jetbrains.com/plugin/9525--env-files)
+
+- [.​ignore](https://plugins.jetbrains.com/plugin/7495--ignore)
