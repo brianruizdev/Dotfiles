@@ -48,7 +48,6 @@
   //   "notebook.defaultFormatter": "esbenp.prettier-vscode",
   //   "prettier.tabWidth": 4,
   //   "prettier.useTabs": true,
-
   "editor.stickyScroll.enabled": false,
   "editor.colorDecorators": false,
   "editor.codeLens": false,
@@ -83,6 +82,7 @@
   "files.autoSave": "afterDelay",
   "update.mode": "none",
   "extensions.ignoreRecommendations": true,
+
   "console-ninja.featureSet": "Community",
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
     "live-server-extension": true,

@@ -63,7 +63,27 @@ winget install <package-name>
 winget install <package-id>
 ```
 
-Existe otros gestores de paquetes llamados:
+#### WinUtil
+
+Chris Titus Tech's Windows Utility
+
+This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates. I am extremely picky about any contributions to keep this project clean and efficient.
+
+Official Github page [here](https://github.com/christitustech/winutil).
+
+Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
+
+Launch Command:
+
+```sh
+# Stable Branch (Recommended)
+irm "https://christitus.com/win" | iex
+```
+
+```sh
+# Dev Branch
+irm "https://christitus.com/windev" | iex
+```
 
 #### Chocolatey
 
@@ -435,7 +455,21 @@ winget install lukehaas.RunJS
 winget install Spyder.Spyder
 ```
 
-#### Microsoft Office
+#### Microsoft Tools
+
+- Esenciales:
+
+```sh
+# PC Manager
+winget install Microsoft.PCManager
+```
+
+```sh
+# PowerToys
+winget install Microsoft.PowerToys
+```
+
+- Instalando `Office 2024`:
 
 1. Download the [`Office Deployment Tool`](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy) from the [`Microsoft Download Center`](https://www.microsoft.com/en-us/download/details.aspx?id=49117). Keep the "`Setup.exe`" file and erase another files.
 
@@ -468,18 +502,13 @@ winget install Microsoft.PowerBI
 #### Softwares Útiles
 
 ```sh
-# PC Manager
-winget install Microsoft.PCManager
-```
-
-```sh
-# PowerToys
-winget install Microsoft.PowerToys
-```
-
-```sh
 # Ngrok
 winget install Ngrok.Ngrok
+```
+
+```sh
+# Steam
+winget install Valve.Steam
 ```
 
 ```sh
@@ -488,13 +517,23 @@ winget install OBSProject.OBSStudio
 ```
 
 ```sh
+# TickTick
+winget install Appest.TickTick
+```
+
+```sh
+# Obsidian
+winget install Obsidian.Obsidian
+```
+
+```sh
 # Chrome
 winget install Google.Chrome
 ```
 
 ```sh
-# Zen
-winget install Zen-Team.Zen-Browser
+# Firefox
+winget install Mozilla.Firefox
 ```
 
 ```sh
@@ -503,7 +542,7 @@ winget install Proton.ProtonVPN
 ```
 
 ```sh
-# Oracle Virtual Box
+# VirtualBox
 winget install Oracle.VirtualBox
 ```
 
@@ -517,23 +556,70 @@ winget install Transmission.Transmission
 winget install Balena.Etcher
 ```
 
+#### Customizing Windows
+
 ```sh
-# StartAllBack
+# ShareX (better screenshots)
+winget install ShareX.ShareX
+```
+
+```sh
+# AltSnap (moving windows)
+winget install AltSnap.AltSnap
+```
+
+```sh
+# Everything (looking files)
+winget install voidtools.Everything
+```
+
+```sh
+# Flow Launcher (search bar)
+winget install Flow-Launcher.Flow-Launcher
+```
+
+```sh
+# Listary (search bar)
+winget install Bopsoft.Listary
+```
+
+```sh
+# StartAllBack (taskbar config)
 winget install StartIsBack.StartAllBack
 ```
 
 ```sh
-# TranslucentTB
+# Start11 (taskbar config)
+winget install Stardock.Start11
+```
+
+```sh
+# TranslucentTB (transparent taskbar)
 winget install CharlesMilette.TranslucentTB
 ```
 
 ```sh
-# GlazeWM
+# Lively Wallpaper (live wallpapers)
+winget install rocksdanister.LivelyWallpaper
+```
+
+```sh
+# Sucrose Wallpaper Engine (live wallpapers)
+winget install Taiizor.SucroseWallpaperEngine
+```
+
+```sh
+# Rainmeter (custom gadgets)
+winget install Rainmeter.Rainmeter
+```
+
+```sh
+# GlazeWM (window manager)
 winget install glzr-io.glazewm
 ```
 
 ```sh
-# Zebar
+# Zebar (GlazeWM bar)
 winget install glzr-io.zebar
 ```
 
@@ -924,14 +1010,6 @@ Soon...
 - [Twilio](https://www.twilio.com/en-us) - Get RCS on Twilio Messaging—no code changes required.
 
 - [Stripe](https://stripe.com/) - Financial infrastructure to grow your revenue.
-
-- [V0](https://v0.dev/) - AI-Generated UI on Demand.
-
-- [Bolt AI](https://bolt.new/) - Prompt, run, edit, and deploy full-stack web and mobile apps.
-
-- [PureCode AI](https://purecode.ai/) - The World's First Front-End Ready Copilot.
-
-- [Lovable](https://lovable.dev/) - Idea to app in seconds.
 
 - [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons.
 

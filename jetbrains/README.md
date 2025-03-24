@@ -27,8 +27,6 @@ Te dejo algunas de las extensiones que impulsaran tu desempeño:
 
 - [Docker](https://plugins.jetbrains.com/plugin/7724-docker)
 
-- [Gemini Code Assist](https://plugins.jetbrains.com/plugin/24198-gemini-code-assist)
-
 - [GitHub Copilot](https://plugins.jetbrains.com/plugin/17718-github-copilot)
 
 - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
