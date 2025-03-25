@@ -63,13 +63,13 @@ winget install <package-name>
 winget install <package-id>
 ```
 
-#### WinUtil
+#### CTT WinUtil
 
 Chris Titus Tech's Windows Utility
 
 This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates. I am extremely picky about any contributions to keep this project clean and efficient.
 
-Official Github page [here](https://github.com/christitustech/winutil).
+Official [Github](https://github.com/christitustech/winutil).
 
 Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
 
@@ -574,12 +574,12 @@ winget install voidtools.Everything
 ```
 
 ```sh
-# Flow Launcher (search bar)
+# Flow Launcher (app launcher)
 winget install Flow-Launcher.Flow-Launcher
 ```
 
 ```sh
-# Listary (search bar)
+# Listary (file manager tool)
 winget install Bopsoft.Listary
 ```
 
@@ -609,7 +609,7 @@ winget install Taiizor.SucroseWallpaperEngine
 ```
 
 ```sh
-# Rainmeter (custom gadgets)
+# Rainmeter (gadgets)
 winget install Rainmeter.Rainmeter
 ```
 
