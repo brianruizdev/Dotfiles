@@ -63,28 +63,6 @@ winget install <package-name>
 winget install <package-id>
 ```
 
-#### CTT WinUtil
-
-Chris Titus Tech's Windows Utility
-
-This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates. I am extremely picky about any contributions to keep this project clean and efficient.
-
-Official [Github](https://github.com/christitustech/winutil).
-
-Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
-
-Launch Command:
-
-```sh
-# Stable Branch (Recommended)
-irm "https://christitus.com/win" | iex
-```
-
-```sh
-# Dev Branch
-irm "https://christitus.com/windev" | iex
-```
-
 #### Chocolatey
 
 The Package Manager for Windows Modern Software Automation
@@ -111,6 +89,28 @@ A command-line installer for Windows
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
+
+#### CTT WinUtil
+
+Chris Titus Tech's Windows Utility
+
+This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates. I am extremely picky about any contributions to keep this project clean and efficient.
+
+Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
+
+Launch Command:
+
+```sh
+# Stable Branch (Recommended)
+irm "https://christitus.com/win" | iex
+```
+
+```sh
+# Dev Branch
+irm "https://christitus.com/windev" | iex
+```
+
+Official [Github](https://github.com/christitustech/winutil).
 
 ### Instalando Paquetes
 
@@ -920,6 +920,8 @@ Soon...
 - [Goal Kicker Books](https://books.goalkicker.com/) - Programming Notes for Professionals books.
 
 - [RoadMap](https://roadmap.sh/) - Developer RoadMaps.
+
+- [DevDocs](https://devdocs.io/) - DevDocs combines multiple API documentations in a fast, organized, and searchable interface.
 
 - [W3Schools](https://www.w3schools.com/) - Learn to code with the world's largest web developer site.
 
