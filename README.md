@@ -256,7 +256,7 @@ winget install ajeetdsouza.zoxide
 winget install Python.Python.3.13
 ```
 
-Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python`como `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Streamlit`, `Django`, `FastAPI`, `Flask`, `FastHTML`, `ReactPy`, `Flet`, entre otros, con el comando:
+Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Tkinter`, `Streamlit`, `Django`, `FastAPI`, `Flask`, `FastHTML`, `ReactPy`, `Flet`, entre otros, con el comando:
 
 ```sh
 pip install <package-name>
@@ -973,6 +973,8 @@ Soon...
 
 ### Servicios
 
+- [DeskMate](https://desksmate.com/) - Programming Languages cheat sheet Mat Store.
+
 - [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
 - [Hostinger](https://www.hostinger.com/) - Your website. Sorted.
@@ -1012,6 +1014,34 @@ Soon...
 - [Twilio](https://www.twilio.com/en-us) - Get RCS on Twilio Messaging—no code changes required.
 
 - [Stripe](https://stripe.com/) - Financial infrastructure to grow your revenue.
+
+- [Figma](https://www.figma.com/) - Think bigger. Build faster.
+
+- [Bubble](https://bubble.io/) - Meet AI-powered visual development.
+
+- [WeWeb](https://www.weweb.io/) - Build production-grade web applications 10x faster.
+
+- [WebFlow](https://webflow.com/) - Your site should do more than look good.
+
+- [FlutterFlow](https://www.flutterflow.io/) - Build Better. Launch Faster.
+
+- [Draftbit](https://draftbit.com/) - Create any app, 10x faster.
+
+- [Adalo](https://www.adalo.com/) - Build a Mobile App for Your Business — No Coding Required.
+
+- [Bravo Studio](https://www.bravostudio.app/) - Figma to app, accelerated by AI.
+
+- [Airtable](https://www.airtable.com/) - Digital operations for the AI era.
+
+- [Lovable](https://lovable.dev/) - Idea to app in seconds.
+
+- [v0](https://v0.dev/) - What can I help you ship?
+
+- [bolt.new](https://bolt.new/) - What do you want to build?
+
+- [PureCode AI](https://purecode.ai/) - The World's First Front-End Ready Copilot.
+
+- [Same](https://same.dev/) - Copy web pages.
 
 - [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons.
 
