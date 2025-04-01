@@ -31,6 +31,18 @@
   //   "git.decorations.enabled": false,
   //   "scm.diffDecorations": "none",
 
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.builtinCompletions": {
+    "pwshCode": true,
+    "pwshGit": true
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "files.autoSave": "afterDelay",
+  "update.mode": "none",
+  "extensions.ignoreRecommendations": true,
+
   "editor.lineNumbers": "relative",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -75,13 +87,6 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
-
-  "terminal.integrated.env.windows": {},
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "emmet.triggerExpansionOnTab": true,
-  "files.autoSave": "afterDelay",
-  "update.mode": "none",
-  "extensions.ignoreRecommendations": true,
 
   "console-ninja.featureSet": "Community",
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
