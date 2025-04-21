@@ -32,6 +32,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 
+- [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
+
 - [Data Wrangler](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.datawrangler)
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
@@ -123,6 +125,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) ⭐
+
+- [VSCode Animations](https://marketplace.visualstudio.com/items?itemName=BrandonKirbyson.vscode-animations)
 
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 

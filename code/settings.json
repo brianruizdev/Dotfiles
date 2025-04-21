@@ -88,6 +88,11 @@
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
 
+  "vscode_custom_css.imports": [
+    "file:///c:/Users/brian/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "animations.Enabled": true,
+  "animations.Install-Method": "Custom CSS and JS",
   "console-ninja.featureSet": "Community",
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
     "live-server-extension": true,

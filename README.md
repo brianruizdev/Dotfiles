@@ -81,15 +81,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-#### Scoop
-
-A command-line installer for Windows
-
-```sh
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-```
-
 #### CTT WinUtil
 
 Chris Titus Tech's Windows Utility
@@ -285,6 +276,21 @@ Administrador de versiones:
 ```sh
 # Volta
 winget install Volta.Volta
+```
+
+```sh
+# NVM (NodeVersionManager) for Windows
+winget install CoreyButler.NVMforWindows
+```
+
+```sh
+# Fast Node Manager
+winget install Schniz.fnm
+```
+
+```sh
+# Node Version Switcher
+winget install jasongin.nvs
 ```
 
 Con `npm` (node package manager) podemos instalar paquetes como librerías y frameworks de `NodeJS` como `Vite`, `RsPack`, `React`, `ExpressJS`, `Mongoose`, `TailwindCSS`, `NextJS`, `NestJS`, `Hono`, `Expo`, entre otros, con el comando:
@@ -537,8 +543,23 @@ winget install Mozilla.Firefox
 ```
 
 ```sh
+# Zen
+winget install Zen-Team.Zen-Browser
+```
+
+```sh
 # Proton VPN
 winget install Proton.ProtonVPN
+```
+
+```sh
+# TunnelBear
+winget install TunnelBear.TunnelBear
+```
+
+```sh
+# GIMP 3
+winget install GIMP.GIMP.3
 ```
 
 ```sh
@@ -556,7 +577,22 @@ winget install Transmission.Transmission
 winget install Balena.Etcher
 ```
 
+```sh
+# Figma
+winget install Figma.Figma
+```
+
+```sh
+# WebStudio
+winget install Webstudio.Webstudio
+```
+
 #### Customizing Windows
+
+```sh
+# Files
+winget install FilesCommunity.Files
+```
 
 ```sh
 # ShareX (better screenshots)
@@ -908,7 +944,7 @@ Soon...
 - Homebrew
 - Warp, Kitty, Ghostty
 - zsh, oh-my-zsh, Starship
-- Neovim, VS Code, Ducklet
+- Neovim, VS Code, Ducklet, Nova
 - VirtualBox, VMware Fusion
 
 ## Recursos de interés
@@ -977,6 +1013,8 @@ Soon...
 
 - [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
+- [Firebase Studio](https://firebase.studio/) - The full stack AI workspace.
+
 - [Hostinger](https://www.hostinger.com/) - Your website. Sorted.
 
 - [Github Pages](https://pages.github.com/) - Websites for you and your projects.
@@ -1023,6 +1061,8 @@ Soon...
 
 - [WebFlow](https://webflow.com/) - Your site should do more than look good.
 
+- [WebStudio](https://webstudio.is/) - Custom frontend without custom code.
+
 - [FlutterFlow](https://www.flutterflow.io/) - Build Better. Launch Faster.
 
 - [Draftbit](https://draftbit.com/) - Create any app, 10x faster.
@@ -1055,7 +1095,13 @@ Soon...
 
 - [ExcaliDraw](https://excalidraw.com/) - Schemas drawing tool.
 
-- [DB Diagram](https://dbdiagram.io/home) - Draw Entity-Relationship Diagrams, Painlessly 😎.
+- [SQL Playground](https://sqlplayground.app/) - Create easily online SQL sandbox with SQL Playground.
+
+- [Run SQL](https://runsql.com/) - Test your SQL queries easily 😎.
+
+- [DB Diagram](https://dbdiagram.io/) - Draw Entity-Relationship Diagrams, Painlessly 😎.
+
+- [CharDB](https://chartdb.io/) - Visualize your DB via one-single query.
 
 - [JSON Crack](https://jsoncrack.com/) - Visualize JSON into interactive graphs.
 
