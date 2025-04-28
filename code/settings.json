@@ -7,13 +7,12 @@
   "material-icon-theme.hidesExplorerArrows": true,
   "workbench.productIconTheme": "material-product-icons",
 
-  //   "workbench.activityBar.location": "hidden",
-  //   "workbench.sideBar.location": "right",
-  //   "workbench.editor.showTabs": "single",
-  //   "workbench.statusBar.visible": false,
-
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  //   "workbench.editor.showTabs": "single",
+  //   "workbench.statusBar.visible": false,
   //   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
   "workbench.tree.enableStickyScroll": false,
