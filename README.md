@@ -523,6 +523,12 @@ winget install OBSProject.OBSStudio
 ```
 
 ```sh
+# SteamLabs
+winget install Streamlabs.StreamlabsOBS
+winget install Streamlabs.Streamlabs
+```
+
+```sh
 # TickTick
 winget install Appest.TickTick
 ```
@@ -585,6 +591,12 @@ winget install Figma.Figma
 ```sh
 # WebStudio
 winget install Webstudio.Webstudio
+```
+
+```sh
+# SpeedTest
+winget install Ookla.Speedtest.Desktop
+winget install Ookla.Speedtest.CLI
 ```
 
 #### Customizing Windows
@@ -1006,6 +1018,14 @@ Soon...
 - [DataScience4Business](https://ds4b.teachable.com/) - Tu primera experiencia como analista de datos.
 
 - [DataNerd](https://datanerd.tech/) - 🛠️ Top Skills for Data Nerds 🤓.
+
+- [Guía Entrevistas](https://github.com/DevCaress/guia-entrevistas-de-programacion) - Guía para entrevistas técnicas como Ingeniero de software.
+
+- [LenguajeHTML](https://lenguajehtml.com/) - Guía lenguajes Front.
+
+- [KodeKlouds Labs](https://kodekloud.com/free-labs) - Free Labs.
+
+- [ShipFree](https://shipfree.idee8.agency/) - Ship your startup in days, not weeks.
 
 ### Servicios
 
