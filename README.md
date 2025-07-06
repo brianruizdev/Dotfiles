@@ -29,6 +29,7 @@ A continuación estarán algunas de las herramientas que podrían acomodarse a t
 ### Gestores de Paquetes
 
 > [!TIP]
+> Primero debemos tener actualizado todo en la Microsoft Store.
 > Es recomendable instalar paquetes como administrador!
 
 #### Winget
@@ -105,6 +106,47 @@ Official [Github](https://github.com/christitustech/winutil).
 
 ### Instalando Paquetes
 
+#### Terminal
+
+```sh
+# Windows Terminal
+winget install Microsoft.WindowsTerminal
+```
+
+```sh
+# WezTerm
+winget install wez.wezterm
+```
+
+```sh
+# Warp
+winget install Warp.Warp
+```
+
+Usaremos `PowerShell` como nuestro CLI:
+
+```sh
+winget install Microsoft.PowerShell
+```
+
+Mejoramos el `prompt` con `oh-my-posh` ó `Starship`:
+
+```sh
+# OhMyPosh
+winget install JanDeDobbeleer.OhMyPosh
+```
+
+```sh
+# Starship
+winget install Starship.Starship
+```
+
+Instalamos `Terminal-Icons` para nuestros iconos en terminal:
+
+```sh
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
 #### Git
 
 ```sh
@@ -153,48 +195,7 @@ winget install JesseDuffield.Lazydocker
 winget install Docker.DockerDesktop
 ```
 
-#### Terminal
-
-```sh
-# Windows Terminal
-winget install Microsoft.WindowsTerminal
-```
-
-```sh
-# WezTerm
-winget install wez.wezterm
-```
-
-```sh
-# Warp
-winget install Warp.Warp
-```
-
-Usaremos `PowerShell` como nuestro CLI:
-
-```sh
-winget install Microsoft.PowerShell
-```
-
-Mejoramos el `prompt` con `oh-my-posh` ó `Starship`:
-
-```sh
-# OhMyPosh
-winget install JanDeDobbeleer.OhMyPosh
-```
-
-```sh
-# Starship
-winget install Starship.Starship
-```
-
-Instalamos `Terminal-Icons` para nuestros iconos en terminal:
-
-```sh
-Install-Module -Name Terminal-Icons -Repository PSGallery
-```
-
-Otras herramientas útiles:
+#### CLI Tools
 
 ```sh
 # Zig
@@ -513,6 +514,11 @@ winget install Ngrok.Ngrok
 ```
 
 ```sh
+# iCloud
+winget install Apple.iCloud
+```
+
+```sh
 # Steam
 winget install Valve.Steam
 ```
@@ -551,6 +557,16 @@ winget install Mozilla.Firefox
 ```sh
 # Zen
 winget install Zen-Team.Zen-Browser
+```
+
+```sh
+# Spotify
+winget install Spotify.Spotify
+```
+
+```sh
+# Discord
+winget install Discord.Discord
 ```
 
 ```sh
