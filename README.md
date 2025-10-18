@@ -242,10 +242,10 @@ winget install chrisant996.Clink
 winget install ajeetdsouza.zoxide
 ```
 
-#### Python 3.13
+#### Python
 
 ```sh
-winget install Python.Python.3.13
+winget install Python.Python.3.14
 ```
 
 Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Tkinter`, `Streamlit`, `Django`, `FastAPI`, `Flask`, `FastHTML`, `ReactPy`, `Flet`, entre otros, con el comando:
@@ -648,6 +648,11 @@ winget install Bopsoft.Listary
 ```
 
 ```sh
+# Fluent Search (app launcher)
+winget install BlastApps.FluentSearch
+```
+
+```sh
 # StartAllBack (taskbar config)
 winget install StartIsBack.StartAllBack
 ```
@@ -685,6 +690,16 @@ winget install glzr-io.glazewm
 ```sh
 # Zebar (GlazeWM bar)
 winget install glzr-io.zebar
+```
+
+```sh
+# Seelen UI
+winget install Seelen.SeelenUI
+```
+
+```sh
+# Komorebi
+winget install LGUG2Z.komorebi
 ```
 
 ### WSL (Windows Subsystem for Linux)

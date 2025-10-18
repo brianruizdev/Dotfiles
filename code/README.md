@@ -30,6 +30,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [Console Ninja](https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja) ⭐
 
+- [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers)
+
 - [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 
 - [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
