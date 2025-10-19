@@ -833,7 +833,7 @@ A continuación estarán algunos paquetes y herramientas que podrían acomodarse
 
 Para la instalación es recomendable seguir la `guía oficial`, buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
 
-Otra distro basada en `Arch Linux` recomendable es `ArchCraft`.
+Otras distros basada en `Arch Linux` recomendables son `ArchCraft` y `Omarchy`.
 
 Para conectar por wifi usamos `iwctl` con los comandos:
 
