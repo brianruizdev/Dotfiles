@@ -88,7 +88,7 @@ Chris Titus Tech's Windows Utility
 
 This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates. I am extremely picky about any contributions to keep this project clean and efficient.
 
-Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
+WinUtil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
 
 Launch Command:
 
@@ -833,7 +833,20 @@ A continuación estarán algunos paquetes y herramientas que podrían acomodarse
 
 Para la instalación es recomendable seguir la `guía oficial`, buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
 
-Otras distros basada en `Arch Linux` recomendables son `ArchCraft` y `Omarchy`.
+Otras distros basada en `Arch` recomendables son `Omarchy` y `ArchCraft`.
+
+> [!NOTE]
+> Para instalar `Omarchy`, creamos la configuracion base de `Arch` con `archinstall` y usamos alguno de los comandos a continuación.
+>
+>```sh
+>wget -qO- https://omarchy.org/install | bash
+>```
+>
+>```sh
+>curl -fsSL https://omarchy.org/install | bash
+>```
+>
+>También podemos desacargar la ISO directamente desde la página web, al igual que hariamos con `ArchCraft`.
 
 Para conectar por wifi usamos `iwctl` con los comandos:
 
