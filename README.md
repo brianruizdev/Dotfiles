@@ -738,7 +738,7 @@ wsl --list --verbose
 wsl --unregister Ubuntu
 ```
 
-Para instalar otra distro como `Arch Linux`, `Debian`, `Kali Linux` ó `Parrot Security`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
+Para instalar otra distro como `Arch`, `Debian`, `Kali` ó `Parrot`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
 
 ```sh
 # para listar las distros disponibles
@@ -752,7 +752,7 @@ wsl --install <distro name>
 
 Una vez instalada la distro es muy probable que no este completamente actualizado asi que antes de cualquier cosa, es recomendable actualizar el sistema.
 
-#### Arch Linux
+#### Arch
 
 ```sh
 wsl --install archlinux
@@ -846,7 +846,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
 
-#### Kali Linux
+#### Kali
 
 ```sh
 wsl --install kali-linux
@@ -867,7 +867,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-#### Parrot Security
+#### Parrot
 
 Descargamos la imagen WSL en la página y usamos el siguiente comando para instalar:
 
