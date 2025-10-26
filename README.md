@@ -738,7 +738,7 @@ wsl --list --verbose
 wsl --unregister Ubuntu
 ```
 
-Para instalar otra distro como `Debian` ó `Kali Linux`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
+Para instalar otra distro como `Arch Linux`, `Debian`, `Kali Linux` ó `Parrot Security`, podemos ejecutar el comando para listar las distros disponibles y posteriormente instalarla:
 
 ```sh
 # para listar las distros disponibles
@@ -746,71 +746,102 @@ wsl --list --online
 ```
 
 ```sh
-# para instalar la distro que queremos, en este caso Debian
+# para instalar la distro que queremos
+wsl --install <distro name>
+```
+
+Una vez instalada la distro es muy probable que no este completamente actualizado asi que antes de cualquier cosa, es recomendable actualizar el sistema.
+
+#### Arch Linux
+
+```sh
+wsl --install archlinux
+```
+
+Otra opción es descargar la imagen WSL en la página y usamos el siguiente comando para instalar:
+
+```sh
+wsl --import <distro name> <install location> <WSL image>
+```
+
+Actualizamos el sistema con:
+
+```sh
+# WSL
+sudo pacman -Syu
+```
+
+#### Debian
+
+```sh
 wsl --install Debian
 ```
 
-Una vez instalado `Debian` es muy probable que no este completamente actualizado asi que antes de cualquier cosa, necesitamos actualizar el sistema con estos dos comandos:
+Actualizamos el sistema con:
 
 ```sh
+# WSL, Actualizar lista de paquetes
 sudo apt update
-```
 
-```sh
+# WSL, Actualizar paquetes
 sudo apt upgrade
 ```
 
-#### Homebrew
+##### Homebrew
 
 Podemos instalar `Homebrew` ejecutando el siguiente comando para copiar el repositorio.
 
 ```sh
+# WSL
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Una vez instalado `Homebrew` podemos instalar paquetes en `WLS` con:
 
 ```sh
-# Linux Terminal (WSL)
+# WSL
 brew install <package-name>
 ```
 
-#### Nala
+##### Nala
 
 `Nala` es un gestor de paquetes mejorado para `Debian` ya que proporciona ventajas visuales sobre `apt`, aunque para instalar `Nala` correctamente, requeriremos varias cosas de `Python` como bibliotecas de colores para crear tablas, entre otras cosas, por lo que el proceso tomará su tiempo.
 
 Para instalar `Nala` ejecutamos el siguiente comando y comenzará el proceso de instalación:
 
 ```sh
+# WSL
 sudo apt install nala
 ```
 
 Una vez instalado `Nala` podemos instalar paquetes en `Debian` con:
 
 ```sh
+# WSL
 sudo nala install <package-name>
 ```
 
-#### Zellij en WezTerm
+##### Zellij en WezTerm
 
 ```sh
-# Bash on Linux Terminal (WSL)
+# WSL, Bash
 bash <(curl -L https://zellij.dev/launch)
 ```
 
 ```sh
-# Homebrew on Linux Terminal (WSL)
+# WSL, Homebrew
 brew install zellij
 ```
 
-#### Neovim en Debian
+##### Neovim en Debian
 
 ```sh
+# WSL
 sudo apt install neovim
 ```
 
 ```sh
-# LazyVim
+# WSL, LazyVim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
@@ -818,13 +849,40 @@ rm -rf ~/.config/nvim/.git
 #### Kali Linux
 
 ```sh
-# WSL (recomendado)
 wsl --install kali-linux
 ```
 
 ```sh
 # Winget
 winget install OffSec.KaliLinux
+```
+
+Actualizamos el sistema con:
+
+```sh
+# WSL, Actualizar lista de paquetes
+sudo apt update
+
+# WSL, Actualizar paquetes
+sudo apt upgrade
+```
+
+#### Parrot Security
+
+Descargamos la imagen WSL en la página y usamos el siguiente comando para instalar:
+
+```sh
+wsl --import <distro name> <install location> <WSL image>
+```
+
+Actualizamos el sistema con:
+
+```sh
+# WSL, Actualizar lista de paquetes
+sudo apt update
+
+# WSL, Actualizar paquetes
+sudo apt upgrade
 ```
 
 ## GNU Linux - Arch Linux
