@@ -484,15 +484,15 @@ winget install Microsoft.PowerToys
 
 3. Install Office LTSC 2024 by using the Office Deployment Tool. Open the folder containing the files in a `CMD` as Administrator and use the follow command:
 
-   ```sh
-   setup /configure configuration.xml
-   ```
+    ```sh
+    setup /configure configuration.xml
+    ```
 
 4. Use this command on a `PowerShell` as Administrator and select (`2`) and then (`1`):
 
-   ```sh
-   irm https://get.activated.win | iex
-   ```
+    ```sh
+    irm https://get.activated.win | iex
+    ```
 
 También se puede instalar el `Office Development Tool` como paquete de `winget`, aunque no es una instalación personalizada:
 
@@ -887,60 +887,34 @@ sudo apt upgrade
 
 ## GNU Linux - Arch Linux
 
-A continuación estarán algunos paquetes y herramientas que podrían acomodarse al entorno de tu distro de `Arch Linux`.
-
 Para la instalación es recomendable seguir la `guía oficial`, buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
 
-Otras distros basada en `Arch` recomendables son `Omarchy` y `ArchCraft`.
+Otras distros basadas en `Arch` recomendables son `Omarchy`, `ArchRiot` y `ArchCraft`.
 
 > [!NOTE]
-> Para instalar `Omarchy`, creamos la configuracion base de `Arch` con `archinstall` y usamos alguno de los comandos a continuación.
+> Una vez creamos la configuracion base de `Arch` usamos el siguiente comando para instalar...
 >
->```sh
->wget -qO- https://omarchy.org/install | bash
->```
+> - `Omarchy`:
 >
->```sh
->curl -fsSL https://omarchy.org/install | bash
->```
+> ```sh
+> curl -fsSL https://omarchy.org/install | bash
+> ```
 >
->También podemos desacargar la ISO directamente desde la página web, al igual que hariamos con `ArchCraft`.
+> - `ArchRiot`:
+>
+> ```sh
+> curl -fsSL https://ArchRiot.org/setup.sh | bash
+> ```
+>
+> También podemos desacargar la ISO directamente desde sus páginas web, al igual que hariamos con `ArchCraft`.
+>
+> Otra opción que tenemos una vez instalada la base sería instalar los dotfiles de [`ML4W`](https://www.ml4w.com/) desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
 
-Para conectar por wifi usamos `iwctl` con los comandos:
+A continuación estarán algunos paquetes y herramientas que podrían acomodarse al entorno de tu distro de `Arch Linux`.
 
-```sh
-# To get an interactive prompt do:
-iwctl
+El gestor de paquetes por defecto de `Arch` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
 
-# The interactive prompt is then displayed with a prefix of [iwd].
-
-# First, if you do not know your wireless device name, list all Wi-Fi devices:
-[iwd] device list
-
-# If the device or its corresponding adapter is turned off, turn it on:
-[iwd] device <name> set-property Powered on
-[iwd] adapter <adapter> set-property Powered on
-
-# Then, to initiate a scan for networks (note that this command will not output anything):
-[iwd] station <name> scan
-
-# You can then list all available networks:
-[iwd] station <name> get-networks
-
-# Finally, to connect to a network:
-[iwd] station <name> connect SSID
-
-# If a passphrase is required (and it is not already stored in one of the profiles that iwd automatically checks), you will be prompted to enter it. Alternatively, you can supply it as a command line argument:
-iwctl --passphrase <passphrase> station <name> connect SSID
-```
-
-El gestor de paquetes por defecto en `Arch Linux` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
-
-### Paquetes
-
-#### Base
-
-Paquetes para uso general de la distro:
+- Paquetes para uso general de la distro:
 
 ```sh
 sudo pacman -S udiskie nm-applet blueman-applet cbatticon
@@ -960,36 +934,27 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
 
-> [!TIP]
-> Una vez tengamos instalada una base podemos instalar los dotfiles de [ML4W](https://www.ml4w.com/) desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
-
-#### Qtile
-
-Paquetes para uso exclusivo de `Qtile`:
+- Paquetes para uso exclusivo de `Qtile`:
 
 ```sh
 sudo pacman -S qtile qtile-extras ly feh rofi polybar
 ```
 
-#### Hyprland
-
-Paquetes para uso exclusivo de `Hyprland`:
+- Paquetes para uso exclusivo de `Hyprland`:
 
 ```sh
 sudo pacman -S hyprland hyprwm hyprlock hyprpanel hyprpaper wofi waybar
 ```
 
-#### Virtual Machine
-
-Paquetes gráficos para uso en maquina virtual:
+- Paquetes gráficos para uso en `Virtual Machine`:
 
 ```sh
 pacman -S virtualbox-guest-utils mesa mesa-libgl
 ```
 
-### Repositorios
+Instalando repositorios para paquetes adicionales:
 
-Instalando repo [Paru](https://aur.archlinux.org/packages/paru):
+- Repo [`Paru`](https://aur.archlinux.org/packages/paru):
 
 ```sh
 sudo pacman -S --needed base-devel
@@ -998,7 +963,7 @@ cd paru
 makepkg -si
 ```
 
-Instalando repo [Yay](https://aur.archlinux.org/packages/yay):
+- Repo [`Yay`](https://aur.archlinux.org/packages/yay):
 
 ```sh
 sudo pacman -S --needed git base-devel
@@ -1007,25 +972,24 @@ cd yay
 makepkg -si
 ```
 
-Instalando repo [BlackArch](https://blackarch.org/downloads.html):
+- Repo [`BlackArch`](https://blackarch.org/downloads.html):
 
 BlackArch Linux is compatible with existing/normal Arch installations. It acts as an unofficial user repository. Below you will find instructions on how to install BlackArch in this manner.
 
 ```sh
 # Run https://blackarch.org/strap.sh as root and follow the instructions.
-
 curl -O https://blackarch.org/strap.sh
+
 # Verify the SHA1 sum
-
 echo 76363d41bd1caeb9ed2a0c984ce891c8a6075764 strap.sh | sha1sum -c
+
 # Set execute bit
-
 chmod +x strap.sh
+
 # Run strap.sh
-
 sudo ./strap.sh
-# Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
 
+# Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
 sudo pacman -Syu
 ```
 
@@ -1033,21 +997,18 @@ You may now install tools from the blackarch repository.
 
 ```sh
 # To list all of the available tools, run
-
 sudo pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
+
 # To install a category of tools, run
-
 sudo pacman -S blackarch-<category>
+
 # To see the blackarch categories, run
-
 sudo pacman -Sg | grep blackarch
+
 # To search for a specific package, run
-
 pacman -Ss <package_name>
-# Note - it maybe be necessary to overwrite certain packages when installing blackarch tools. If
-# you experience "failed to commit transaction" errors, use the --needed and --overwrite switches
-# For example:
 
+# Note - it maybe be necessary to overwrite certain packages when installing blackarch tools. If you experience "failed to commit transaction" errors, use the --needed and --overwrite switches; For example:
 sudo pacman -Syyu --needed --overwrite='*' <wanted-package>
 ```
 
@@ -1063,8 +1024,6 @@ Soon...
 
 ## Recursos de interés
 
-### Guías y Cursos
-
 - [Library Genesis](https://libgen.is/) - Get Books.
 
 - [Goal Kicker Books](https://books.goalkicker.com/) - Programming Notes for Professionals books.
@@ -1079,7 +1038,7 @@ Soon...
 
 - [Retos de Programación](https://retosdeprogramacion.com/) - Ejercicios y proyectos para mejorar tu lógica de programación.
 
-- [Full Stack Open (es)](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
+- [Full Stack Open](https://fullstackopen.com/es/) - Inmersión Profunda en el Desarrollo Web Moderno.
 
 - [SQLBolt](https://sqlbolt.com/) - Learn SQL with simple, interactive exercises.
 
@@ -1101,23 +1060,9 @@ Soon...
 
 - [Studio 3T Academy](https://studio3t.com/academy/) - The fastest way to learn MongoDB.
 
-- [Netboot](https://netboot.xyz/) - your favorite operating systems in one place.
-
-- [Typecraft](https://typecraft.dev/) - be a better nerd.
-
-- [FaztWeb](https://faztweb.com/) - Aprende a Desarrollar Proyectos Web.
-
-- [HackTheBox](https://www.hackthebox.com/) - Your Cyber Performance Center.
-
-- [Hack4U](https://hack4u.io/) - Aprende Ciberseguridad.
+- [Hacking Vault](https://www.hackingvault.com/) - Aprende Ciberseguridad.
 
 - [OverTheWire](https://overthewire.org/wargames/) - The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
-
-- [NetworkChuk Academy](https://academy.networkchuck.com/) - Level up your I.T. Career with Chuck's expertise and engaging courses at NetworkChuck Academy. Start Now!
-
-- [OffSec](https://www.offsec.com/) - Elevating Cyber Workforce and Professional Development.
-
-- [DataScience4Business](https://ds4b.teachable.com/) - Tu primera experiencia como analista de datos.
 
 - [DataNerd](https://datanerd.tech/) - 🛠️ Top Skills for Data Nerds 🤓.
 
@@ -1129,15 +1074,9 @@ Soon...
 
 - [ShipFree](https://shipfree.idee8.agency/) - Ship your startup in days, not weeks.
 
-### Servicios
-
 - [DeskMate](https://desksmate.com/) - Programming Languages cheat sheet Mat Store.
 
 - [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
-
-- [Firebase Studio](https://firebase.studio/) - The full stack AI workspace.
-
-- [Hostinger](https://www.hostinger.com/) - Your website. Sorted.
 
 - [Github Pages](https://pages.github.com/) - Websites for you and your projects.
 
@@ -1147,77 +1086,23 @@ Soon...
 
 - [Render](https://render.com/) - Your fastest path to production.
 
-- [Fly](https://fly.io/) - A Public Cloud Built For Developers Who Ship.
-
-- [FL0](https://www.fl0.com/) - Taking your product to the next level.
-
-- [Cloudflare](https://www.cloudflare.com/) - Connect, protect, and build everywhere.
-
-- [MongoDB Atlas](https://www.mongodb.com/atlas) - The multi-cloud developer data platform.
-
-- [PlanetScale](https://planetscale.com/) - The database platform built for scale.
-
 - [Supabase](https://supabase.com/) - Build in a weekend. Scale to millions.
 
-- [PocketBase](https://pocketbase.io/) - Open Source backend in 1 file.
-
-- [Firebase](https://firebase.google.com/) - Make your app the best it can be with Firebase and generative AI.
-
-- [Resend](https://resend.com/) - Email for developers.
-
-- [New.email](https://new.email/) - The new way to build emails.
-
-- [Brevo](https://www.brevo.com/) - Grow with our Email Marketing Platform & CRM suite.
-
-- [SendGrid](https://sendgrid.com/) - Get your emails to the inbox—where they belong.
-
-- [Twilio](https://www.twilio.com/en-us) - Get RCS on Twilio Messaging—no code changes required.
-
-- [Stripe](https://stripe.com/) - Financial infrastructure to grow your revenue.
-
-- [Figma](https://www.figma.com/) - Think bigger. Build faster.
-
 - [PyGUIBuilder](https://pyuibuilder.com/) - Build Python UI.
-
-- [Bubble](https://bubble.io/) - Meet AI-powered visual development.
 
 - [WeWeb](https://www.weweb.io/) - Build production-grade web applications 10x faster.
 
 - [WebFlow](https://webflow.com/) - Your site should do more than look good.
 
-- [WebStudio](https://webstudio.is/) - Custom frontend without custom code.
-
 - [FlutterFlow](https://www.flutterflow.io/) - Build Better. Launch Faster.
-
-- [Draftbit](https://draftbit.com/) - Create any app, 10x faster.
-
-- [Adalo](https://www.adalo.com/) - Build a Mobile App for Your Business — No Coding Required.
-
-- [Bravo Studio](https://www.bravostudio.app/) - Figma to app, accelerated by AI.
-
-- [Airtable](https://www.airtable.com/) - Digital operations for the AI era.
-
-- [Lovable](https://lovable.dev/) - Idea to app in seconds.
-
-- [v0](https://v0.dev/) - What can I help you ship?
-
-- [bolt.new](https://bolt.new/) - What do you want to build?
-
-- [PureCode AI](https://purecode.ai/) - The World's First Front-End Ready Copilot.
-
-- [Same](https://same.dev/) - Copy web pages.
 
 - [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons.
 
 - [WorldVectorLogo](https://worldvectorlogo.com/) - Download vector logos of brands you love.
 
-- [Google Colab](https://colab.research.google.com/) - Colab notebooks allow you to combine executable code and rich text in a single document.
-
 - [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
 
 - [Freesets](https://freesets.dev/) - Free usefull tools.
-
-- [ExcaliDraw](https://excalidraw.com/) - Schemas drawing tool.
 
 - [SQL Playground](https://sqlplayground.app/) - Create easily online SQL sandbox with SQL Playground.
 
@@ -1231,16 +1116,4 @@ Soon...
 
 - [ToDiagram](https://todiagram.com/) - Convert JSON into interactive diagrams.
 
-- [Lorem Picsum](https://picsum.photos/) - The Lorem Ipsum for photos.
-
-- [HTMLrev](https://htmlrev.com/) - 1500+ free HTML templates.
-
-- [Tailwind Awesome](https://www.tailwindawesome.com/) - Discover the best Tailwind templates & UI kits.
-
-- [CSS Loaders](https://css-loaders.com/) - The Biggest Collection of Loading Animations
-
-- [HyperUI](https://www.hyperui.dev/) - HyperUI is a collection of free Tailwind CSS components that can be used in your next project.
-
-- [Material UI](https://mui.com/) - Move faster with intuitive React UI tools.
-
-- [ShadCN UI](https://ui.shadcn.com/) - Build your component library.
+- [WinBoat](https://www.winboat.app/) - Run Windows apps on 🐧 Linux with ✨ seamless integration.
