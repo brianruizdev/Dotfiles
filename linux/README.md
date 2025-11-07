@@ -1,4 +1,6 @@
-# GNU Linux - Arch Linux
+# GNU Linux
+
+## Arch Linux
 
 Para la instalación es recomendable seguir la `guía oficial`, buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
 

@@ -10,9 +10,9 @@ Archivos de configuración, gestores de paquetes, softwares, recursos y herramie
 
 Sistemas Operativos:
 
-- [Windows 10/11](./windows.md)
-- [GNU Linux - Arch Linux](./linux.md)
-- [MacOS](./mac.md)
+- [Windows 10/11](./windows/README.md)
+- [GNU Linux](./linux/README.md)
+- [MacOS](./mac/README.md)
 
 Fuentes necesarias para visualizar `ligatures` e `icons`:
 
