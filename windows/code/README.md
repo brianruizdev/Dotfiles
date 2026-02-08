@@ -132,6 +132,8 @@ Adicionalmente te dejo algunas de las extensiones que impulsaran tu desempeño.
 
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
+- [vscode-pets](https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets)
+
 - [vscode-pokemon](https://marketplace.visualstudio.com/items?itemName=jakobhoeg.vscode-pokemon)
 
 - [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)

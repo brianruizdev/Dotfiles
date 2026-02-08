@@ -19,6 +19,8 @@
 	"workbench.tree.enableStickyScroll": false,
 	"workbench.tree.renderIndentGuides": "none",
 	"workbench.tree.indent": 16,
+	"window.menuBarVisibility": "compact",
+	"window.commandCenter": false,
 
 	"explorer.compactFolders": false,
 	"explorer.confirmDragAndDrop": false,
@@ -87,6 +89,10 @@
 	"editor.suggestOnTriggerCharacters": false,
 	"editor.tabCompletion": "on",
 	"editor.snippetSuggestions": "top",
+
+	"vscode-pets.petSize": "small",
+	"vscode-pets.throwBallWithMouse": true,
+	"vscode-pokemon.pokemonSize": "small",
 
 	"vscode_custom_css.imports": [
 		"file:///c:/Users/brian/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
