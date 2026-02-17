@@ -102,7 +102,7 @@ Recursos y herramientas de interés:
 
 - [SQLite OnLine IDE](https://sqliteonline.com/) - SQLite OnLine IDE.
 
-- [Freesets](https://freesets.dev/) - Free usefull tools.
+- [Freesets](https://freesets.dev/) - Free resources and tools.
 
 - [SQL Playground](https://sqlplayground.app/) - Create easily online SQL sandbox with SQL Playground.
 

@@ -224,7 +224,7 @@ winget install ajeetdsouza.zoxide
 winget install Python.Python.3.14
 ```
 
-Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Django`, `FastAPI`, `Flask`, `CustomTkinter`, `ttkBootstap`, `Streamlit`, `FastHTML`, `ReactPy`, `Flet`, entre otros, con el comando:
+Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Gradio`, `Django`, `FastAPI`, `Flask`, `Streamlit`, `Reflex`, `Flet`, `ReactPy`, `FastHTML`, `NiceGUI`, `CustomTkinter`, `ttkBootstap` entre otros, con el comando:
 
 ```sh
 pip install <package-name>
