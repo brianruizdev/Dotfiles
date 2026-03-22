@@ -230,44 +230,22 @@ Con `pip` (package installer for python) podemos instalar paquetes como librerí
 pip install <package-name>
 ```
 
-Una alternativa para instalar `Python` es el entorno `Anaconda`:
+Creating a virtual environment (venv):
 
 ```sh
-# Anaconda
-winget install Anaconda.Anaconda3
-```
+python -m venv .venv
 
-```sh
-# Miniconda
-winget install Anaconda.Miniconda3
+# windows
+.venv\Scripts\activate
+
+# unix
+source .venv/bin/activate
 ```
 
 ### NodeJS
 
 ```sh
 winget install OpenJS.NodeJS.LTS
-```
-
-Administrador de versiones:
-
-```sh
-# Volta
-winget install Volta.Volta
-```
-
-```sh
-# NVM (NodeVersionManager) for Windows
-winget install CoreyButler.NVMforWindows
-```
-
-```sh
-# Fast Node Manager
-winget install Schniz.fnm
-```
-
-```sh
-# Node Version Switcher
-winget install jasongin.nvs
 ```
 
 Con `npm` (node package manager) podemos instalar paquetes como librerías y frameworks de `NodeJS` como `Vite`, `RsPack`, `React`, `ExpressJS`, `Mongoose`, `TailwindCSS`, `NextJS`, `NestJS`, `Hono`, `Expo`, entre otros, con el comando:
@@ -317,16 +295,14 @@ winget install JanProchazka.dbgate
 
 ### SQL
 
-- Entorno `XAMPP 8.2`:
-
 ```sh
-# Entorno XAMPP 8.2
+# XAMPP 8.2 Environment
 winget install ApacheFriends.Xampp.8.2
 ```
 
 - [`DBngin`](https://dbngin.com/) - Database Version Management Tool.
 
-- `MySQL`:
+- MySQL:
 
 ```sh
 # MySQL
@@ -343,7 +319,7 @@ winget install Oracle.MySQLWorkbench
 winget install sqlectron.sqlectron-gui
 ```
 
-- `PostgreSQL`:
+- PostgreSQL:
 
 ```sh
 # PostgreSQL
@@ -355,7 +331,7 @@ winget install PostgreSQL.PostgreSQL.17
 winget install PostgreSQL.pgAdmin
 ```
 
-- `SQLite`:
+- SQLite:
 
 ```sh
 # SQLite
@@ -389,18 +365,8 @@ winget install Microsoft.VisualStudioCode
 ```
 
 ```sh
-# Cursor
-winget install Anysphere.Cursor
-```
-
-```sh
-# Windsurf
-winget install Codeium.Windsurf
-```
-
-```sh
-# Trae
-winget install ByteDance.Trae
+# PyCharm Community
+winget install JetBrains.PyCharm.Community
 ```
 
 ```sh
@@ -409,28 +375,18 @@ winget install JetBrains.WebStorm
 ```
 
 ```sh
-# PyCharm Community
-winget install JetBrains.PyCharm.Community
-```
-
-```sh
 # IntelliJ IDEA Community
 winget install JetBrains.IntelliJIDEA.Community
 ```
 
 ```sh
-# DataGrip (Databases)
+# DataGrip
 winget install JetBrains.DataGrip
 ```
 
 ```sh
-# DataSpell (Data Analysis)
+# DataSpell
 winget install JetBrains.DataSpell
-```
-
-```sh
-# RunJS
-winget install lukehaas.RunJS
 ```
 
 ```sh
@@ -438,9 +394,12 @@ winget install lukehaas.RunJS
 winget install Spyder.Spyder
 ```
 
-### Microsoft Tools
+```sh
+# RunJS
+winget install lukehaas.RunJS
+```
 
-- Esenciales:
+### Microsoft Tools
 
 ```sh
 # PC Manager
@@ -452,9 +411,13 @@ winget install Microsoft.PCManager
 winget install Microsoft.PowerToys
 ```
 
-- Instalando `Office 2024`:
+- Office 2024:
 
-1. Download the [`Office Deployment Tool`](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy) from the [`Microsoft Download Center`](https://www.microsoft.com/en-us/download/details.aspx?id=49117). Keep the "`Setup.exe`" file and erase another files.
+1. Download the [`Office Deployment Tool`](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy) from the [`Microsoft Download Center`](https://www.microsoft.com/en-us/download/details.aspx?id=49117) or try with `winget`. Keep the "`Setup.exe`" file and erase another files.
+
+   ```sh
+   winget install Microsoft.OfficeDeploymentTool
+   ```
 
 2. Create and export the [`Office Customization Tool`](https://config.office.com/deploymentsettings) file as "`Office Open XML`" and name it "`Configuration`", then move the "`Configuration.xml`" file to the folder with the "`Setup.exe`" file.
 
@@ -470,69 +433,21 @@ winget install Microsoft.PowerToys
     irm https://get.activated.win | iex
     ```
 
-También se puede instalar el `Office Development Tool` como paquete de `winget`, aunque no es una instalación personalizada:
-
 ```sh
-winget install Microsoft.OfficeDeploymentTool
-```
-
-- Instalando `Power BI`:
-
-```sh
+# Power BI
 winget install Microsoft.PowerBI
 ```
 
 ### Softwares Útiles
 
 ```sh
-# Ngrok
-winget install Ngrok.Ngrok
-```
-
-```sh
 # iCloud
-winget install Apple.iCloud
+winget install iCloud
 ```
 
 ```sh
 # Steam
 winget install Valve.Steam
-```
-
-```sh
-# OBS Studio
-winget install OBSProject.OBSStudio
-```
-
-```sh
-# SteamLabs
-winget install Streamlabs.StreamlabsOBS
-winget install Streamlabs.Streamlabs
-```
-
-```sh
-# TickTick
-winget install Appest.TickTick
-```
-
-```sh
-# Obsidian
-winget install Obsidian.Obsidian
-```
-
-```sh
-# Chrome
-winget install Google.Chrome
-```
-
-```sh
-# Firefox
-winget install Mozilla.Firefox
-```
-
-```sh
-# Zen
-winget install Zen-Team.Zen-Browser
 ```
 
 ```sh
@@ -546,6 +461,11 @@ winget install Discord.Discord
 ```
 
 ```sh
+# OBS Studio
+winget install OBSProject.OBSStudio
+```
+
+```sh
 # Proton VPN
 winget install Proton.ProtonVPN
 ```
@@ -553,11 +473,6 @@ winget install Proton.ProtonVPN
 ```sh
 # TunnelBear
 winget install TunnelBear.TunnelBear
-```
-
-```sh
-# GIMP 3
-winget install GIMP.GIMP.3
 ```
 
 ```sh
@@ -576,46 +491,35 @@ winget install Balena.Etcher
 ```
 
 ```sh
-# Figma
-winget install Figma.Figma
-```
-
-```sh
-# WebStudio
-winget install Webstudio.Webstudio
-```
-
-```sh
-# SpeedTest
-winget install Ookla.Speedtest.Desktop
-winget install Ookla.Speedtest.CLI
+# Ngrok
+winget install Ngrok.Ngrok
 ```
 
 ### Customizing Windows
 
 ```sh
-# Files
+# Files (file explorer) ⭐
 winget install FilesCommunity.Files
+```
+
+```sh
+# Flow Launcher (app launcher) ⭐
+winget install Flow-Launcher.Flow-Launcher
+```
+
+```sh
+# Everything (looking files) ⭐
+winget install voidtools.Everything
+```
+
+```sh
+# AltSnap (moving windows) ⭐
+winget install AltSnap.AltSnap
 ```
 
 ```sh
 # ShareX (better screenshots)
 winget install ShareX.ShareX
-```
-
-```sh
-# AltSnap (moving windows)
-winget install AltSnap.AltSnap
-```
-
-```sh
-# Everything (looking files)
-winget install voidtools.Everything
-```
-
-```sh
-# Flow Launcher (app launcher)
-winget install Flow-Launcher.Flow-Launcher
 ```
 
 ```sh
@@ -651,31 +555,6 @@ winget install rocksdanister.LivelyWallpaper
 ```sh
 # Sucrose Wallpaper Engine (live wallpapers)
 winget install Taiizor.SucroseWallpaperEngine
-```
-
-```sh
-# Rainmeter (gadgets)
-winget install Rainmeter.Rainmeter
-```
-
-```sh
-# GlazeWM (window manager)
-winget install glzr-io.glazewm
-```
-
-```sh
-# Zebar (GlazeWM bar)
-winget install glzr-io.zebar
-```
-
-```sh
-# Seelen UI
-winget install Seelen.SeelenUI
-```
-
-```sh
-# Komorebi
-winget install LGUG2Z.komorebi
 ```
 
 ## WSL (Windows Subsystem for Linux)
