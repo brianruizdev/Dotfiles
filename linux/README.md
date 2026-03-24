@@ -1,5 +1,14 @@
 # GNU Linux
 
+> [!NOTE]
+>
+> Para `Dual Boot` con `Windows` es necesario configurar la zona horaria con el siguiente comando en `PowerShell` como Admin:
+>
+> ```sh
+> reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+> ```
+>
+
 ## Arch Linux
 
 Para la instalación es recomendable seguir la `guía oficial`, buscar un tutorial de guía ó usar el comando `archinstall` para una instalación por GUI.
@@ -13,16 +22,6 @@ Para la instalación es recomendable seguir la `guía oficial`, buscar un tutori
 > curl -fsSL https://omarchy.org/install | bash
 > ```
 >
-> - [`ArchRiot`](https://archriot.org/):
->
-> ```sh
-> curl -fsSL https://ArchRiot.org/setup.sh | bash
-> ```
->
-> - [`ML4W`](https://www.ml4w.com/):
-> Instalar los dotfiles de  desde su [GitHub](https://github.com/mylinuxforwork/dotfiles).
->
->
 > - [`ArchCraft`](https://archcraft.io/):
 > Descargamos la ISO directamente desde sus páginas web.
 >
@@ -31,18 +30,18 @@ A continuación estarán algunos paquetes y herramientas que podrían acomodarse
 
 El gestor de paquetes por defecto de `Arch` es `pacman`. Posteriormente instalaremos otro gestor como `paru` para expandir nuestros paquetes.
 
-- Paquetes para uso general de la distro:
+### Instalando Paquetes
+
+- Terminal
 
 ```sh
-sudo pacman -S udiskie nm-applet blueman-applet cbatticon
-sudo pacman -S pipewire wireplumber volumeicon
-sudo pacman -S kitty ghostty git vim nano neovim helix
-sudo pacman -S zsh oh-my-zsh lsd bat fzf fd zoxide
-sudo pacman -S htop neofetch fastfetch
-sudo pacman -S ranger nemo dunst picom
-sudo pacman -S zip unzip tar 7z curl wget
-sudo pacman -S unclutter scrot solaar papyrus
-sudo paru -S lazygit
+sudo pacman -S kitty ghostty
+```
+
+- Neovim
+
+```sh
+sudo pacman -S vim neovim
 ```
 
 ```sh
@@ -51,27 +50,128 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
 
-- Paquetes para uso exclusivo de `Qtile`:
+- Tools
+
+```sh
+sudo pacman -S git zsh lsd bat fzf fd zoxide locate mdcat
+sudo pacman -S curl wget htop fastfetch zip unzip tar p7zip
+sudo pacman -S udiskie nm-applet blueman-applet cbatticon
+sudo pacman -S wireplumber volumeicon
+sudo pacman -S ranger yazi nemo dunst picom
+sudo pacman -S unclutter scrot solaar papyrus
+```
+
+```sh
+# we need to install PARU repo first
+sudo paru -S lazygit
+```
+
+Switching to `zsh`:
+
+```sh
+# checking the actual shell
+echo $SHELL
+
+# super usering
+sudo su
+
+# changing shell for user (root and users)
+usermod --shell /usr/bin/zsh <user>
+# or
+chsh -s $(which zsh)
+```
+
+Plugins:
+
+- oh-my-zsh
+
+```sh
+# we need to install PARU repo first
+sudo paru -S zsh-syntax-highlighting zsh-autosuggestions
+
+# with curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# with wget
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+- zsh-sudo
+
+```sh
+cd /usr/share
+sudo su
+mkdir zsh-sudo
+chown <user>:<user> zsh-sudo/
+cd !$
+exit
+cd zsh-sudo
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
+```
+
+Link simbolico para root (root -> user)
+
+```sh
+ln -s -f /home/<user>/.zshrc /root/.zshrc
+```
+
+Window Manager:
+
+- Hyprland
+
+```sh
+sudo pacman -S hyprland hyprwm hyprlock hyprpanel hyprpaper wofi waybar waypaper
+```
+
+```sh
+# we need to install PARU repo first
+sudo paru -S swww
+```
+
+- Qtile
 
 ```sh
 sudo pacman -S qtile qtile-extras ly feh rofi polybar
 ```
 
-- Paquetes para uso exclusivo de `Hyprland`:
-
 ```sh
-sudo pacman -S hyprland hyprwm hyprlock hyprpanel hyprpaper wofi waybar
+# LyDM
+
+# Remove actual Desktop Manager
+sudo pacman -Rns sddm sddm-kcm # or other DM
+sudo rm /etc/systemd/system/display-manager.service
+
+# now we can enable LyDM
+sudo systemcl enable ly.service
+
+# configuring
+cd /etc/ly/
+sudo nvim config.ini
 ```
 
-- Paquetes gráficos para uso en `Virtual Machine`:
+- Virtual Machine Graphics
 
 ```sh
 pacman -S virtualbox-guest-utils mesa mesa-libgl
 ```
 
-Instalando repositorios para paquetes adicionales:
+### Hack Nerd Fonts
 
-- Repo [`Paru`](https://aur.archlinux.org/packages/paru):
+Download the [`Nerd Fonts`](https://www.nerdfonts.com/font-downloads) from de web site, then:
+
+```sh
+sudo su
+cd /usr/share/fonts
+mv /home/brian/Downloads/Hack.zip .
+unzip Hack.zip
+rm Hack.zip
+```
+
+### Repositories
+
+Installing additional repos for packages:
+
+- [`Paru`](https://aur.archlinux.org/packages/paru) (recomended)
 
 ```sh
 sudo pacman -S --needed base-devel
@@ -80,16 +180,16 @@ cd paru
 makepkg -si
 ```
 
-- Repo [`Yay`](https://aur.archlinux.org/packages/yay):
+- [`Yay`](https://aur.archlinux.org/packages/yay)
 
 ```sh
-sudo pacman -S --needed git base-devel
+sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
 
-- Repo [`BlackArch`](https://blackarch.org/downloads.html):
+- [`BlackArch`](https://blackarch.org/downloads.html)
 
 BlackArch Linux is compatible with existing/normal Arch installations. It acts as an unofficial user repository. Below you will find instructions on how to install BlackArch in this manner.
 

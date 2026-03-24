@@ -5,8 +5,8 @@ ZSH_THEME="afowler"
 ENABLE_CORRECTION="true"
 
 plugins=(
-  git
-  sudo
+	git
+	sudo
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
@@ -15,11 +15,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Set up the prompt
 function user () {
-  if [[ "$EUID" -eq 0 ]]; then
-    echo "%F{yellow}󰈸%f"
-  else
-    echo "%F{magenta}󰊠%f"
-  fi
+	if [[ "$EUID" -eq 0 ]]; then
+		echo "%F{yellow}󰈸%f"
+	else
+		echo "%F{magenta}󰊠%f"
+	fi
 }
 
 function dir_icon () {
