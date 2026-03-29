@@ -1,0 +1,3 @@
+[default_session]
+command = "sysc-greet --layer-shell --command hyprland"
+user = "greeter"
