@@ -55,7 +55,7 @@ sudo pacman -S udiskie blueman-applet cbatticon volumeicon
 
 ```sh
 # Essentials
-sudo pacman -S kitty ranger yazi nemo dunst firefox fastfetch htop
+sudo pacman -S kitty ranger yazi dunst nemo firefox fastfetch htop
 sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
 sudo pacman -S curl wget zip unzip tar p7zip
 sudo pacman -S wireplumber unclutter scrot solaar papyrus
@@ -99,6 +99,12 @@ usermod --shell /usr/bin/zsh <user>
 chsh -s $(which zsh)
 ```
 
+Link simbolico para root (root -> user)
+
+```sh
+ln -s -f /home/<user>/.zshrc /root/.zshrc
+```
+
 - Hack Nerd Fonts
 
 Download the [`Nerd Fonts`](https://www.nerdfonts.com/font-downloads) from de web site, then:
@@ -109,16 +115,6 @@ cd /usr/share/fonts
 mv /home/brian/Downloads/Hack.zip .
 unzip Hack.zip
 rm Hack.zip
-```
-
-Link simbolico para root (root -> user)
-
-```sh
-ln -s -f /home/<user>/.zshrc /root/.zshrc
-```
-
-```sh
-instalamos awww
 ```
 
 - LazyVim
@@ -165,12 +161,60 @@ cd /etc/ly/
 sudo nvim config.ini
 ```
 
-- Paru
+- Extra repos:
+
+[`Paru`](https://aur.archlinux.org/packages/paru) (recomended)
 
 ```sh
 sudo pacman -S --needed base-devel
-cd .config/
+cd .config/repos
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+```
+
+[`Yay`](https://aur.archlinux.org/packages/yay)
+
+```sh
+sudo pacman -S --needed base-devel
+cd .config/repos
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+[`BlackArch`](https://blackarch.org/downloads.html)
+
+```sh
+# Run https://blackarch.org/strap.sh as root and follow the instructions.
+curl -O https://blackarch.org/strap.sh
+
+# Verify the SHA1 sum
+echo 76363d41bd1caeb9ed2a0c984ce891c8a6075764 strap.sh | sha1sum -c
+
+# Set execute bit
+chmod +x strap.sh
+
+# Run strap.sh
+sudo ./strap.sh
+
+# Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
+sudo pacman -Syu
+
+# You may now install tools from the blackarch repository.
+
+# To list all of the available tools, run
+sudo pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
+
+# To install a category of tools, run
+sudo pacman -S blackarch-<category>
+
+# To see the blackarch categories, run
+sudo pacman -Sg | grep blackarch
+
+# To search for a specific package, run
+pacman -Ss <package_name>
+
+# Note - it maybe be necessary to overwrite certain packages when installing blackarch tools. If you experience "failed to commit transaction" errors, use the --needed and --overwrite switches; For example:
+sudo pacman -Syyu --needed --overwrite='*' <wanted-package>
 ```
