@@ -1,3 +1,4 @@
+-- .config/nvim/lua/plugins/
 return {
 	"navarasu/onedark.nvim",
 	config = function()

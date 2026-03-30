@@ -44,18 +44,18 @@ sudo pacman -Syu
 
 ```sh
 # Hyprland WM
-sudo pacman -S hyprland hyprlock hyprpaper hyprlauncher wofi waybar
+sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprlauncher wofi waybar swaync
 ```
 
 ```sh
 # Qtile WM
-sudo pacman -S qtile qtile-extras feh rofi polybar picom
+sudo pacman -S qtile qtile-extras feh rofi polybar picom dunst
 sudo pacman -S udiskie blueman-applet cbatticon volumeicon
 ```
 
 ```sh
 # Essentials
-sudo pacman -S kitty ranger yazi dunst nemo firefox fastfetch htop
+sudo pacman -S kitty ranger yazi nemo firefox fastfetch htop
 sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
 sudo pacman -S curl wget zip unzip tar p7zip
 sudo pacman -S wireplumber unclutter scrot solaar papyrus
@@ -115,6 +115,7 @@ cd /usr/share/fonts
 mv /home/brian/Downloads/Hack.zip .
 unzip Hack.zip
 rm Hack.zip
+# unzip Downloads/Hack.zip -d ~/.local/share/fonts
 ```
 
 - LazyVim
@@ -143,7 +144,7 @@ sudo rm /etc/systemd/system/display-manager.service
 ```sh
 # Greetd (with sysc-greet) for Hyprland
 sudo pacman -S greetd
-sudo paru -S sysc-greet-hyprland
+paru -S sysc-greet-hyprland
 
 # now we can enable LyDM
 sudo systemcl enable greetd.service
@@ -167,7 +168,7 @@ sudo nvim config.ini
 
 ```sh
 sudo pacman -S --needed base-devel
-cd .config/repos
+cd .config
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
@@ -177,7 +178,7 @@ makepkg -si
 
 ```sh
 sudo pacman -S --needed base-devel
-cd .config/repos
+cd .config
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
