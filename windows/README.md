@@ -2,13 +2,15 @@
 
 A continuación estarán algunas de las herramientas que podrían acomodarse a tu entorno de desarrollo en `Windows`.
 
-## Gestores de Paquetes
+## Instalando Paquetes
 
 > [!TIP]
 > Primero debemos tener actualizado todo en la Microsoft Store.
 > Es recomendable instalar paquetes como administrador!
 
-### Winget
+### Package Manager
+
+- Winget
 
 The WinGet command line tool enables developers to discover, install, upgrade, remove and configure applications on Windows computers.
 
@@ -22,6 +24,12 @@ winget install Microsoft.AppInstaller
 ```sh
 # Update
 winget upgrade Microsoft.AppInstaller
+
+# List packages to update
+winget upgrade
+
+# Update all packages
+winget upgrade --all
 ```
 
 Podemos buscar paquetes en [`winstall`](https://winstall.app/) o usar el comando:
@@ -40,47 +48,13 @@ winget install <package-name>
 winget install <package-id>
 ```
 
-### Chocolatey
+- Chocolatey
 
 The Package Manager for Windows Modern Software Automation
-
-Instalando con `winget`:
 
 ```sh
 winget install Chocolatey.Chocolatey
 ```
-
-Instalando con `cmd`:
-
-```sh
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-```
-
-### CTT WinUtil
-
-Chris Titus Tech's Windows Utility
-
-This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates. I am extremely picky about any contributions to keep this project clean and efficient.
-
-WinUtil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator.
-
-Launch Command:
-
-```sh
-# Stable Branch (Recommended)
-irm "https://christitus.com/win" | iex
-```
-
-```sh
-# Dev Branch
-irm "https://christitus.com/windev" | iex
-```
-
-Official [Github](https://github.com/christitustech/winutil).
-
-## Instalando Paquetes
 
 ### Terminal
 
@@ -123,21 +97,9 @@ Instalamos `Terminal-Icons` para nuestros iconos en terminal:
 Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
-### Git
-
 ```sh
 # Git
 winget install Git.Git
-```
-
-```sh
-# LazyGit
-winget install JesseDuffield.lazygit
-```
-
-```sh
-# GitHub Desktop
-winget install GitHub.GitHubDesktop
 ```
 
 Pushing git repository to github:
@@ -154,68 +116,19 @@ git remote -v
 git push -u origin main
 ```
 
-### Docker
-
 ```sh
 # Docker
 winget install Docker.DockerCompose
 ```
 
 ```sh
-# LazyDocker
-winget install JesseDuffield.Lazydocker
-```
+# Zig lsd bat fzf fd ripgrep tealdeer cLink zoxide
+winget install zig.zig lsd-rs.lsd sharkdp.bat junegunn.fzf sharkdp.fd BurntSushi.ripgrep.MSVC dbrgn.tealdeer chrisant996.Clink ajeetdsouza.zoxide
 
-```sh
-# Docker Desktop
-winget install Docker.DockerDesktop
-```
-
-### CLI Tools
-
-```sh
-# Zig
-winget install zig.zig
-```
-
-```sh
-# lsd
-winget install lsd-rs.lsd
-```
-
-```sh
-# bat
-winget install sharkdp.bat
-```
-
-```sh
-# fzf
-winget install junegunn.fzf
-```
-
-```sh
-# fd
-winget install sharkdp.fd
-```
-
-```sh
-# ripgrep
-winget install BurntSushi.ripgrep.MSVC
-```
-
-```sh
-# tealdeer
-winget install dbrgn.tealdeer
-```
-
-```sh
-# cLink
-winget install chrisant996.Clink
-```
-
-```sh
-# zoxide
-winget install ajeetdsouza.zoxide
+# Yazi
+winget install sxyazi.yazi
+# Install the optional dependencies (recommended):
+winget install Gyan.FFmpeg 7zip.7zip jqlang.jq oschwartz10612.Poppler sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
 ```
 
 ### Python
@@ -224,22 +137,45 @@ winget install ajeetdsouza.zoxide
 winget install Python.Python.3.14
 ```
 
-Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Gradio`, `Django`, `FastAPI`, `Flask`, `Streamlit`, `Reflex`, `Flet`, `ReactPy`, `FastHTML`, `NiceGUI`, `CustomTkinter`, `ttkBootstap` entre otros, con el comando:
+Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Gradio`, `Django`, `FastAPI`, `Flask`, `Streamlit`, `Reflex`, `Flet`, `ReactPy`, `FastHTML`, `NiceGUI` entre otros, con el comando:
 
 ```sh
 pip install <package-name>
 ```
 
+También podemos usar `uv` que es una alternativa moderna de `pip`:
+
+```sh
+winget install astral-sh.uv
+```
+
+```sh
+# checking uv
+uv
+```
+
+```sh
+# installing packages
+uv pip install <package>
+```
+
 Creating a virtual environment (venv):
 
 ```sh
+# Traditional method
 python -m venv .venv
 
-# windows
+# Modern method
+uv venv
+
+# activating on windows
 .venv\Scripts\activate
 
-# unix
+#  activating on unix
 source .venv/bin/activate
+
+# deactivating venv
+deactivate
 ```
 
 ### NodeJS
@@ -354,6 +290,11 @@ winget install DBBrowserForSQLite.DBBrowserForSQLite
 # Neovim
 winget install Neovim.Neovim
 
+# Vim-Plug
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+# :PlugInstall to install the plugins
+
 # LazyVim
 git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
 Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
@@ -443,6 +384,11 @@ winget install Microsoft.PowerBI
 ```sh
 # iCloud
 winget install iCloud
+```
+
+```sh
+# Drive
+winget install Google.GoogleDrive
 ```
 
 ```sh

@@ -7,22 +7,11 @@
 > ```sh
 > reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 > ```
->
 
 ## Arch Linux
 
 > [!NOTE]
-> Podemos instalar una pre-built una vez creamos la configuración base de `Arch` usando el siguiente comando para cada caso:
->
-> - [`Omarchy`](https://omarchy.org/):
->
-> ```sh
-> curl -fsSL https://omarchy.org/install | bash
-> ```
->
-> - [`ArchCraft`](https://archcraft.io/):
-> Descargamos la ISO directamente desde sus páginas web.
->
+> Pre-builts [`Omarchy`](https://omarchy.org/) or [`ArchCraft`](https://archcraft.io/).
 
 - Installing ArchLinux:
 
@@ -57,7 +46,8 @@ sudo pacman -S udiskie blueman-applet cbatticon volumeicon
 # Essentials
 sudo pacman -S kitty ranger yazi nemo firefox fastfetch htop
 sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
-sudo pacman -S curl wget zip unzip tar p7zip
+sudo pacman -S uv curl wget zip unzip tar p7zip
+sudo pacman -S ffmpeg jq poppler ripgrep resvg imagemagick
 sudo pacman -S wireplumber unclutter scrot solaar papyrus
 ```
 
@@ -118,19 +108,20 @@ rm Hack.zip
 # unzip Downloads/Hack.zip -d ~/.local/share/fonts
 ```
 
-- LazyVim
+- Configuring NeoVim
+
+[Vim-Plug](https://github.com/junegunn/vim-plug)
+
+```sh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# :PlugInstall to install the plugins
+```
+
+[LazyVim](https://www.lazyvim.org/)
 
 ```sh
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
-```
-
-- Activamos Grub
-
-```sh
-sudo pacman -S grub efibootmgr
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=ArchLinux
-grub -mkconfig -o /boot/grub/grub.cfg
 ```
 
 - Display Manager

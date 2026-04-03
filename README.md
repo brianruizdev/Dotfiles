@@ -22,7 +22,7 @@ Fuentes necesarias para visualizar `ligatures` e `icons`:
 
 Recursos y herramientas de interés:
 
-- [Library Genesis](https://libgen.is/) - Get Books.
+- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
 - [Goal Kicker Books](https://books.goalkicker.com/) - Programming Notes for Professionals books.
 
@@ -46,17 +46,9 @@ Recursos y herramientas de interés:
 
 - [Exercism](https://exercism.org/) - Develop fluency in 74 programming languages with our unique blend of learning, practice and mentoring.
 
-- [CognitiveClass](https://cognitiveclass.ai/) - Get ahead in the tech industry and advance your career.
-
-- [Python de la A a la Z](https://www.udemy.com/course/former-python-mega-course-build-10-real-world-applications/) - Mega curso de Python en Udemy gratuito. Usa el código `mega_course` para ingresar.
-
 - [FreeCodeCamp](https://www.freecodecamp.org/) - Learn to code — for free. Build projects. Earn certifications.
 
 - [Open Bootcamp](https://open-bootcamp.com/) - Contenido gratuito que se adapta a ti.
-
-- [MongoDB Certified](https://certificationprogramspain.splashthat.com/) - Programa de Certificación MongoDB España.
-
-- [Studio 3T Academy](https://studio3t.com/academy/) - The fastest way to learn MongoDB.
 
 - [Hacking Vault](https://www.hackingvault.com/) - Aprende Ciberseguridad.
 
@@ -64,17 +56,11 @@ Recursos y herramientas de interés:
 
 - [DataNerd](https://datanerd.tech/) - 🛠️ Top Skills for Data Nerds 🤓.
 
-- [Guía Entrevistas](https://github.com/DevCaress/guia-entrevistas-de-programacion) - Guía para entrevistas técnicas como Ingeniero de software.
-
 - [LenguajeHTML](https://lenguajehtml.com/) - Guía lenguajes Front.
 
 - [KodeKlouds Labs](https://kodekloud.com/free-labs) - Free Labs.
 
 - [ShipFree](https://shipfree.idee8.agency/) - Ship your startup in days, not weeks.
-
-- [DeskMate](https://desksmate.com/) - Programming Languages cheat sheet Mat Store.
-
-- [DistroSea](https://distrosea.com/) - Test drive Linux distros online!
 
 - [Github Pages](https://pages.github.com/) - Websites for you and your projects.
 
