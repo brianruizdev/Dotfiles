@@ -45,7 +45,7 @@ sudo pacman -S wireplumber unclutter scrot solaar papyrus
 # Qtile WM
 sudo pacman -S qtile qtile-extras feh rofi polybar picom dunst
 sudo pacman -S udiskie blueman-applet cbatticon volumeicon
-sudo pacman -S kitty ranger nemo firefox neofetch htop
+sudo pacman -S alacritty kitty ranger nemo firefox neofetch htop
 sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
 sudo pacman -S uv curl wget zip unzip tar p7zip
 sudo pacman -S wireplumber unclutter scrot solaar papyrus
