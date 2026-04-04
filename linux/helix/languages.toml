@@ -17,7 +17,6 @@ name = "go"
 auto-format = true
 formatter = { command = "goimports" }
 
-
 [[language]]
 name = "html"
 language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]

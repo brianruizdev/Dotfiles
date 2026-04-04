@@ -30,6 +30,5 @@ palette = 13=#fc4cb4
 palette = 14=#8be9fe
 palette = 15=#ededec
 font-size = 14
-# font-family = Cascadia Code
-font-family = HackNerdFont
+font-family = HackNerdFont #Cascadia Code
 mouse-hide-while-typing = true

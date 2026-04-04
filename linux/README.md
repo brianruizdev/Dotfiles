@@ -34,28 +34,21 @@ sudo pacman -Syu
 ```sh
 # Hyprland WM
 sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprlauncher wofi waybar swaync
-```
-
-```sh
-# Qtile WM
-sudo pacman -S qtile qtile-extras feh rofi polybar picom dunst
-sudo pacman -S udiskie blueman-applet cbatticon volumeicon
-```
-
-```sh
-# Essentials
-sudo pacman -S kitty ranger yazi nemo firefox fastfetch htop
+sudo pacman -S kitty ghostty yazi nemo firefox fastfetch htop
 sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
 sudo pacman -S uv curl wget zip unzip tar p7zip
 sudo pacman -S ffmpeg jq poppler ripgrep resvg imagemagick
 sudo pacman -S wireplumber unclutter scrot solaar papyrus
 ```
 
-- Inciamos Hyprland y waybar
-
 ```sh
-Hyprland
-waybar &
+# Qtile WM
+sudo pacman -S qtile qtile-extras feh rofi polybar picom dunst
+sudo pacman -S udiskie blueman-applet cbatticon volumeicon
+sudo pacman -S kitty ranger nemo firefox neofetch htop
+sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
+sudo pacman -S uv curl wget zip unzip tar p7zip
+sudo pacman -S wireplumber unclutter scrot solaar papyrus
 ```
 
 - OhMyZSH
@@ -89,7 +82,7 @@ usermod --shell /usr/bin/zsh <user>
 chsh -s $(which zsh)
 ```
 
-Link simbolico para root (root -> user)
+Link simbólico para root (root -> user)
 
 ```sh
 ln -s -f /home/<user>/.zshrc /root/.zshrc
