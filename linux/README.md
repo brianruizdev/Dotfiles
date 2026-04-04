@@ -54,6 +54,8 @@ sudo pacman -S wireplumber unclutter scrot solaar papyrus
 
 - OhMyZSH
 
+Hay que instalar para cada usuario
+
 ```sh
 # with curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -86,7 +88,7 @@ chsh -s $(which zsh)
 Link simbólico para root (root -> user)
 
 ```sh
-ln -s -f /home/<user>/.zshrc /root/.zshrc
+sudo ln -s -f /home/<user>/.zshrc /root/.zshrc
 ```
 
 - Hack Nerd Fonts

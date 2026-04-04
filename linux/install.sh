@@ -13,7 +13,7 @@ function installDependencies
 {
 	echo -e "\n\tInstalando Dependencias"
 	sudo pacman -Syu
-	sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprlauncher wofi waybar swaync
+	sudo pacman -S hyprland hyprpaper hypridle hyprlock hyprlauncher waybar swaync
 	sudo pacman -S kitty yazi nemo firefox fastfetch htop
 	sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
 	sudo pacman -S uv curl wget zip unzip tar p7zip
@@ -42,10 +42,25 @@ function installDependencies
 	echo -e "\n\tCambiando la shell a zsh"
 	chsh -s $(which zsh)
 
+	# Install oh-my-zsh and plugins on root
+	sudo su
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+	# Autosuggestions
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+	# Syntax
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+	echo -e "\n\tCambiando la shell a zsh en root"
+	chsh -s $(which zsh)
+	exit
+
 	# Install Nerd Fonts
 	sudo su
 	unzip fonts/Hack.zip -d ~/usr/share/fonts
 	unzip fonts/CascadiaCode.zip -d ~/usr/share/fonts
+	exit
 
 	# Install Greetd (with sysc-greet) for Hyprland
 	sudo pacman -S greetd
@@ -115,6 +130,7 @@ function copyFiles
 		echo -e "\n\tNo existe el archivo, copiando ...\n"
 		cp home/.zshrc $HOME/
 	fi
+	sudo ln -s -f $HOME/.zshrc /root/.zshrc
 
 	# Check if nvim directory exist
 	if [ -d "$HOME/.config/nvim" ]; then
