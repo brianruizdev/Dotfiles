@@ -39,6 +39,7 @@ sudo pacman -S zsh lsd bat fzf fd zoxide mdcat
 sudo pacman -S uv curl wget zip unzip tar p7zip
 sudo pacman -S ffmpeg jq poppler ripgrep resvg imagemagick
 sudo pacman -S wireplumber unclutter scrot solaar papyrus
+paru -S pokemon-colorscripts-git
 ```
 
 ```sh
@@ -130,7 +131,7 @@ sudo rm /etc/systemd/system/display-manager.service
 sudo pacman -S greetd
 paru -S sysc-greet-hyprland
 
-# now we can enable LyDM
+# now we can enable greetdDM
 sudo systemcl enable greetd.service
 ```
 
