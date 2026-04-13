@@ -72,10 +72,8 @@ paru -S xdg-user-dirs pokemon-colorscripts-git
 # update $HOME directories
 xdg-user-dirs-update
 
-# set a wallpaper
+# set a wallpaper and matugen colors
 awww img ~/.config/wallpapers/fuji.png --transition-type center --transition-fps 120
-
-# set matugen colors
 matugen image ~/.config/wallpapers/fuji.png
 ```
 
@@ -88,7 +86,7 @@ Hay que instalar para cada usuario
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -153,8 +151,8 @@ sudo rm /etc/systemd/system/display-manager.service
 ```sh
 # Pixie SDDM for Hyprland
 sudo pacman -S sddm sddm-kcm qt6-declarative qt6-svg qt6-quickcontrols2
-paru -S --needed pixie-sddm-git
 sudo systemcl enable sddm.service
+paru -S --needed pixie-sddm-git
 
 # configuring
 cd /etc/sddm/
@@ -182,18 +180,18 @@ sudo nvim config.ini
 
 ```sh
 sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git ~/.config
-cd .config/paru
-makepkg -si
+git clone https://aur.archlinux.org/paru.git
+(cd paru && makepkg -si --noconfirm)
+rm -rf ./paru
 ```
 
 [`Yay`](https://aur.archlinux.org/packages/yay)
 
 ```sh
 sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/yay.git ~/.config
-cd .config/yay
-makepkg -si
+git clone https://aur.archlinux.org/yay.git
+(cd yay && makepkg -si --noconfirm)
+rm -rf ./yay
 ```
 
 [`BlackArch`](https://blackarch.org/downloads.html)

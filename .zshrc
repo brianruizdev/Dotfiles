@@ -27,8 +27,7 @@ function user () {
 	if [[ "$EUID" -eq 0 ]]; then
 		echo "%F{yellow}󰈸%f"
 	else
-		# echo "%F{magenta}󰊠%f"
-		echo "%F{red}󰐝%f"
+		echo "%F{magenta}󰐝%f"
 	fi
 }
 
@@ -101,7 +100,22 @@ alias vim='nvim'
 # Functions
 
 function walset () {
-	matugen image "$1" &> /dev/null
+	if [ -z "$1" ]; then
+		echo "Uso: walset img.jpg"
+		return 1
+	fi
+
+	local img=$1
+	local path="$HOME/.config/wallpapers/$img"
+
+	# Verificar si el archivo realmente existe
+	if [ ! -f "$path" ]; then
+		echo "Error: La imagen $img no existe en $HOME/.config/wallpapers/"
+		return 1
+	fi
+
+	swww img "$path" --transition-type center --transition-fps 120
+	matugen image "$path" &> /dev/null
 }
 
 function mkt () {

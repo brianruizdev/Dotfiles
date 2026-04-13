@@ -1,4 +1,5 @@
 * {
+	font: "Hack Nerd Font Propo 10";
 	background:     #1E2127FF;
 	background-alt: #282B31FF;
 	foreground:     #FFFFFFFF;

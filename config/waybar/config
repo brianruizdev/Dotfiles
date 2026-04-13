@@ -27,6 +27,7 @@
 	},
 	"hyprland/window": {
 		"format": "{}",
+		"max-length": 30,
 		"separate-outputs": true
 	},
 	"cpu": {
@@ -51,7 +52,11 @@
 			"persistent": "󰊠"
 		},
 		"persistent-workspaces": {
-			"*": 5
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
 		}
 	},
 	"tray": {

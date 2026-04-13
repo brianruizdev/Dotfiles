@@ -25,9 +25,15 @@ function installDependencies () {
 
 	# Install paru
 	echo -e "\n\tInstalando Paru (AUR)"
-	sudo pacman -S --needed --noconfirm base-devel
-	git clone https://aur.archlinux.org/paru.git ~/.config
-	(cd ~/.config/paru && makepkg -si)
+	if ! command -v paru &> /dev/null; then
+		echo "Instalando Paru..."
+		sudo pacman -S --needed --noconfirm base-devel
+		git clone https://aur.archlinux.org/paru.git
+		(cd paru && makepkg -si --noconfirm)
+		rm -rf ./paru
+	else
+		echo -e "\n\tParu ya está instalado!"
+	fi
 
 	# Install AUR packages
 	paru -S --needed --noconfirm xdg-user-dirs wlogout pokemon-colorscripts-git
@@ -39,11 +45,12 @@ function installDependencies () {
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 	# Autosuggestions
-	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+	git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 	# Syntax
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+	# Changing shell to ZSH
 	echo -e "\n\tCambiando la shell a zsh"
 	chsh -s $(which zsh)
 
@@ -54,82 +61,75 @@ function installDependencies () {
 
 	# Install SDDM (with Pixie) for Hyprland
 	sudo pacman -S --noconfirm sddm sddm-kcm qt6-declarative qt6-svg qt6-quickcontrols2
-	paru -S --noconfirm pixie-sddm-git
 	sudo systemcl enable sddm.service
+	paru -S --noconfirm pixie-sddm-git
 
 	# Install LazyVim
+	echo -e "\n\tInstalando LazyVim"
 	git clone https://github.com/LazyVim/starter ~/.config/nvim
 	rm -rf ~/.config/nvim/.git
+
+	echo -e "\n\t¡Instalaciones completas!"
 }
 
 function copyFiles () {
 	echo -e "\n\tCopiando archivos"
 
 	echo -e "\n\tCopiando Wallpapers"
-	cp -r ./wallpapers/ $HOME/.config/wallpapers
-	awww img ~/.config/wallpapers/fuji.png --transition-type center --transition-fps 120
-	echo -e "\n\tWallpapers listo!"
+	cp -r $HOME/Dotfiles/wallpapers/ $HOME/.config/wallpapers
+	awww img $HOME/.config/wallpapers/fuji.png --transition-type center --transition-fps 120
+	echo -e "\n\t¡Wallpapers listo!"
 
 	echo -e "\n\tCopiando Hyprland"
 	if [ -d "$HOME/.config/hypr" ]; then
 		echo -e "\n\tExiste el directorio hypr...\n\tCopiando archivos\n"
-		cp -r config/hypr/* $HOME/.config/hypr
+		cp -r $HOME/Dotfiles/config/hypr/* $HOME/.config/hypr
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/hypr
-		cp -r config/hypr/* $HOME/.config/hypr
+		cp -r $HOME/Dotfiles/config/hypr $HOME/.config/
 	fi
-	echo -e "\n\tHyprland listo!"
+	echo -e "\n\t¡Hyprland listo!"
 
 	echo -e "\n\tCopiando Waybar"
 	if [ -d "$HOME/.config/waybar" ]; then
 		echo -e "\n\tExiste el directorio waybar...\n\tCopiando archivos\n"
-		cp -r config/waybar/* $HOME/.config/waybar
+		cp -r $HOME/Dotfiles/config/waybar/* $HOME/.config/waybar
 	else
-		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/waybar
-		cp -r config/waybar/* $HOME/.config/waybar/
+		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"cp -r
+		cp -r $HOME/Dotfiles/config/waybar $HOME/.config/
 	fi
-	echo -e "\n\tWaybar listo!"
+	echo -e "\n\t¡Waybar listo!"
 
 	echo -e "\n\tCopiando SDDM"
 	if [ -d "$HOME/.config/sddm" ]; then
 		echo -e "\n\tExiste el directorio sddm...\n\tCopiando archivos\n"
-		cp -r config/sddm/* $HOME/.config/sddm
+		cp -r $HOME/Dotfiles/config/sddm/* $HOME/.config/sddm
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/sddm
-		cp -r config/sddm/* $HOME/.config/sddm/
+		cp -r $HOME/Dotfiles/config/sddm $HOME/.config/
 	fi
-	echo -e "\n\tSDDM listo!"
+	echo -e "\n\t¡SDDM listo!"
 
 	echo -e "\n\tCopiando Fastfetch"
 	if [ -d "$HOME/.config/fastfetch" ]; then
 		echo -e "\n\tExiste el directorio fastfetch...\n\tCopiando archivos\n"
-		cp -r config/fastfetch/* $HOME/.config/fastfetch/
+		cp -r $HOME/Dotfiles/config/fastfetch/* $HOME/.config/fastfetch/
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/fastfetch
-		cp -r config/fastfetch/* $HOME/.config/fastfetch/
+		cp -r $HOME/Dotfiles/config/fastfetch $HOME/.config/
 	fi
-	echo -e "\n\tFastfetch listo!"
+	echo -e "\n\t¡Fastfetch listo!"
 
 	echo -e "\n\tCopiando Kitty"
 	if [ -d "$HOME/.config/kitty" ]; then
-		echo -e "\n\tExiste el directorio kitty"
-		if [ -f "$HOME/.config/kitty/kitty.conf" ]; then
-			echo -e "\tExiste el archivo kitty.conf"
-			cp -r $HOME/.config/kitty/kitty.conf $HOME/.config/kitty/backup_kitty.conf
-			cp -r config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
-		else
-			echo -e "\n\tNo existe el archivo copiando ...\n"
-			cp -r config/kitty/kitty.conf $HOME/.config/kitty/
-		fi
+		echo -e "\n\tExiste el directorio kitty...\n\tCopiando archivos\n"
+		cp -r $HOME/Dotfiles/config/kitty/* $HOME/.config/kitty/
 	else
-		echo -e "\n\tEl directorio no existe copiando...\n"
-		cp -r config/kitty/ $HOME/.config/
+		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
+
+		cp -r $HOME/Dotfiles/config/kitty $HOME/.config/
 	fi
-	echo -e "\n\tKitty listo!"
+	echo -e "\n\t¡Kittylisto!"
 
 	echo -e "\n\tCopiando ZSH"
 	if [ -f "$HOME/.zshrc" ]; then
@@ -137,68 +137,66 @@ function copyFiles () {
 		cp -r $HOME/.zshrc $HOME/.zshrc_backup
 	else
 		echo -e "\n\tNo existe el archivo, copiando ...\n"
-		cp -r home/.zshrc $HOME/
+		cp -r $HOME/Dotfiles/home/.zshrc $HOME/
 	fi
-	source ~/.zshrc
+	source $HOME/.zshrc
 	sudo ln -s -f $HOME/.zshrc /root/.zshrc
-	echo -e "\n\tZSH listo!"
+	echo -e "\n\t¡ZSH listo!"
 
 	echo -e "\n\tCopiando Rofi"
 	if [ -d "$HOME/.config/rofi" ]; then
 		echo -e "\n\tExiste el directorio rofi...\n\tCopiando archivos\n"
-		cp -r config/rofi/* $HOME/.config/rofi/
+		cp -r $HOME/Dotfiles/config/rofi/* $HOME/.config/rofi/
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/rofi
-		cp -r config/rofi/* $HOME/.config/rofi/
+		cp -r $HOME/Dotfiles/config/rofi $HOME/.config/
 	fi
-	echo -e "\n\tRofi listo!"
+	echo -e "\n\t¡Rofi listo!"
 
 	echo -e "\n\tCopiando Yazi"
 	if [ -d "$HOME/.config/yazi" ]; then
 		echo -e "\n\tExiste el directorio yazi...\n\tCopiando archivos\n"
-		cp -r config/yazi/* $HOME/.config/yazi/
+		cp -r $HOME/Dotfiles/config/yazi/* $HOME/.config/yazi/
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/yazi
-		cp -r config/yazi/* $HOME/.config/yazi/
+		cp -r $HOME/Dotfiles/config/yazi $HOME/.config/
 	fi
-	echo -e "\n\tYazi listo!"
+	echo -e "\n\t¡Yazi listo!"
 
 	echo -e "\n\tCopiando Swaync"
 	if [ -d "$HOME/.config/swaync" ]; then
 		echo -e "\n\tExiste el directorio swaync...\n\tCopiando archivos\n"
-		cp -r config/swaync/* $HOME/.config/swaync/
+		cp -r $HOME/Dotfiles/config/swaync/* $HOME/.config/swaync/
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/swaync
-		cp -r config/swaync/* $HOME/.config/swaync/
+		cp -r $HOME/Dotfiles/config/swaync $HOME/.config/
 	fi
-	echo -e "\n\tSwaync listo!"
+	echo -e "\n\t¡Swaync listo!"
 
 	echo -e "\n\tCopiando Wlogout"
 	if [ -d "$HOME/.config/wlogout" ]; then
 		echo -e "\n\tExiste el directorio Wlogout...\n\tCopiando archivos\n"
-		cp -r config/wlogout/* $HOME/.config/wlogout/
+		cp -r $HOME/Dotfiles/config/wlogout/* $HOME/.config/wlogout/
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/wlogout
-		cp -r config/wlogout/* $HOME/.config/wlogout/
+		cp -r $HOME/Dotfiles/config/wlogout $HOME/.config/
 	fi
-	echo -e "\n\tWlogout listo!"
+	echo -e "\n\t¡Wlogout listo!"
 
 	echo -e "\n\tCopiando Matugen"
 	if [ -d "$HOME/.config/matugen" ]; then
 		echo -e "\n\tExiste el directorio Matugen...\n\tCopiando archivos\n"
-		cp -r config/matugen/* $HOME/.config/matugen/
+		cp -r $HOME/Dotfiles/config/matugen/* $HOME/.config/matugen/
 	else
 		echo -e "\n\tEl directorio no existe...\n\tCreandolo...\n"
-		mkdir $HOME/.config/matugen
-		cp -r config/matugen/* $HOME/.config/matugen/
+		cp -r $HOME/Dotfiles/config/matugen $HOME/.config/
 	fi
+	echo -e "\n\t¡Matugen listo!"
+
+	echo -e "\n\t¡Copias completas!"
 }
 
 presentation
 installDependencies
 copyFiles
-echo -e "\n\tTODO LISTO!"
+echo -e "\n\t¡TODO LISTO!"
