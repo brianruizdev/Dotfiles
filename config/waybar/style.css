@@ -1,0 +1,99 @@
+@import './one-dark.css';
+
+* {
+	border: none;
+	border-radius: 0px;
+	font-family: "Hack Nerd Fonts";
+	font-weight: bold;
+	min-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+tooltip {
+	background: @bg0;
+	border: 1px solid @bg3;
+	border-radius: 12px;
+}
+
+tooltip label {
+	color: @fg;
+	padding: 6px;
+}
+
+#workspaces {
+	background-color: @bg0;
+	padding: 5px 3px;
+	margin: 0 0 0 12px;
+	border: 1px, solid @bg1
+	border-radius: 18px;
+	color: @fg;
+}
+
+#workspaces button {
+	padding: 0px 6px;
+	margin: 0px 3px;
+	border-radius: 50px;
+	color: transparent;
+	transition: all 300ms ease-in-out;
+}
+
+#workspaces button.active {
+	color: @yellow;
+	min-width: 50px;
+	font-size: 13px;
+	background: transparent;
+	transition: all 300ms ease-in-out;
+}
+
+#workspaces button.empty {
+	color: @purple;
+	font-size: 2px;
+	transition: none;
+	background: transparent;
+}
+
+#workspaces button.persistent {
+	color: @blue;
+	font-size: 4px;
+	background: transparent;
+	transition: none;
+}
+
+#workspaces button:hover {
+	color: @yellow;
+	border-radius: 16px;
+	min-width: 50px;
+	background-size: 400% 400%;
+	background: transparent;
+}
+
+#workspaces button.urgent {
+	color: @red;
+	border-radius: 16px;
+	min-width: 50px;
+	background: transparent;
+	background-size: 400% 400%;
+	transition: all 300ms ease-in-out;
+}
+
+#custom-launcher,
+#cpu,
+#memory,
+#disk
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#custom-notification {
+	color: @fg;
+	background-color: @bg0;
+	padding: 0 15px 0 15px;
+	margin: 0 0 0 12px;
+	border: 1px, solid @bg1
+	border-radius: 45px;
+}

@@ -1,0 +1,30 @@
+{
+	"label": "lock",
+	"action": "hyprlock",
+	"text": "Lock",
+	"keybind": "l"
+}
+{
+	"label": "logout",
+	"action": "loginctl kill-session $XDG_SESSION_ID",
+	"text": "Logout",
+	"keybind": "e"
+}
+{
+	"label": "sleep",
+	"action": "loginctl lock-session && systemctl suspend",
+	"text": "Sleep",
+	"keybind": "h"
+}
+{
+	"label": "reboot",
+	"action": "terminate_clients && systemctl reboot",
+	"text": "Reboot",
+	"keybind": "r"
+}
+{
+	"label": "shutdown",
+	"action": "terminate_clients && systemctl poweroff",
+	"text": "Shutdown",
+	"keybind": "s"
+}

@@ -1,0 +1,167 @@
+{
+	"position": "top",
+	"width": 1728,
+	"margin-top": 10,
+	"margin-bottom": 0,
+	"modules-left": [
+		"custom/launcher",
+		"hyprland/window",
+		"cpu",
+		"memory",
+		"disk"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"tray",
+		"network",
+		"pulseaudio",
+		"battery",
+		"clock",
+		"custom/notification"
+	],
+	"custom/launcher": {
+		"format": " ",
+		"on-click": "~/.config/rofi/launcher.sh || pkill rofi"
+	},
+	"hyprland/window": {
+		"format": "{}",
+		"separate-outputs": true
+	},
+	"cpu": {
+		"interval": 15,
+		"format": "<span color='#f7768e'> </span> {}%",
+		"max-length": 10
+	},
+	"memory": {
+		"interval": 30,
+		"format": "<span color='#7dcfff'> </span> {used}GiB",
+		"max-length": 10
+	},
+	"disk": {
+		"format": "<span color='#e0af68'> </span> {used}",
+		"interval": 1
+	},
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "<span font='12'>󰮯</span>",
+			"empty": "<span font='8'></span>",
+			"persistent": "󰊠"
+		},
+		"persistent-workspaces": {
+			"*": 5
+		}
+	},
+	"tray": {
+		"icon-size": 21,
+		"spacing": 10
+	},
+	"network": {
+		"interface": "wlp5s0",
+		"format": "{ifname}",
+		"format-wifi": "<span color='#9ece6a'> </span> {essid}",
+		"format-ethernet": "<span color='#9ece6a'> </span> {ipaddr}/{cidr}",
+		"format-disconnected": "<span color='#9ece6a'> </span>",
+		"tooltip-format": "󰊗 {ifname} via {gwaddr}",
+		"tooltip-format-wifi": "  {essid} - {bandwidthDownBits}",
+		"tooltip-format-ethernet": "  {ifname} - {bandwidthDownBits}",
+		"tooltip-format-disconnected": "Disconnected",
+		"max-length": 50
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"headset": "",
+			"default": [
+				"<span color='#7aa2f7'> </span>",
+				"<span color='#7aa2f7'> </span>",
+				"<span color='#7aa2f7'> </span>"
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	},
+	"battery": {
+		"interval": 60,
+		"states": {
+			"good": 80,
+			"warning": 30,
+			"critical": 20
+		},
+		"format": "{icon} {capacity}%",
+		"format-icons": {
+			"default": [
+				"<span color='#f7768e'></span>",
+				"<span color='#e0af68'></span>",
+				"<span color='#e0af68'></span>",
+				"<span color='#9ece6a'></span>",
+				"<span color='#9ece6a'></span>"
+			],
+			"charging": [
+				"<span color='#9ece6a'></span>"
+			]
+		},
+		"max-length": 25
+	},
+	"clock": {
+		"interval": 60,
+		"format": "{:%H:%M %p}",
+		"max-length": 25,
+		"tooltip": true,
+		"tooltip-format": "{:%Y-%m-%d}"
+	},
+	"custom/media": {
+		"interval": 30,
+		"format": "{icon} {}",
+		"return-type": "json",
+		"max-length": 20,
+		"format-icons": {
+			"spotify": " ",
+			"default": " "
+		},
+		"escape": true,
+		"exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+		"on-click": "playerctl play-pause"
+	},
+	"custom/updates": {
+		"format": "{icon} {}",
+		"interval": 15,
+		"return-type": "json",
+		"format-icons": {
+			"pending-updates": " ",
+			"updated": ""
+		},
+		"exec": "checkupdates | wc -l",
+		"exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+		"on-click": "kitty -e paru -Syu && notify-send 'The system has been updated' "
+	},
+	"custom/notification": {
+		"tooltip": true,
+		"format": "<span size='16pt'>{icon}</span>",
+		"format-icons": {
+			"notification": "󱅫",
+			"none": "󰂜",
+			"dnd-notification": "󰂠",
+			"dnd-none": "󰪓",
+			"inhibited-notification": "󰂛",
+			"inhibited-none": "󰪑",
+			"dnd-inhibited-notification": "󰂛",
+			"dnd-inhibited-none": "󰪑"
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},
+	"custom/power": {
+		"format": "<span color='#f7768e'>⏻</span>",
+		"on-click": "wlogout"
+	}
+}
