@@ -15,13 +15,13 @@ function installDependencies () {
 
 	sudo pacman -Syu --noconfirm
 	sudo pacman -S --needed --noconfirm hyprland hypridle hyprlock waybar awww
-	sudo pacman -S --needed --noconfirm kitty ghostty yazi fastfetch rofi swaync matugen
+	sudo pacman -S --needed --noconfirm kitty ghostty yazi superfile fastfetch rofi swaync matugen
 	sudo pacman -S --needed --noconfirm zsh uv htop udiskie nwg-look nemo firefox
-	sudo pacman -S --needed --noconfirm lsd bat fzf fd zoxide ripgrep mdcat
+	sudo pacman -S --needed --noconfirm lsd bat fzf fd zoxide ripgrep
 	sudo pacman -S --needed --noconfirm ffmpeg jq poppler resvg imagemagick
 	sudo pacman -S --needed --noconfirm curl wget zip unzip tar p7zip
 	sudo pacman -S --needed --noconfirm grim slurp cliphist wl-clipboard wl-clip-persist
-	sudo pacman -S --needed --noconfirm wireplumber solaar papyrus
+	sudo pacman -S --needed --noconfirm wireplumber solaar papyrus impala bluetui wiremix
 
 	# Install paru
 	echo -e "\n\tInstalando Paru (AUR)"
@@ -55,13 +55,13 @@ function installDependencies () {
 	chsh -s $(which zsh)
 
 	# Install Nerd Fonts
-	sudo unzip ./fonts/Hack.zip -d /usr/share/fonts
-	sudo unzip ./fonts/CascadiaCode.zip -d /usr/share/Fonts
+	sudo unzip ./fonts/Hack.zip -d /usr/share/fonts/Hack
+	sudo unzip ./fonts/CascadiaCode.zip -d /usr/share/fonts/CascadiaCode
 	sudo fc-cache -f -v
 
 	# Install SDDM (with Pixie) for Hyprland
-	sudo pacman -S --noconfirm sddm sddm-kcm qt6-declarative qt6-svg qt6-quickcontrols2
-	sudo systemcl enable sddm.service
+	sudo pacman -S --noconfirm sddm sddm-kcm qt6-declarative qt6-svg
+	sudo systemctl enable sddm.service
 	paru -S --noconfirm pixie-sddm-git
 
 	# Install LazyVim

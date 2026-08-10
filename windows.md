@@ -129,6 +129,54 @@ winget install zig.zig lsd-rs.lsd sharkdp.bat junegunn.fzf sharkdp.fd BurntSushi
 winget install sxyazi.yazi
 # Install the optional dependencies (recommended):
 winget install Gyan.FFmpeg 7zip.7zip jqlang.jq oschwartz10612.Poppler sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
+
+# Superfile
+winget install yorukot.superfile
+# Before install, need to install any NerdFont
+```
+
+### AI Tools & Agents
+
+- CLI Tools
+
+```sh
+# OpenCode CLI
+winget install SST.OpenCode
+```
+
+```sh
+# Claude Code CLI
+winget install Anthropic.ClaudeCode
+```
+
+- Agents
+
+```sh
+# OpenCode Desktop
+winget install SST.OpenCodeDesktop
+```
+
+```sh
+# Claude
+winget install Anthropic.Claude
+```
+
+```sh
+# MiniMax
+winget install MiniMax.MiniMaxCode
+```
+
+```sh
+# LM Studio
+winget install ElementLabs.LMStudio
+```
+
+```sh
+# Ollama
+winget install Ollama.Ollama
+
+# Ollama Portable
+winget install Ollama.Ollama.Portable
 ```
 
 ### Python
@@ -137,29 +185,15 @@ winget install Gyan.FFmpeg 7zip.7zip jqlang.jq oschwartz10612.Poppler sharkdp.fd
 winget install Python.Python.3.14
 ```
 
-Con `pip` (package installer for python) podemos instalar paquetes como librerías y frameworks de `Python` como `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Gradio`, `Django`, `FastAPI`, `Flask`, `Streamlit`, `Reflex`, `Flet`, `ReactPy`, `FastHTML`, `NiceGUI` entre otros, con el comando:
-
-```sh
-pip install <package-name>
-```
-
-También podemos usar `uv` que es una alternativa moderna de `pip`:
+With `pip` (package installer for python) we can install libraries and frameworks or we can install and use `uv` as a modern alternative.
 
 ```sh
 winget install astral-sh.uv
 ```
 
-```sh
-# checking uv
-uv
-```
+Here are some useful packages: `virtualenv`, `NumPy`, `Pandas`, `PyTorch`, `Matplotlib`, `Gradio`, `Django`, `FastAPI`, `Flask`, `Streamlit`, `Reflex`, `Flet`, `ReactPy`, `FastHTML`, `NiceGUI`.
 
-```sh
-# installing packages
-uv pip install <package>
-```
-
-Creating a virtual environment (venv):
+Creating a virtual environment (`venv`):
 
 ```sh
 # Traditional method
@@ -171,7 +205,7 @@ uv venv
 # activating on windows
 .venv\Scripts\activate
 
-#  activating on unix
+# activating on unix
 source .venv/bin/activate
 
 # deactivating venv
@@ -184,13 +218,15 @@ deactivate
 winget install OpenJS.NodeJS.LTS
 ```
 
-Con `npm` (node package manager) podemos instalar paquetes como librerías y frameworks de `NodeJS` como `Vite`, `RsPack`, `React`, `ExpressJS`, `Mongoose`, `TailwindCSS`, `NextJS`, `NestJS`, `Hono`, `Expo`, entre otros, con el comando:
+With `npm` (node package manager) we can install packages and libraries or we can install and use `pnpm` as a modern alternative.
 
 ```sh
-npm install <package-name>
+winget install pnpm.pnpm
 ```
 
-Alternativas a `NodeJS`:
+Here are some useful packages: `Vite`, `RsPack`, `React`, `ExpressJS`, `Mongoose`, `TailwindCSS`, `NextJS`, `NestJS`, `Hono`, `Expo`.
+
+`NodeJS` alternatives:
 
 ```sh
 # Deno
@@ -207,11 +243,6 @@ winget install Oven-sh.Bun
 ```sh
 # Server
 winget install MongoDB.Server
-```
-
-```sh
-# Shell
-winget install MongoDB.Shell
 ```
 
 ```sh
@@ -238,50 +269,28 @@ winget install ApacheFriends.Xampp.8.2
 
 - [`DBngin`](https://dbngin.com/) - Database Version Management Tool.
 
-- MySQL:
-
 ```sh
 # MySQL
 winget install Oracle.MySQL
-```
 
-```sh
 # MySQL Workbench 8.0 CE
 winget install Oracle.MySQLWorkbench
 ```
 
 ```sh
-# SQLectron
-winget install sqlectron.sqlectron-gui
-```
-
-- PostgreSQL:
-
-```sh
 # PostgreSQL
 winget install PostgreSQL.PostgreSQL.17
-```
 
-```sh
 # pgAdmin
 winget install PostgreSQL.pgAdmin
 ```
 
-- SQLite:
-
 ```sh
 # SQLite
 winget install SQLite.SQLite
-```
 
-```sh
 # SQLiteStudio
 winget install PawelSalawa.SQLiteStudio
-```
-
-```sh
-# DB Browser for SQLite
-winget install DBBrowserForSQLite.DBBrowserForSQLite
 ```
 
 ### Editores & IDEs
@@ -305,42 +314,7 @@ Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
 winget install Microsoft.VisualStudioCode
 ```
 
-```sh
-# WebStorm
-winget install JetBrains.WebStorm
-```
-
-```sh
-# PyCharm Community
-winget install JetBrains.PyCharm.Community
-```
-
-```sh
-# IntelliJ IDEA Community
-winget install JetBrains.IntelliJIDEA.Community
-```
-
-```sh
-# DataGrip
-winget install JetBrains.DataGrip
-```
-
-```sh
-# DataSpell
-winget install JetBrains.DataSpell
-```
-
-```sh
-# Spyder
-winget install Spyder.Spyder
-```
-
-```sh
-# RunJS
-winget install lukehaas.RunJS
-```
-
-### Microsoft Tools
+### Microsoft Tools & Customizing Windows
 
 ```sh
 # PC Manager
@@ -356,9 +330,9 @@ winget install Microsoft.PowerToys
 
 1. Download the [`Office Deployment Tool`](https://learn.microsoft.com/en-us/office/ltsc/2024/deploy) from the [`Microsoft Download Center`](https://www.microsoft.com/en-us/download/details.aspx?id=49117) or try with `winget`. Keep the "`Setup.exe`" file and erase another files.
 
-   ```sh
-   winget install Microsoft.OfficeDeploymentTool
-   ```
+    ```sh
+    winget install Microsoft.OfficeDeploymentTool
+    ```
 
 2. Create and export the [`Office Customization Tool`](https://config.office.com/deploymentsettings) file as "`Office Open XML`" and name it "`Configuration`", then move the "`Configuration.xml`" file to the folder with the "`Setup.exe`" file.
 
@@ -378,70 +352,6 @@ winget install Microsoft.PowerToys
 # Power BI
 winget install Microsoft.PowerBI
 ```
-
-### Softwares Útiles
-
-```sh
-# iCloud
-winget install iCloud
-```
-
-```sh
-# Drive
-winget install Google.GoogleDrive
-```
-
-```sh
-# Steam
-winget install Valve.Steam
-```
-
-```sh
-# Spotify
-winget install Spotify.Spotify
-```
-
-```sh
-# Discord
-winget install Discord.Discord
-```
-
-```sh
-# OBS Studio
-winget install OBSProject.OBSStudio
-```
-
-```sh
-# Proton VPN
-winget install Proton.ProtonVPN
-```
-
-```sh
-# TunnelBear
-winget install TunnelBear.TunnelBear
-```
-
-```sh
-# VirtualBox
-winget install Oracle.VirtualBox
-```
-
-```sh
-# Transmission
-winget install Transmission.Transmission
-```
-
-```sh
-# balenaEtcher
-winget install Balena.Etcher
-```
-
-```sh
-# Ngrok
-winget install Ngrok.Ngrok
-```
-
-### Customizing Windows
 
 ```sh
 # Files (file explorer) ⭐
@@ -476,31 +386,6 @@ winget install Bopsoft.Listary
 ```sh
 # Fluent Search (app launcher)
 winget install BlastApps.FluentSearch
-```
-
-```sh
-# StartAllBack (taskbar config)
-winget install StartIsBack.StartAllBack
-```
-
-```sh
-# Start11 (taskbar config)
-winget install Stardock.Start11
-```
-
-```sh
-# TranslucentTB (transparent taskbar)
-winget install CharlesMilette.TranslucentTB
-```
-
-```sh
-# Lively Wallpaper (live wallpapers)
-winget install rocksdanister.LivelyWallpaper
-```
-
-```sh
-# Sucrose Wallpaper Engine (live wallpapers)
-winget install Taiizor.SucroseWallpaperEngine
 ```
 
 ## WSL (Windows Subsystem for Linux)

@@ -94,6 +94,9 @@ alias cat='bat'
 alias catn='bat --style=plain'
 alias catnp='bat --style=plain --paging=never'
 alias vim='nvim'
+alias lzg='lazygit'
+alias lzd='lazydocker'
+alias lzsql='lazysql'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -114,7 +117,7 @@ function walset () {
 		return 1
 	fi
 
-	swww img "$path" --transition-type center --transition-fps 120
+	awww img "$path" --transition-type center --transition-fps 120
 	matugen image "$path" &> /dev/null
 }
 

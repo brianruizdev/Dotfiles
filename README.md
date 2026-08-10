@@ -105,3 +105,7 @@ Recursos y herramientas de interés:
 - [ToDiagram](https://todiagram.com/) - Convert JSON into interactive diagrams.
 
 - [WinBoat](https://www.winboat.app/) - Run Windows apps on 🐧 Linux with ✨ seamless integration.
+
+- [AnimeJS](https://animejs.com/) - All-in-one animation engine.
+
+- [TerminalTrove](https://terminaltrove.com/) - Find your next TUI tool at Terminal Trove.

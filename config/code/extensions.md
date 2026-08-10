@@ -8,11 +8,15 @@
 
 - [Bootstrap 5 Quick Snippets](https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode)
 
+- [Claude Code for VS Code](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) 🤖
+
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) ⭐
 
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) ⭐
 
-- - [Spanish Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish) 📦 ⭐
+- [Codex – OpenAI’s coding agent](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) 🤖
+
+- - [Spanish Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-spanish) 📦
 
 - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 
@@ -40,13 +44,17 @@
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) ⭐
 
+- [FileTree Pro](https://marketplace.visualstudio.com/items?itemName=0xTanzim.filetree-pro) ⭐
+
 - [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 
 - - [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) 📦
 
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) ⭐
+- [Gemini Code Assist](https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist) 🤖
 
-- - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) 📦 ⭐
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) 🤖
+
+- - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) 📦
 
 - [GitHub Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
@@ -60,13 +68,17 @@
 
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) ⭐
 
-- - [Jupyter Cell Tags](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-cell-tags) 📦 ⭐
+- - [Jupyter Cell Tags](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-cell-tags) 📦
 
-- - [Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-keymap) 📦 ⭐
+- - [Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-keymap) 📦
 
-- - [Jupyter Notebook Renderers](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-renderers) 📦 ⭐
+- - [Jupyter Notebook Renderers](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-renderers) 📦
 
-- - [Jupyter Slide Show](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-slideshow) 📦 ⭐
+- - [Jupyter Slide Show](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-jupyter-slideshow) 📦
+
+- [Kilo Code: AI Coding Agent, Copilot, and Autocomplete](https://marketplace.visualstudio.com/items?itemName=kilocode.Kilo-Code) 🤖
+
+- [Kombai - Your AI design engineer](https://marketplace.visualstudio.com/items?itemName=Kombai.kombai) 🤖
 
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
@@ -80,11 +92,15 @@
 
 - [MySQL](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2) ⭐
 
-- - [Database Client JDBC](https://marketplace.visualstudio.com/items?itemName=cweijan.dbclient-jdbc) 📦 ⭐
+- - [Database Client JDBC](https://marketplace.visualstudio.com/items?itemName=cweijan.dbclient-jdbc) 📦
 
 - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
 - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) ⭐
+
+- [OpenCode](https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode) 🤖
+
+- [Opilot](https://marketplace.visualstudio.com/items?itemName=selfagency.opilot) 🤖
 
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
@@ -98,9 +114,9 @@
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) ⭐
 
-- - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) 📦 ⭐
+- - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) 📦
 
-- - [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy) 📦 ⭐
+- - [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy) 📦
 
 - [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) ⭐
 

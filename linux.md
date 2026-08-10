@@ -13,14 +13,31 @@
 > [!NOTE]
 > Pre-builts [`Omarchy`](https://omarchy.org/) or [`ArchCraft`](https://archcraft.io/).
 
-- Installing ArchLinux:
+- Installing Arch:
+
+Una vez que iniciamos el disco de arranque desde `UEFI`, activamos la conexión wifi de la siguiente manera:
+
+```sh
+iwctl
+device list
+station <device-name> scan
+station <device-name> get-networks
+station <device-name> connect <network-name>
+# Ctrl+D para salir
+```
+
+Actualizamos `archinstall`
+
+```sh
+pacman -Sy archinstall
+```
 
 Usamos `archinstall` y hacemos una instalación `minimal` con los paquetes `git`, `neovim` y `gcc`. Una vez finalizado, reiniciamos el sistema.
 
 - Configuramos el wifi con NetworkMaganer
 
 ```sh
-nmcli dev wifi connect "<name>" password "<pass>"
+nmcli dev wifi connect <name> password <pass>
 ```
 
 - Actualizamos
@@ -44,7 +61,7 @@ chmod +x ./Dotfiles/install.sh
 ```sh
 # Hyprland WM
 sudo pacman -S hyprland hyprpaper hyprpicker hypridle hyprlock sddm waybar awww
-sudo pacman -S kitty ghostty yazi fastfetch btop swaync matugen nwg-look
+sudo pacman -S kitty ghostty yazi superfile fastfetch btop swaync matugen nwg-look
 sudo pacman -S grim slurp cliphist wl-clipboard wl-clip-persist
 paru -S wlogout
 paru -S walker-bin elephant-bin elephant-providerlist-bin elephant-desktopapplications-bin
@@ -61,11 +78,13 @@ sudo pacman -S unclutter scrot
 ```sh
 # Essentials
 sudo pacman -S zsh uv udiskie rofi nemo firefox
-sudo pacman -S lsd bat fzf fd zoxide ripgrep mdcat
+sudo pacman -S lsd bat fzf fd zoxide ripgrep
 sudo pacman -S ffmpeg jq poppler resvg imagemagick
 sudo pacman -S curl wget zip unzip tar p7zip
 sudo pacman -S wireplumber solaar papyrus
+sudo pacman -S impala bluetui wiremix
 paru -S xdg-user-dirs pokemon-colorscripts-git
+sudo pacman -S opencode lazygit lazydocker lazysql
 ```
 
 ```sh
@@ -113,13 +132,24 @@ Link simbólico para root (root -> user)
 sudo ln -s -f /home/<user>/.zshrc /root/.zshrc
 ```
 
+- Limine Boot Options
+
+```sh
+# adding boot options
+paru -S limine-entry-tool
+sudo limine-entry-tool --scan
+sudo limine-entry-tool --tree
+```
+
+- More Terminal UI Tools on [TerminalTrove](https://terminaltrove.com/).
+
 - Hack Nerd Fonts
 
 Download the [`Nerd Fonts`](https://www.nerdfonts.com/font-downloads) from de web site, then:
 
 ```sh
-sudo unzip /home/brian/Downloads/Hack.zip -d /usr/share/fonts
-sudo unzip /home/brian/Downloads/CascadiaCode.zip -d /usr/share/fonts
+sudo unzip /home/brian/Downloads/Hack.zip -d /usr/share/fonts/Hack
+sudo unzip /home/brian/Downloads/CascadiaCode.zip -d /usr/share/fonts/CascadiaCode
 sudo fc-cache -f -v
 rm Hack.zip CascadiaCode.zip
 ```
@@ -150,8 +180,8 @@ sudo rm /etc/systemd/system/display-manager.service
 
 ```sh
 # Pixie SDDM for Hyprland
-sudo pacman -S sddm sddm-kcm qt6-declarative qt6-svg qt6-quickcontrols2
-sudo systemcl enable sddm.service
+sudo pacman -S sddm sddm-kcm qt6-declarative qt6-svg
+sudo systemctl enable sddm.service
 paru -S --needed pixie-sddm-git
 
 # configuring
@@ -167,7 +197,7 @@ sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/pixie
 ```sh
 # LyDM for Qtile
 sudo pacman -S ly
-sudo systemcl enable ly.service
+sudo systemctl enable ly.service
 
 # configuring
 cd /etc/ly/
