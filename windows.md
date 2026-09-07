@@ -2,6 +2,13 @@
 
 A continuación estarán algunas de las herramientas que podrían acomodarse a tu entorno de desarrollo en `Windows`.
 
+> [!NOTE]
+> Para iniciar Windows sin conectar cuenta de Microsoft, presionamos `Shift + F10` al iniciar el equipo nuevo o recién restaurado; se abrirá `CMD` y colocamos el siguiente comando:
+>
+> ```sh
+> start ms-cxh:localonly
+> ```
+
 ## Instalando Paquetes
 
 > [!TIP]
